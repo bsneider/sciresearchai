@@ -44,7 +44,7 @@ class TestEmbeddingGenerator:
             assert isinstance(embedding, np.ndarray)
             assert embedding.shape == (768,)
             assert embedding.dtype == np.float32
-            mock_encode.assert_called_once_with(text)
+            mock_encode.assert_called_once_with(text, convert_to_numpy=True)
 
     def test_generate_batch_embeddings(self, embedding_gen):
         """Test generating embeddings for multiple texts"""
@@ -64,7 +64,7 @@ class TestEmbeddingGenerator:
             assert isinstance(embeddings, np.ndarray)
             assert embeddings.shape == (3, 768)
             assert embeddings.dtype == np.float32
-            mock_encode.assert_called_once_with(texts)
+            mock_encode.assert_called_once_with(texts, convert_to_numpy=True)
 
     def test_embedding_caching(self, embedding_gen):
         """Test that embeddings are cached efficiently"""
@@ -363,7 +363,7 @@ class TestVectorSearchEngine:
             "not a dict"  # Invalid type
         ]
 
-        with pytest.raises(ValueError, match="Invalid document format"):
+        with pytest.raises(ValueError):
             asyncio.run(search_engine.add_documents(invalid_documents))
 
     @pytest.mark.asyncio

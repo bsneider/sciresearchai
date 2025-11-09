@@ -8,6 +8,8 @@ import hashlib
 from typing import List, Dict, Optional
 
 from .api_integrations import APIIntegrationManager
+from .vector_search import VectorSearchEngine
+from .search_workflow import SearchWorkflowOrchestrator
 
 
 class RateLimiter:
@@ -44,6 +46,16 @@ class SearchAgent:
 
         # Initialize API integration manager
         self.api_manager = APIIntegrationManager(api_keys)
+
+        # Initialize vector search engine
+        try:
+            self.vector_engine = VectorSearchEngine(collection_name="research_papers")
+        except ImportError:
+            logging.warning("Vector search not available - missing dependencies")
+            self.vector_engine = None
+
+        # Initialize search workflow orchestrator
+        self.workflow_orchestrator = SearchWorkflowOrchestrator(self)
 
     async def optimize_query(self, query: str) -> str:
         """Optimize search query for better results across databases"""
@@ -184,6 +196,71 @@ class SearchAgent:
     async def search_all_databases(self, query: str) -> List[Dict]:
         """Search across all configured databases"""
         return await self.api_manager.search_all(query)
+
+    async def vector_search(self, query: str, top_k: int = 10, search_type: str = "hybrid") -> List[Dict]:
+        """Perform vector search on stored papers"""
+        if not self.vector_engine:
+            logging.warning("Vector search not available")
+            return []
+
+        try:
+            if search_type == "semantic":
+                return await self.vector_engine.semantic_search(query, top_k)
+            elif search_type == "hybrid":
+                return await self.vector_engine.hybrid_search(query, top_k)
+            else:
+                raise ValueError(f"Unknown search type: {search_type}")
+        except Exception as e:
+            logging.error(f"Vector search error: {e}")
+            return []
+
+    async def add_papers_to_vector_store(self, papers: List[Dict]) -> None:
+        """Add papers to vector search database"""
+        if not self.vector_engine:
+            logging.warning("Vector search not available")
+            return
+
+        try:
+            await self.vector_engine.add_documents(papers)
+        except Exception as e:
+            logging.error(f"Error adding papers to vector store: {e}")
+
+    async def search_with_vector_enhancement(self, query: str, top_k: int = 20) -> List[Dict]:
+        """Enhanced search combining API results with vector search"""
+        # Get results from APIs
+        api_results = await self.search_all_databases(query)
+
+        # Add papers to vector store for future searches
+        if api_results:
+            await self.add_papers_to_vector_store(api_results)
+
+        # Get vector search results
+        vector_results = await self.vector_search(query, top_k // 2, "hybrid")
+
+        # Combine and deduplicate results
+        all_results = api_results + vector_results
+        unique_results = self.remove_duplicates(all_results)
+
+        # Re-rank combined results
+        ranked_results = await self.score_relevance(unique_results, query)
+
+        return ranked_results[:top_k]
+
+    async def execute_search_workflow(self, query: str, max_results: int = 100) -> List[Dict]:
+        """Execute complete search workflow with orchestration"""
+        return await self.workflow_orchestrator.execute_search_workflow(query, max_results)
+
+    async def execute_enhanced_search_workflow(self, query: str, max_results: int = 50) -> List[Dict]:
+        """Execute enhanced search workflow with vector search"""
+        return await self.workflow_orchestrator.execute_enhanced_search_workflow(query, max_results)
+
+    async def analyze_search_coverage(self, results: List[Dict], query: str) -> Dict:
+        """Analyze coverage and provide insights"""
+        return self.workflow_orchestrator.analyze_search_performance(results, query)
+
+    def get_workflow_status(self) -> Dict:
+        """Get current workflow execution status"""
+        return self.workflow_orchestrator.get_workflow_status()
 
     def _get_source_name(self, index: int) -> str:
         """Get database source name from index"""

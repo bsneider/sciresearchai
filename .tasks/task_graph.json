@@ -5,7 +5,10 @@
       "title": "Implement Paper Search Subagent Core Infrastructure",
       "prd_traceability": {
         "feature_id": "F001",
-        "prd_lines": [69, 76],
+        "prd_lines": [
+          69,
+          76
+        ],
         "original_requirement": "Comprehensive literature discovery and retrieval across multiple databases"
       },
       "scope_boundaries": {
@@ -36,11 +39,22 @@
           "pydantic": "2.9.2",
           "tenacity": "9.0.0"
         },
-        "forbidden_patterns": ["Hardcoded API keys", "Synchronous blocking calls", "Unlimited retry loops"]
+        "forbidden_patterns": [
+          "Hardcoded API keys",
+          "Synchronous blocking calls",
+          "Unlimited retry loops"
+        ]
       },
       "hallucination_guards": {
-        "verify_before_use": ["Semantic Scholar API endpoints", "arXiv API response formats", "Rate limiting patterns"],
-        "forbidden_assumptions": ["No API key requirements assumed", "No unlimited rate limits assumed"]
+        "verify_before_use": [
+          "Semantic Scholar API endpoints",
+          "arXiv API response formats",
+          "Rate limiting patterns"
+        ],
+        "forbidden_assumptions": [
+          "No API key requirements assumed",
+          "No unlimited rate limits assumed"
+        ]
       },
       "context_drift_prevention": {
         "task_boundaries": "This task ONLY implements core search infrastructure and API integration patterns",
@@ -64,7 +78,10 @@
       "title": "Build Scientific Database API Integrations",
       "prd_traceability": {
         "feature_id": "F001",
-        "prd_lines": [135, 140],
+        "prd_lines": [
+          135,
+          140
+        ],
         "original_requirement": "Query formulation across multiple databases (Semantic Scholar, arXiv, PubMed)"
       },
       "scope_boundaries": {
@@ -77,7 +94,7 @@
         ],
         "must_not_implement": [
           "Custom web scraping implementations",
-          "付费数据库集成",
+          "\u4ed8\u8d39\u6570\u636e\u5e93\u96c6\u6210",
           "Real-time data synchronization"
         ],
         "out_of_scope_check": "BLOCK if implementing non-API data sources"
@@ -95,11 +112,22 @@
           "arxiv": "2.1.0",
           "ratelimit": "2.2.1"
         },
-        "forbidden_patterns": ["Missing rate limiting", "Hardcoded retry counts", "No API key handling"]
+        "forbidden_patterns": [
+          "Missing rate limiting",
+          "Hardcoded retry counts",
+          "No API key handling"
+        ]
       },
       "hallucination_guards": {
-        "verify_before_use": ["BioPython Entrez usage patterns", "Semantic Scholar rate limits", "arXiv API terms"],
-        "forbidden_assumptions": ["No API authentication required", "Unlimited request quotas"]
+        "verify_before_use": [
+          "BioPython Entrez usage patterns",
+          "Semantic Scholar rate limits",
+          "arXiv API terms"
+        ],
+        "forbidden_assumptions": [
+          "No API authentication required",
+          "Unlimited request quotas"
+        ]
       },
       "context_drift_prevention": {
         "task_boundaries": "This task ONLY handles official API integrations with proper rate limiting",
@@ -123,7 +151,10 @@
       "title": "Create Vector Search and Similarity System",
       "prd_traceability": {
         "feature_id": "F001",
-        "prd_lines": [137, 138],
+        "prd_lines": [
+          137,
+          138
+        ],
         "original_requirement": "Semantic and keyword-based search execution with relevance scoring"
       },
       "scope_boundaries": {
@@ -154,11 +185,22 @@
           "sentence-transformers": "3.3.1",
           "numpy": "2.1.3"
         },
-        "forbidden_patterns": ["Manual embedding calculations", "Inefficient vector operations", "Missing dimension checks"]
+        "forbidden_patterns": [
+          "Manual embedding calculations",
+          "Inefficient vector operations",
+          "Missing dimension checks"
+        ]
       },
       "hallucination_guards": {
-        "verify_before_use": ["ChromaDB collection operations", "Sentence transformer inference patterns", "Vector similarity metrics"],
-        "forbidden_assumptions": ["No GPU acceleration required", "No embedding dimension mismatches"]
+        "verify_before_use": [
+          "ChromaDB collection operations",
+          "Sentence transformer inference patterns",
+          "Vector similarity metrics"
+        ],
+        "forbidden_assumptions": [
+          "No GPU acceleration required",
+          "No embedding dimension mismatches"
+        ]
       },
       "context_drift_prevention": {
         "task_boundaries": "This task ONLY implements vector search using existing pre-trained models",
@@ -182,7 +224,10 @@
       "title": "Implement Search Workflow Coordination",
       "prd_traceability": {
         "feature_id": "F005",
-        "prd_lines": [126, 145],
+        "prd_lines": [
+          126,
+          145
+        ],
         "original_requirement": "End-to-end search process with ranking, filtering, and coverage analysis"
       },
       "scope_boundaries": {
@@ -213,11 +258,22 @@
           "asyncio": "built-in",
           "logging": "built-in"
         },
-        "forbidden_patterns": ["Blocking workflow operations", "Missing error handling", "No progress tracking"]
+        "forbidden_patterns": [
+          "Blocking workflow operations",
+          "Missing error handling",
+          "No progress tracking"
+        ]
       },
       "hallucination_guards": {
-        "verify_before_use": ["CrewAI task delegation patterns", "Async workflow coordination", "Result aggregation strategies"],
-        "forbidden_assumptions": ["No database coordination complexity", "Instant search results"]
+        "verify_before_use": [
+          "CrewAI task delegation patterns",
+          "Async workflow coordination",
+          "Result aggregation strategies"
+        ],
+        "forbidden_assumptions": [
+          "No database coordination complexity",
+          "Instant search results"
+        ]
       },
       "context_drift_prevention": {
         "task_boundaries": "This task ONLY handles search workflow coordination using existing components",
@@ -264,7 +320,10 @@
       "title": "Implement Paper Reader Subagent Infrastructure",
       "prd_traceability": {
         "feature_id": "F002",
-        "prd_lines": [77, 84],
+        "prd_lines": [
+          77,
+          84
+        ],
         "original_requirement": "Critical analysis and assessment of scientific papers"
       },
       "scope_boundaries": {
@@ -295,11 +354,23 @@
           "nltk": "3.9.1",
           "textstat": "0.7.3"
         },
-        "forbidden_patterns": ["Unstructured text processing", "Missing PDF error handling", "Assumed paper formats"]
+        "forbidden_patterns": [
+          "Unstructured text processing",
+          "Missing PDF error handling",
+          "Assumed paper formats"
+        ]
       },
       "hallucination_guards": {
-        "verify_before_use": ["PDF parsing error handling", "Research paper section identification", "Quality metric calculation methods"],
-        "forbidden_assumptions": ["All PDFs are readable", "Consistent paper structure", "No corrupted downloads"]
+        "verify_before_use": [
+          "PDF parsing error handling",
+          "Research paper section identification",
+          "Quality metric calculation methods"
+        ],
+        "forbidden_assumptions": [
+          "All PDFs are readable",
+          "Consistent paper structure",
+          "No corrupted downloads"
+        ]
       },
       "context_drift_prevention": {
         "task_boundaries": "This task ONLY implements generic paper analysis infrastructure",
@@ -316,14 +387,19 @@
         "is_milestone_critical": true,
         "can_defer": false,
         "milestone_position": 2
-      }
+      },
+      "status": "in_progress",
+      "started_at": "2025-11-09T17:29:36.156572"
     },
     {
       "id": "T-ANALYSIS-002",
       "title": "Build Quality Assessment and Methodology Evaluation",
       "prd_traceability": {
         "feature_id": "F002",
-        "prd_lines": [80, 83],
+        "prd_lines": [
+          80,
+          83
+        ],
         "original_requirement": "Quality assessment and methodology evaluation"
       },
       "scope_boundaries": {
@@ -354,11 +430,22 @@
           "statsmodels": "0.14.4",
           "sklearn": "1.5.2"
         },
-        "forbidden_patterns": ["Hardcoded quality thresholds", "Missing statistical validation", "Assumed methodology compliance"]
+        "forbidden_patterns": [
+          "Hardcoded quality thresholds",
+          "Missing statistical validation",
+          "Assumed methodology compliance"
+        ]
       },
       "hallucination_guards": {
-        "verify_before_use": ["Statistical test implementations", "Bias detection algorithms", "Quality scoring methodologies"],
-        "forbidden_assumptions": ["Complete methodology information available", "No statistical calculation errors"]
+        "verify_before_use": [
+          "Statistical test implementations",
+          "Bias detection algorithms",
+          "Quality scoring methodologies"
+        ],
+        "forbidden_assumptions": [
+          "Complete methodology information available",
+          "No statistical calculation errors"
+        ]
       },
       "context_drift_prevention": {
         "task_boundaries": "This task ONLY implements generic quality assessment tools",
@@ -382,7 +469,10 @@
       "title": "Create Key Finding Extraction and Summarization",
       "prd_traceability": {
         "feature_id": "F002",
-        "prd_lines": [82, 83],
+        "prd_lines": [
+          82,
+          83
+        ],
         "original_requirement": "Key finding extraction and summarization"
       },
       "scope_boundaries": {
@@ -413,11 +503,23 @@
           "spacy": "3.8.2",
           "networkx": "3.4.2"
         },
-        "forbidden_patterns": ["Manual text extraction rules", "Missing context preservation", "Loss of important findings"]
+        "forbidden_patterns": [
+          "Manual text extraction rules",
+          "Missing context preservation",
+          "Loss of important findings"
+        ]
       },
       "hallucination_guards": {
-        "verify_before_use": ["Text summarization methodologies", "Citation parsing algorithms", "Finding extraction validation"],
-        "forbidden_assumptions": ["Complete paper text available", "No ambiguous findings", "Accurate citation extraction"]
+        "verify_before_use": [
+          "Text summarization methodologies",
+          "Citation parsing algorithms",
+          "Finding extraction validation"
+        ],
+        "forbidden_assumptions": [
+          "Complete paper text available",
+          "No ambiguous findings",
+          "Accurate citation extraction"
+        ]
       },
       "context_drift_prevention": {
         "task_boundaries": "This task ONLY implements generic extraction using existing NLP models",
@@ -441,7 +543,10 @@
       "title": "Implement Critical Assessment Workflow",
       "prd_traceability": {
         "feature_id": "F006",
-        "prd_lines": [146, 165],
+        "prd_lines": [
+          146,
+          165
+        ],
         "original_requirement": "Paper analysis and quality evaluation with insight extraction"
       },
       "scope_boundaries": {
@@ -472,11 +577,22 @@
           "redis": "5.2.1",
           "asyncio": "built-in"
         },
-        "forbidden_patterns": ["Blocking batch processing", "Missing progress tracking", "No error recovery"]
+        "forbidden_patterns": [
+          "Blocking batch processing",
+          "Missing progress tracking",
+          "No error recovery"
+        ]
       },
       "hallucination_guards": {
-        "verify_before_use": ["Celery task queue patterns", "Batch processing coordination", "Analysis result aggregation"],
-        "forbidden_assumptions": ["All papers process successfully", "No batch processing bottlenecks"]
+        "verify_before_use": [
+          "Celery task queue patterns",
+          "Batch processing coordination",
+          "Analysis result aggregation"
+        ],
+        "forbidden_assumptions": [
+          "All papers process successfully",
+          "No batch processing bottlenecks"
+        ]
       },
       "context_drift_prevention": {
         "task_boundaries": "This task ONLY handles workflow orchestration using existing analysis components",
@@ -501,7 +617,10 @@
       "title": "Build Cross-Reference and Citation Analysis",
       "prd_traceability": {
         "feature_id": "F002",
-        "prd_lines": [83, 84],
+        "prd_lines": [
+          83,
+          84
+        ],
         "original_requirement": "Citation network analysis"
       },
       "scope_boundaries": {
@@ -532,11 +651,23 @@
           "pyvis": "0.3.2",
           "citation_parser": "0.0.1"
         },
-        "forbidden_patterns": ["Manual citation parsing", "Missing reference format handling", "Inconsistent citation data"]
+        "forbidden_patterns": [
+          "Manual citation parsing",
+          "Missing reference format handling",
+          "Inconsistent citation data"
+        ]
       },
       "hallucination_guards": {
-        "verify_before_use": ["Neo4j graph database operations", "Citation parsing algorithms", "Network analysis methods"],
-        "forbidden_assumptions": ["Consistent citation formats", "Complete reference information", "No parsing errors"]
+        "verify_before_use": [
+          "Neo4j graph database operations",
+          "Citation parsing algorithms",
+          "Network analysis methods"
+        ],
+        "forbidden_assumptions": [
+          "Consistent citation formats",
+          "Complete reference information",
+          "No parsing errors"
+        ]
       },
       "context_drift_prevention": {
         "task_boundaries": "This task ONLY implements basic citation network analysis",
@@ -582,7 +713,10 @@
       "title": "Implement Hypothesis Subagent Core Infrastructure",
       "prd_traceability": {
         "feature_id": "F003",
-        "prd_lines": [85, 91],
+        "prd_lines": [
+          85,
+          91
+        ],
         "original_requirement": "Novel hypothesis generation from synthesized knowledge"
       },
       "scope_boundaries": {
@@ -613,11 +747,23 @@
           "networkx": "3.4.2",
           "itertools": "built-in"
         },
-        "forbidden_patterns": ["Random hypothesis generation", "Missing evidence validation", "Unsynthesized claims"]
+        "forbidden_patterns": [
+          "Random hypothesis generation",
+          "Missing evidence validation",
+          "Unsynthesized claims"
+        ]
       },
       "hallucination_guards": {
-        "verify_before_use": ["Knowledge synthesis methodologies", "Gap detection algorithms", "Hypothesis validation frameworks"],
-        "forbidden_assumptions": ["Complete insight coverage", "No contradictory evidence", "Valid gap identification"]
+        "verify_before_use": [
+          "Knowledge synthesis methodologies",
+          "Gap detection algorithms",
+          "Hypothesis validation frameworks"
+        ],
+        "forbidden_assumptions": [
+          "Complete insight coverage",
+          "No contradictory evidence",
+          "Valid gap identification"
+        ]
       },
       "context_drift_prevention": {
         "task_boundaries": "This task ONLY implements hypothesis generation from analyzed papers",
@@ -641,7 +787,10 @@
       "title": "Build Research Gap Analysis System",
       "prd_traceability": {
         "feature_id": "F003",
-        "prd_lines": [89, 90],
+        "prd_lines": [
+          89,
+          90
+        ],
         "original_requirement": "Gap identification in current research"
       },
       "scope_boundaries": {
@@ -672,11 +821,23 @@
           "pandas": "2.2.3",
           "matplotlib": "3.9.3"
         },
-        "forbidden_patterns": ["Manual gap identification", "Missing trend analysis", "Assumed complete coverage"]
+        "forbidden_patterns": [
+          "Manual gap identification",
+          "Missing trend analysis",
+          "Assumed complete coverage"
+        ]
       },
       "hallucination_guards": {
-        "verify_before_use": ["Trend analysis algorithms", "Gap detection methodologies", "Research landscape mapping"],
-        "forbidden_assumptions": ["Complete literature coverage", "No hidden research areas", "Accurate trend identification"]
+        "verify_before_use": [
+          "Trend analysis algorithms",
+          "Gap detection methodologies",
+          "Research landscape mapping"
+        ],
+        "forbidden_assumptions": [
+          "Complete literature coverage",
+          "No hidden research areas",
+          "Accurate trend identification"
+        ]
       },
       "context_drift_prevention": {
         "task_boundaries": "This task ONLY implements gap analysis using existing analytical tools",
@@ -700,7 +861,10 @@
       "title": "Create Knowledge Synthesis Engine",
       "prd_traceability": {
         "feature_id": "F003",
-        "prd_lines": [88, 89],
+        "prd_lines": [
+          88,
+          89
+        ],
         "original_requirement": "Cross-paper insight synthesis"
       },
       "scope_boundaries": {
@@ -731,11 +895,23 @@
           "numpy": "2.1.3",
           "scipy": "1.14.1"
         },
-        "forbidden_patterns": ["Random insight combination", "Missing quality validation", "Unvalidated synthesis"]
+        "forbidden_patterns": [
+          "Random insight combination",
+          "Missing quality validation",
+          "Unvalidated synthesis"
+        ]
       },
       "hallucination_guards": {
-        "verify_before_use": ["Graph theory applications", "Insight combination methodologies", "Quality assessment algorithms"],
-        "forbidden_assumptions": ["Valid insight connections", "No contradictory synthesis", "Complete integration possible"]
+        "verify_before_use": [
+          "Graph theory applications",
+          "Insight combination methodologies",
+          "Quality assessment algorithms"
+        ],
+        "forbidden_assumptions": [
+          "Valid insight connections",
+          "No contradictory synthesis",
+          "Complete integration possible"
+        ]
       },
       "context_drift_prevention": {
         "task_boundaries": "This task ONLY implements synthesis of existing research findings",
@@ -759,7 +935,10 @@
       "title": "Implement Knowledge Synthesis & Hypothesis Workflow",
       "prd_traceability": {
         "feature_id": "F007",
-        "prd_lines": [166, 185],
+        "prd_lines": [
+          166,
+          185
+        ],
         "original_requirement": "Cross-paper insight synthesis and novel hypothesis creation"
       },
       "scope_boundaries": {
@@ -790,11 +969,23 @@
           "asyncio": "built-in",
           "logging": "built-in"
         },
-        "forbidden_patterns": ["Single-step hypothesis generation", "Missing validation steps", "No evidence tracking"]
+        "forbidden_patterns": [
+          "Single-step hypothesis generation",
+          "Missing validation steps",
+          "No evidence tracking"
+        ]
       },
       "hallucination_guards": {
-        "verify_before_use": ["Multi-step workflow orchestration", "Hypothesis validation methodologies", "Evidence tracking systems"],
-        "forbidden_assumptions": ["Valid hypothesis generation", "Complete evidence coverage", "No logical gaps"]
+        "verify_before_use": [
+          "Multi-step workflow orchestration",
+          "Hypothesis validation methodologies",
+          "Evidence tracking systems"
+        ],
+        "forbidden_assumptions": [
+          "Valid hypothesis generation",
+          "Complete evidence coverage",
+          "No logical gaps"
+        ]
       },
       "context_drift_prevention": {
         "task_boundaries": "This task ONLY orchestrates the complete hypothesis generation pipeline",
@@ -841,7 +1032,10 @@
       "title": "Build Claude Code Command System Integration",
       "prd_traceability": {
         "feature_id": "F004",
-        "prd_lines": [107, 120],
+        "prd_lines": [
+          107,
+          120
+        ],
         "original_requirement": "8 core research slash commands for Claude Code"
       },
       "scope_boundaries": {
@@ -872,11 +1066,23 @@
           "asyncio": "built-in",
           "json": "built-in"
         },
-        "forbidden_patterns": ["Blocking command execution", "Missing error handling", "No progress feedback"]
+        "forbidden_patterns": [
+          "Blocking command execution",
+          "Missing error handling",
+          "No progress feedback"
+        ]
       },
       "hallucination_guards": {
-        "verify_before_use": ["Claude Code command integration patterns", "Async command execution", "Progress reporting mechanisms"],
-        "forbidden_assumptions": ["Claude Code availability", "Unlimited command execution time", "No command conflicts"]
+        "verify_before_use": [
+          "Claude Code command integration patterns",
+          "Async command execution",
+          "Progress reporting mechanisms"
+        ],
+        "forbidden_assumptions": [
+          "Claude Code availability",
+          "Unlimited command execution time",
+          "No command conflicts"
+        ]
       },
       "context_drift_prevention": {
         "task_boundaries": "This task ONLY implements core research command integration",
@@ -901,7 +1107,10 @@
       "title": "Implement FastAPI Backend Server",
       "prd_traceability": {
         "feature_id": "F004",
-        "prd_lines": [107, 120],
+        "prd_lines": [
+          107,
+          120
+        ],
         "original_requirement": "Research-focused commands for autonomous research"
       },
       "scope_boundaries": {
@@ -909,7 +1118,7 @@
           "FastAPI application with async endpoints",
           "Subagent coordination API endpoints",
           "Request/response models with Pydantic validation",
-          "Error handling and status reporting,
+          "Error handling and status reporting",
           "API documentation with OpenAPI integration"
         ],
         "must_not_implement": [
@@ -932,11 +1141,23 @@
           "pydantic": "2.9.2",
           "uvicorn": "0.32.1"
         },
-        "forbidden_patterns": ["Synchronous endpoint implementations", "Missing validation", "No error handling"]
+        "forbidden_patterns": [
+          "Synchronous endpoint implementations",
+          "Missing validation",
+          "No error handling"
+        ]
       },
       "hallucination_guards": {
-        "verify_before_use": ["FastAPI async patterns", "Pydantic validation methods", "OpenAPI documentation generation"],
-        "forbidden_assumptions": ["No endpoint conflicts", "Unlimited concurrent requests", "Perfect validation coverage"]
+        "verify_before_use": [
+          "FastAPI async patterns",
+          "Pydantic validation methods",
+          "OpenAPI documentation generation"
+        ],
+        "forbidden_assumptions": [
+          "No endpoint conflicts",
+          "Unlimited concurrent requests",
+          "Perfect validation coverage"
+        ]
       },
       "context_drift_prevention": {
         "task_boundaries": "This task ONLY implements backend API server for subagent coordination",
@@ -960,15 +1181,18 @@
       "title": "Create Subagent Coordination and Workflow Management",
       "prd_traceability": {
         "feature_id": "F007",
-        "prd_lines": [166, 185],
+        "prd_lines": [
+          166,
+          185
+        ],
         "original_requirement": "Complete research workflow from search to hypothesis"
       },
       "scope_boundaries": {
         "must_implement": [
-          "End-to-end research workflow orchestration,
-          "Subagent task delegation and coordination,
-          "Workflow state management and persistence,
-          "Progress tracking and status reporting,
+          "End-to-end research workflow orchestration",
+          "Subagent task delegation and coordination",
+          "Workflow state management and persistence",
+          "Progress tracking and status reporting",
           "Error recovery and rollback mechanisms"
         ],
         "must_not_implement": [
@@ -991,16 +1215,32 @@
           "redis": "5.2.1",
           "pickle": "built-in"
         },
-        "forbidden_patterns": ["Blocking workflow operations", "Missing state persistence", "No error recovery"]
+        "forbidden_patterns": [
+          "Blocking workflow operations",
+          "Missing state persistence",
+          "No error recovery"
+        ]
       },
       "hallucination_guards": {
-        "verify_before_use": ["CrewAI coordination patterns", "State management strategies", "Error recovery mechanisms"],
-        "forbidden_assumptions": ["Perfect coordination", "No state corruption", "Complete error coverage"]
+        "verify_before_use": [
+          "CrewAI coordination patterns",
+          "State management strategies",
+          "Error recovery mechanisms"
+        ],
+        "forbidden_assumptions": [
+          "Perfect coordination",
+          "No state corruption",
+          "Complete error coverage"
+        ]
       },
       "context_drift_prevention": {
         "task_boundaries": "This task ONLY orchestrates existing subagents into complete workflow",
         "refer_to_other_tasks": {
-          "All subagent systems": ["T-SEARCH-004", "T-ANALYSIS-004", "T-HYPOTH-004"],
+          "All subagent systems": [
+            "T-SEARCH-004",
+            "T-ANALYSIS-004",
+            "T-HYPOTH-004"
+          ],
           "Command system": "T-CMD-001",
           "API server": "T-CMD-002"
         },
@@ -1043,7 +1283,12 @@
       "id": "M1",
       "name": "Core Search Infrastructure",
       "description": "Paper search subagent with database integrations and vector search",
-      "tasks": ["T-SEARCH-001", "T-SEARCH-002", "T-SEARCH-003", "T-SEARCH-004"],
+      "tasks": [
+        "T-SEARCH-001",
+        "T-SEARCH-002",
+        "T-SEARCH-003",
+        "T-SEARCH-004"
+      ],
       "launch_ready": true,
       "validation_criteria": {
         "api_integrations_work": "All three database APIs (Semantic Scholar, arXiv, PubMed) functional with rate limiting",
@@ -1059,7 +1304,13 @@
       "id": "M2",
       "name": "Analysis & Reading System",
       "description": "Paper reader subagent with quality assessment and citation analysis",
-      "tasks": ["T-ANALYSIS-001", "T-ANALYSIS-002", "T-ANALYSIS-003", "T-ANALYSIS-004", "T-ANALYSIS-005"],
+      "tasks": [
+        "T-ANALYSIS-001",
+        "T-ANALYSIS-002",
+        "T-ANALYSIS-003",
+        "T-ANALYSIS-004",
+        "T-ANALYSIS-005"
+      ],
       "launch_ready": true,
       "validation_criteria": {
         "pdf_parsing_accurate": "Research papers parsed correctly with section identification",
@@ -1075,7 +1326,12 @@
       "id": "M3",
       "name": "Hypothesis Generation",
       "description": "Hypothesis subagent with knowledge synthesis and gap analysis",
-      "tasks": ["T-HYPOTH-001", "T-HYPOTH-002", "T-HYPOTH-003", "T-HYPOTH-004"],
+      "tasks": [
+        "T-HYPOTH-001",
+        "T-HYPOTH-002",
+        "T-HYPOTH-003",
+        "T-HYPOTH-004"
+      ],
       "launch_ready": true,
       "validation_criteria": {
         "hypotheses_generated": "Novel, testable hypotheses generated from analyzed papers",
@@ -1091,7 +1347,11 @@
       "id": "M4",
       "name": "Integration & Workflow",
       "description": "End-to-end system integration with Claude Code commands and coordination",
-      "tasks": ["T-CMD-001", "T-CMD-002", "T-CMD-003"],
+      "tasks": [
+        "T-CMD-001",
+        "T-CMD-002",
+        "T-CMD-003"
+      ],
       "launch_ready": true,
       "validation_criteria": {
         "commands_function_correctly": "All research slash commands work through Claude Code interface",
@@ -1108,7 +1368,12 @@
     "max_tasks_per_milestone": 5,
     "min_tasks_per_milestone": 3,
     "validation_frequency": "every_milestone",
-    "human_review_points": ["M1", "M2", "M3", "M4"],
+    "human_review_points": [
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
     "rollback_strategy": "milestone_based_with_full_recovery"
   },
   "scope_enforcement": {

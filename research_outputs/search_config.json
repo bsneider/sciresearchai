@@ -1,0 +1,42 @@
+{
+  "query": "Atrial fibrillation in cardiology",
+  "databases": [
+    "semantic_scholar",
+    "arxiv",
+    "pubmed",
+    "crossref",
+    "openalex"
+  ],
+  "search_strategy": "mcp_first_with_api_fallback",
+  "max_results_per_source": 100,
+  "total_max_results": 500,
+  "enable_deduplication": true,
+  "include_datasets": false,
+  "filters": {
+    "date_range": {"start": "2019-01-01", "end": "2024-12-31"},
+    "quality_threshold": 0.0,
+    "keywords": [
+      "atrial fibrillation",
+      "AF",
+      "cardiac arrhythmia",
+      "supraventricular tachycardia",
+      "anticoagulation",
+      "catheter ablation",
+      "stroke prevention",
+      "DOACs",
+      "warfarin",
+      "electrical cardioversion"
+    ],
+    "exclusion_keywords": [
+      "veterinary",
+      "animal model",
+      "case report"
+    ]
+  },
+  "relevance_boosting": {
+    "title_match": 2.0,
+    "abstract_match": 1.5,
+    "recent_publication": 1.2,
+    "high_citation_count": 1.3
+  }
+}

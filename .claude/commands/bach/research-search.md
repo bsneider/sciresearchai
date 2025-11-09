@@ -44,13 +44,93 @@ You are Paper Search Subagent — a specialized literature discovery engine with
 
 **Search Process:**
 ```bash
-# Document search strategy
+# Document search strategy  
 create_file "research_outputs/search_strategy.md"
 
-# Execute searches across databases
-fetch_webpage "https://pubmed.ncbi.nlm.nih.gov/..." # PubMed search
-fetch_webpage "https://arxiv.org/search/..." # arXiv search
-fetch_webpage "https://api.semanticscholar.org/..." # Semantic Scholar API
+# Initialize Bach search system with MCP and API integration
+create_file "research_outputs/search_execution.py" """
+import asyncio
+import json
+from bach.utils.search_integration import unified_search, comprehensive_research_search
+
+# Execute comprehensive search with MCP-first strategy
+async def execute_research_search(query, domain=None):
+    # Get API keys from environment or config
+    api_keys = {
+        'semantic_scholar': os.getenv('SEMANTIC_SCHOLAR_API_KEY'),
+        'pubmed': os.getenv('PUBMED_EMAIL')
+    }
+    
+    # Execute search with automatic MCP/API selection
+    results = await comprehensive_research_search(
+        query=query,
+        domain=domain,
+        max_results=300,
+        api_keys=api_keys
+    )
+    
+    return results
+
+# Example execution
+results = asyncio.run(execute_research_search("$ARGUMENTS"))
+"""
+
+# Execute unified search across all available databases  
+semantic_search "multi-database literature search"
+
+# Create search configuration using Bach utilities
+create_file "research_outputs/search_config.json" """
+{
+  "query": "$ARGUMENTS",
+  "databases": [
+    "semantic_scholar",
+    "arxiv", 
+    "pubmed",
+    "crossref",
+    "openalex"
+  ],
+  "search_strategy": "mcp_first_with_api_fallback",
+  "max_results_per_source": 100,
+  "total_max_results": 500,
+  "enable_deduplication": true,
+  "include_datasets": false,
+  "filters": {
+    "date_range": {"start": "2019-01-01", "end": "2024-12-31"},
+    "quality_threshold": 0.0
+  }
+}
+"""
+
+# Store search results and metadata
+create_file "research_outputs/search_results.json"
+create_file "research_outputs/search_metrics.json"
+
+# Integration with remote datasets if needed
+create_file "research_outputs/dataset_search_config.json" """
+{
+  "query": "$ARGUMENTS",
+  "repositories": [
+    "ncbi_genomes",
+    "ncbi_sra", 
+    "ebi_pride",
+    "ebi_arrayexpress",
+    "data_gov"
+  ],
+  "dataset_types": ["genomic", "clinical", "experimental"],
+  "max_results": 100
+}
+"""
+```
+
+**Bach Search Integration Features:**
+- **MCP-First Strategy**: Use MCP servers when available for faster responses
+- **API Fallback**: Seamless fallback to direct API calls when MCP unavailable  
+- **Intelligent Routing**: Automatically select optimal search strategy
+- **Unified Results**: Standardized result format across all sources
+- **Advanced Deduplication**: Remove duplicates based on DOI, title similarity
+- **Remote Dataset Access**: Include scientific datasets from major repositories
+
+### Phase 3: Result Processing
 
 # Document search results
 create_file "research_outputs/search_results_pubmed.json"
@@ -143,21 +223,63 @@ create_file "research_outputs/search_results_semantic_scholar.json"
 4. `search_quality_report.md` - Coverage and quality assessment
 5. `selected_papers_list.json` - Final curated paper list
 
-## Search Command Examples
+### Search Command Examples
 
 ```bash
-# Search strategy documentation
-create_file "research_outputs/search_strategy.md" --content="# Literature Search Strategy for [TOPIC]"
+# Basic literature search with Bach integration
+create_file "research_outputs/search_execution.py"
+semantic_search "literature search Bach utilities"
 
-# Execute database searches
-semantic_search "machine learning healthcare applications"
-fetch_webpage "https://pubmed.ncbi.nlm.nih.gov/..."
+# Quick paper search using MCP/API integration
+create_file "research_outputs/quick_search.py" """
+from bach.utils.search_integration import quick_paper_search
 
-# Quality assessment
-grep_search "relevant|high-quality|systematic" --includePattern="research_outputs/**"
+papers = await quick_paper_search(
+    "$ARGUMENTS",
+    max_results=100,
+    api_keys=api_keys
+)
+"""
 
-# Results compilation
-create_file "research_outputs/final_paper_selection.json"
+# Comprehensive search including datasets
+create_file "research_outputs/comprehensive_search.py" """
+from bach.utils.search_integration import comprehensive_research_search
+
+results = await comprehensive_research_search(
+    "$ARGUMENTS",
+    domain="genomics",  # or "clinical", "chemistry", etc.
+    max_results=300,
+    api_keys=api_keys
+)
+"""
+
+# Advanced search with custom configuration
+create_file "research_outputs/advanced_search.py" """
+from bach.utils.search_integration import unified_search
+
+results = await unified_search(
+    query="$ARGUMENTS",
+    include_papers=True,
+    include_datasets=True,
+    paper_sources=["semantic_scholar", "arxiv", "pubmed"],
+    dataset_sources=["ncbi_genomes", "ebi_pride"],
+    prefer_mcp=True,
+    fallback_to_api=True,
+    max_results=200
+)
+"""
+
+# Remote dataset search
+create_file "research_outputs/dataset_search.py" """
+from bach.utils.apis.remote_datasets import search_remote_datasets
+
+datasets = await search_remote_datasets(
+    "$ARGUMENTS",
+    domain="genomics",
+    repositories=["ncbi_genomes", "ncbi_sra", "ebi_ena"],
+    max_results=100
+)
+"""
 ```
 
 ## Success Criteria

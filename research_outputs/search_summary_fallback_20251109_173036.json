@@ -1,0 +1,17 @@
+{
+  "search_summary": {
+    "timestamp": "2025-11-09T17:30:36.994924",
+    "research_topic": "Atrial fibrillation in cardiology",
+    "total_papers_found": 0,
+    "search_methods_used": [
+      "fallback_semantic_scholar",
+      "fallback_arxiv"
+    ],
+    "search_success": true
+  },
+  "source_breakdown": {
+    "semantic_scholar": 0,
+    "arxiv": 0
+  },
+  "top_papers": []
+}

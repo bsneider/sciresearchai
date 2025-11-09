@@ -187,14 +187,18 @@ class HybridSearchRanker:
         self.semantic_weight = semantic_weight
         self.keyword_weight = keyword_weight
 
-    def calculate_hybrid_scores(self, semantic_scores: np.ndarray, keyword_scores: np.ndarray) -> np.ndarray:
+    def calculate_hybrid_scores(self, semantic_scores, keyword_scores) -> np.ndarray:
         """Calculate hybrid scores combining semantic and keyword scores"""
-        if semantic_scores.shape != keyword_scores.shape:
-            raise ValueError(f"Score arrays must have same shape: {semantic_scores.shape} vs {keyword_scores.shape}")
+        # Convert to numpy arrays if needed
+        semantic_arr = np.array(semantic_scores)
+        keyword_arr = np.array(keyword_scores)
+
+        if semantic_arr.shape != keyword_arr.shape:
+            raise ValueError(f"Score arrays must have same shape: {semantic_arr.shape} vs {keyword_arr.shape}")
 
         # Normalize scores to 0-1 range
-        semantic_norm = self.normalize_scores(semantic_scores)
-        keyword_norm = self.normalize_scores(keyword_scores)
+        semantic_norm = self.normalize_scores(semantic_arr)
+        keyword_norm = self.normalize_scores(keyword_arr)
 
         # Calculate weighted combination
         hybrid_scores = (self.semantic_weight * semantic_norm +

@@ -143,42 +143,46 @@ class ResearchMCPClient:
         self.connection_manager = MCPConnectionManager()
         self.initialized = False
         
-        # Define available research MCP servers
+        # Define available research MCP servers (using existing implementations)
         self.research_servers = {
-            "semantic_scholar_mcp": MCPServerConfig(
-                name="semantic_scholar_mcp",
-                command="semantic-scholar-mcp-server",
-                args=[],
-                description="Semantic Scholar database access via MCP",
-                capabilities=["paper_search", "citation_analysis", "author_lookup"]
-            ),
             "arxiv_mcp": MCPServerConfig(
                 name="arxiv_mcp", 
-                command="arxiv-mcp-server",
-                args=[],
-                description="arXiv preprint database access via MCP",
-                capabilities=["preprint_search", "category_filtering", "fulltext_access"]
+                command="uv",
+                args=["tool", "run", "arxiv-mcp-server", "--storage-path", os.path.expanduser("~/.arxiv-mcp-server/papers")],
+                env={"TRANSPORT": "stdio"},
+                description="arXiv preprint database access via existing MCP server",
+                capabilities=["preprint_search", "paper_download", "fulltext_access", "metadata_extraction"]
             ),
-            "pubmed_mcp": MCPServerConfig(
-                name="pubmed_mcp",
-                command="pubmed-mcp-server", 
-                args=[],
-                description="PubMed biomedical database access via MCP",
-                capabilities=["biomedical_search", "mesh_terms", "clinical_trials"]
+            "brave_search_mcp": MCPServerConfig(
+                name="brave_search_mcp",
+                command="npx",
+                args=["-y", "@modelcontextprotocol/server-brave-search"],
+                env={"BRAVE_API_KEY": os.getenv("BRAVE_API_KEY", "")},
+                description="Brave Search for academic web content",
+                capabilities=["web_search", "academic_content", "real_time_search"]
             ),
-            "research_tools_mcp": MCPServerConfig(
-                name="research_tools_mcp",
-                command="research-tools-mcp-server",
-                args=[],
-                description="Research analysis tools via MCP",
-                capabilities=["text_analysis", "citation_extraction", "quality_assessment"]
+            "github_mcp": MCPServerConfig(
+                name="github_mcp",
+                command="npx",
+                args=["-y", "@modelcontextprotocol/server-github"],
+                env={"GITHUB_PERSONAL_ACCESS_TOKEN": os.getenv("GITHUB_TOKEN", "")},
+                description="GitHub repository search for research code and datasets",
+                capabilities=["repository_search", "code_search", "dataset_discovery"]
             ),
-            "data_analysis_mcp": MCPServerConfig(
-                name="data_analysis_mcp",
-                command="data-analysis-mcp-server",
-                args=[],
-                description="Data analysis and visualization tools",
-                capabilities=["statistical_analysis", "plotting", "data_processing"]
+            "filesystem_mcp": MCPServerConfig(
+                name="filesystem_mcp",
+                command="npx",
+                args=["-y", "@modelcontextprotocol/server-filesystem", "--allowed-directory", os.getcwd()],
+                description="Local filesystem access for research data management",
+                capabilities=["file_operations", "local_data_access", "result_storage"]
+            ),
+            "postgres_mcp": MCPServerConfig(
+                name="postgres_mcp",
+                command="npx",
+                args=["-y", "@modelcontextprotocol/server-postgres"],
+                env={"POSTGRES_CONNECTION_STRING": os.getenv("POSTGRES_CONNECTION_STRING", "")},
+                description="PostgreSQL database for research data storage",
+                capabilities=["data_storage", "query_execution", "result_persistence"]
             )
         }
     
@@ -189,13 +193,29 @@ class ResearchMCPClient:
             return {}
         
         if enable_servers is None:
-            enable_servers = list(self.research_servers.keys())
+            # Default to commonly available MCP servers
+            enable_servers = ["arxiv_mcp", "brave_search_mcp", "filesystem_mcp"]
         
         connection_results = {}
         
         for server_name in enable_servers:
             if server_name in self.research_servers:
                 config = self.research_servers[server_name]
+                
+                # Check if required environment variables are set
+                if server_name == "brave_search_mcp" and not os.getenv("BRAVE_API_KEY"):
+                    logging.warning(f"BRAVE_API_KEY not set, skipping {server_name}")
+                    connection_results[server_name] = False
+                    continue
+                elif server_name == "github_mcp" and not os.getenv("GITHUB_TOKEN"):
+                    logging.warning(f"GITHUB_TOKEN not set, skipping {server_name}")
+                    connection_results[server_name] = False
+                    continue
+                elif server_name == "postgres_mcp" and not os.getenv("POSTGRES_CONNECTION_STRING"):
+                    logging.warning(f"POSTGRES_CONNECTION_STRING not set, skipping {server_name}")
+                    connection_results[server_name] = False
+                    continue
+                
                 success = await self.connection_manager.register_server(config)
                 connection_results[server_name] = success
             else:
@@ -376,7 +396,7 @@ class SemanticScholarMCP:
 
 
 class ArxivMCP:
-    """arXiv specific MCP client"""
+    """arXiv specific MCP client using existing arxiv-mcp-server"""
     
     def __init__(self, client: ResearchMCPClient):
         self.client = client
@@ -384,19 +404,112 @@ class ArxivMCP:
     
     async def search(self, query: str, limit: int = 100, 
                    categories: Optional[List[str]] = None) -> List[Dict[str, Any]]:
-        """Search arXiv via MCP"""
-        filters = {}
-        if categories:
-            filters["categories"] = categories
+        """Search arXiv via existing MCP server"""
+        # Use the search_papers tool from arxiv-mcp-server
+        arguments = {
+            "query": query,
+            "max_results": limit
+        }
         
-        return await self.client.search_papers(self.server_name, query, limit, filters)
+        if categories:
+            arguments["categories"] = categories
+        
+        return await self.client.search_papers(self.server_name, query, limit, arguments)
     
-    async def get_fulltext(self, arxiv_id: str) -> str:
-        """Get full text of arXiv paper"""
-        result = await self.client.connection_manager.call_tool(
-            self.server_name, "get_fulltext", {"arxiv_id": arxiv_id}
-        )
-        return result.get("fulltext", "")
+    async def get_paper(self, arxiv_id: str) -> Dict[str, Any]:
+        """Get paper details using arxiv-mcp-server"""
+        try:
+            result = await self.client.connection_manager.call_tool(
+                self.server_name, "get_paper", {"arxiv_id": arxiv_id}
+            )
+            return result
+        except Exception as e:
+            logging.error(f"Failed to get arXiv paper {arxiv_id}: {e}")
+            return {}
+    
+    async def download_paper(self, arxiv_id: str, storage_path: Optional[str] = None) -> str:
+        """Download paper PDF using arxiv-mcp-server"""
+        try:
+            arguments = {"arxiv_id": arxiv_id}
+            if storage_path:
+                arguments["storage_path"] = storage_path
+            
+            result = await self.client.connection_manager.call_tool(
+                self.server_name, "download_paper", arguments
+            )
+            return result.get("file_path", "")
+        except Exception as e:
+            logging.error(f"Failed to download arXiv paper {arxiv_id}: {e}")
+            return ""
+
+
+class BraveSearchMCP:
+    """Brave Search MCP client for academic web content"""
+    
+    def __init__(self, client: ResearchMCPClient):
+        self.client = client
+        self.server_name = "brave_search_mcp"
+    
+    async def search_academic(self, query: str, limit: int = 20) -> List[Dict[str, Any]]:
+        """Search for academic content using Brave Search"""
+        try:
+            # Add academic-specific query modifiers
+            academic_query = f"{query} site:arxiv.org OR site:pubmed.ncbi.nlm.nih.gov OR site:scholar.google.com OR filetype:pdf"
+            
+            result = await self.client.connection_manager.call_tool(
+                self.server_name, "search", {
+                    "query": academic_query,
+                    "count": limit
+                }
+            )
+            
+            return result.get("results", [])
+        except Exception as e:
+            logging.error(f"Brave search failed: {e}")
+            return []
+
+
+class GitHubMCP:
+    """GitHub MCP client for research code and datasets"""
+    
+    def __init__(self, client: ResearchMCPClient):
+        self.client = client
+        self.server_name = "github_mcp"
+    
+    async def search_repositories(self, query: str, language: Optional[str] = None) -> List[Dict[str, Any]]:
+        """Search GitHub repositories for research-related code"""
+        try:
+            search_query = f"{query} research OR dataset OR analysis"
+            if language:
+                search_query += f" language:{language}"
+            
+            result = await self.client.connection_manager.call_tool(
+                self.server_name, "search_repositories", {
+                    "query": search_query,
+                    "per_page": 30
+                }
+            )
+            
+            return result.get("items", [])
+        except Exception as e:
+            logging.error(f"GitHub search failed: {e}")
+            return []
+    
+    async def get_repository_content(self, owner: str, repo: str, path: str = "") -> Dict[str, Any]:
+        """Get repository content for research datasets"""
+        try:
+            result = await self.client.connection_manager.call_tool(
+                self.server_name, "get_contents", {
+                    "owner": owner,
+                    "repo": repo,
+                    "path": path
+                }
+            )
+            
+            return result
+        except Exception as e:
+            logging.error(f"Failed to get GitHub content {owner}/{repo}/{path}: {e}")
+            return {}
 
 
 class PubmedMCP:
@@ -425,46 +538,80 @@ class PubmedMCP:
 
 # Convenience factory function
 async def create_research_mcp_client(enable_servers: Optional[List[str]] = None) -> ResearchMCPClient:
-    """Factory function to create and initialize research MCP client"""
+    """Factory function to create and initialize research MCP client with existing servers"""
+    if enable_servers is None:
+        # Default to commonly available servers
+        enable_servers = [
+            "arxiv_mcp",        # arxiv-mcp-server via uv
+            "brave_search_mcp", # @modelcontextprotocol/server-brave-search 
+            "filesystem_mcp"    # @modelcontextprotocol/server-filesystem
+        ]
+    
     client = ResearchMCPClient()
-    await client.initialize(enable_servers)
+    connection_results = await client.initialize(enable_servers)
+    
+    # Log connection status
+    for server, connected in connection_results.items():
+        if connected:
+            logging.info(f"✓ Connected to {server}")
+        else:
+            logging.warning(f"✗ Failed to connect to {server}")
+    
     return client
+
+
+def get_installation_commands() -> Dict[str, str]:
+    """Get installation commands for available MCP servers"""
+    return {
+        "arxiv_mcp": "uv tool install arxiv-mcp-server",
+        "brave_search_mcp": "npm install -g @modelcontextprotocol/server-brave-search",
+        "github_mcp": "npm install -g @modelcontextprotocol/server-github", 
+        "filesystem_mcp": "npm install -g @modelcontextprotocol/server-filesystem",
+        "postgres_mcp": "npm install -g @modelcontextprotocol/server-postgres"
+    }
+
+
+def get_required_env_vars() -> Dict[str, List[str]]:
+    """Get required environment variables for each MCP server"""
+    return {
+        "arxiv_mcp": ["ARXIV_STORAGE_PATH (optional)"],
+        "brave_search_mcp": ["BRAVE_API_KEY (required)"],
+        "github_mcp": ["GITHUB_TOKEN (required)"],
+        "filesystem_mcp": [],
+        "postgres_mcp": ["POSTGRES_CONNECTION_STRING (required)"]
+    }
 
 
 # Example usage
 if __name__ == "__main__":
     async def main():
-        # Create and initialize MCP client
+        print("Available MCP servers for Bach research:")
+        print("\nInstallation commands:")
+        for server, cmd in get_installation_commands().items():
+            print(f"  {server}: {cmd}")
+        
+        print("\nRequired environment variables:")
+        for server, vars in get_required_env_vars().items():
+            print(f"  {server}: {', '.join(vars) if vars else 'None required'}")
+        
+        # Create and initialize MCP client with existing servers
         client = await create_research_mcp_client([
-            "semantic_scholar_mcp",
             "arxiv_mcp",
-            "research_tools_mcp"
+            "filesystem_mcp"  # These don't require API keys
         ])
         
         try:
             # Check health
             health = await client.health_check()
-            print("MCP Health Status:")
+            print("\nMCP Health Status:")
             for server, status in health.items():
                 print(f"  {server}: {'✓' if status['healthy'] else '✗'}")
             
-            # Search for papers
-            papers = await client.search_papers(
-                "semantic_scholar_mcp",
-                "machine learning in healthcare",
-                limit=10
-            )
-            
-            print(f"\nFound {len(papers)} papers")
-            
-            # Analyze first paper if available
-            if papers:
-                analysis = await client.analyze_paper(
-                    "research_tools_mcp",
-                    papers[0].get("id", ""),
-                    "quality"
-                )
-                print(f"Analysis result: {analysis}")
+            # Test arXiv search if available
+            if health.get("arxiv_mcp", {}).get("healthy"):
+                arxiv_client = ArxivMCP(client)
+                papers = await arxiv_client.search("machine learning", limit=5)
+                print(f"\nFound {len(papers)} arXiv papers")
                 
         finally:
             await client.close()
@@ -472,4 +619,4 @@ if __name__ == "__main__":
     if MCP_AVAILABLE:
         asyncio.run(main())
     else:
-        print("MCP not available, skipping example")
+        print("MCP not available. Install with: pip install mcp")
