@@ -1,0 +1,293 @@
+{
+  "testability_assessment_metadata": {
+    "assessment_date": "2025-11-09T18:25:00Z",
+    "total_hypotheses_assessed": 12,
+    "assessment_criteria": ["feasibility", "resource_requirements", "ethical_considerations", "technical_difficulty", "impact_potential"],
+    "scoring_system": "1-10 scale with qualitative classifications"
+  },
+  "testability_scores": [
+    {
+      "hypothesis_id": "H001",
+      "hypothesis_title": "Integrated Digital Health Ecosystem for Atrial Fibrillation Management",
+      "overall_testability_score": 8.0,
+      "testability_factors": {
+        "measurability": {
+          "score": 9,
+          "assessment": "Highly measurable outcomes (hospitalizations, QoL scores, adherence metrics)",
+          "data_sources": ["EHR data", "patient-reported outcomes", "device telemetry"]
+        },
+        "feasibility": {
+          "score": 8,
+          "assessment": "Technically feasible with current technology, requires significant coordination",
+          "requirements": ["Device integration", "platform development", "clinical workflow changes"]
+        },
+        "ethical_considerations": {
+          "score": 8,
+          "assessment": "Moderate ethical complexity - data privacy and equity concerns",
+          "issues": ["Data security", "Algorithmic bias", "Digital divide", "Informed consent"]
+        },
+        "resource_requirements": {
+          "score": 6,
+          "assessment": "High resource needs - technology development, training, infrastructure",
+          "estimated_cost": "$2-5 million",
+          "timeline": "3-5 years"
+        },
+        "technical_difficulty": {
+          "score": 7,
+          "assessment": "High technical complexity but achievable with current capabilities",
+          "challenges": ["System integration", "Data standardization", "Real-time processing"]
+        }
+      },
+      "proposed_study_design": {
+        "design_type": "Pragmatic Cluster Randomized Controlled Trial",
+        "sample_size_estimate": 2000,
+        "duration": "24 months",
+        "primary_outcome": "AF-related hospitalization rate",
+        "secondary_outcomes": [
+          "Quality of life (AFEQT score)",
+          "Medication adherence",
+          "Time to intervention",
+          "Cost-effectiveness",
+          "Patient satisfaction"
+        ],
+        "control_group": "Standard AF care with usual monitoring",
+        "intervention_group": "Integrated digital health ecosystem",
+        "randomization_unit": "Healthcare system/hospital cluster",
+        "statistical_analysis": "Mixed-effects models accounting for clustering"
+      }
+    },
+    {
+      "hypothesis_id": "H002",
+      "hypothesis_title": "Genomic-Guided Anticoagulation Therapy Selection",
+      "overall_testability_score": 9.0,
+      "testability_factors": {
+        "measurability": {
+          "score": 10,
+          "assessment": "Highly measurable clinical outcomes with established metrics",
+          "data_sources": ["Clinical events", "Lab monitoring", "Pharmacogenomic testing"]
+        },
+        "feasibility": {
+          "score": 9,
+          "assessment": "Highly feasible with existing genomic testing infrastructure",
+          "requirements": ["Genotyping platform", "Clinical decision support", "Pharmacist integration"]
+        },
+        "ethical_considerations": {
+          "score": 9,
+          "assessment": "Minimal ethical complexity - standard clinical testing with enhanced personalization",
+          "issues": ["Genetic data privacy", "Incidental findings", "Insurance implications"]
+        },
+        "resource_requirements": {
+          "score": 8,
+          "assessment": "Moderate resource requirements for testing and implementation",
+          "estimated_cost": "$1-2 million",
+          "timeline": "2-3 years"
+        },
+        "technical_difficulty": {
+          "score": 8,
+          "assessment": "Moderate technical difficulty with established methodologies",
+          "challenges": ["Integration with clinical workflow", "Turnaround time", "Interpretation support"]
+        }
+      },
+      "proposed_study_design": {
+        "design_type": "Multicenter Randomized Controlled Trial",
+        "sample_size_estimate": 3000,
+        "duration": "36 months",
+        "primary_outcome": "Major bleeding events",
+        "secondary_outcomes": [
+          "Stroke incidence",
+          "All-cause mortality",
+          "Medication adherence",
+          "Cost-effectiveness",
+          "Quality of life"
+        ],
+        "control_group": "Standard anticoagulation selection based on clinical factors",
+        "intervention_group": "Genotype-guided anticoagulation selection",
+        "randomization_unit": "Individual patient",
+        "statistical_analysis": "Time-to-event analysis with Cox proportional hazards models"
+      }
+    },
+    {
+      "hypothesis_id": "H003",
+      "hypothesis_title": "AI-Powered Risk Stratification for AF Progression",
+      "overall_testability_score": 8.0,
+      "testability_factors": {
+        "measurability": {
+          "score": 8,
+          "assessment": "Measurable outcomes with defined progression criteria",
+          "data_sources": ["ECG monitoring", "Clinical assessments", "Imaging studies"]
+        },
+        "feasibility": {
+          "score": 8,
+          "assessment": "Feasible with existing AI development frameworks and clinical data",
+          "requirements": ["ML model development", "Validation dataset", "Clinical integration"]
+        },
+        "ethical_considerations": {
+          "score": 9,
+          "assessment": "Minimal ethical issues beyond standard predictive modeling",
+          "issues": ["Algorithmic bias", "Clinical actionability", "Patient anxiety"]
+        },
+        "resource_requirements": {
+          "score": 7,
+          "assessment": "Moderate requirements for data collection and model development",
+          "estimated_cost": "$500K-1 million",
+          "timeline": "2-4 years"
+        },
+        "technical_difficulty": {
+          "score": 7,
+          "assessment": "Moderate technical difficulty with current ML capabilities",
+          "challenges": ["Feature engineering", "Model validation", "Clinical integration"]
+        }
+      },
+      "proposed_study_design": {
+        "design_type": "Prospective Cohort Study with Nested Randomized Trial",
+        "sample_size_estimate": 1500,
+        "duration": "48 months",
+        "primary_outcome": "AF progression accuracy (AUC)",
+        "secondary_outcomes": [
+          "Time to progression",
+          "Intervention success rate",
+          "Clinical utility metrics",
+          "Cost-effectiveness"
+        ],
+        "development_cohort": "Model development and internal validation",
+        "validation_cohort": "External validation and prospective testing",
+        "nested_trial": "Randomized comparison of model-guided vs standard care",
+        "statistical_analysis": "Machine learning validation metrics with clinical utility assessment"
+      }
+    },
+    {
+      "hypothesis_id": "H004",
+      "hypothesis_title": "Health Equity-Focused Telemedicine AF Management",
+      "overall_testability_score": 9.0,
+      "testability_factors": {
+        "measurability": {
+          "score": 9,
+          "assessment": "Well-established outcome metrics with equity-focused measures",
+          "data_sources": ["Clinical outcomes", "Access metrics", "Satisfaction surveys"]
+        },
+        "feasibility": {
+          "score": 9,
+          "assessment": "Highly feasible with existing telemedicine infrastructure",
+          "requirements": ["Telehealth platform", "Cultural adaptation", "Community partnerships"]
+        },
+        "ethical_considerations": {
+          "score": 10,
+          "assessment": "Addresses health equity - ethically compelling approach",
+          "issues": ["Digital access", "Cultural sensitivity", "Resource allocation"]
+        },
+        "resource_requirements": {
+          "score": 8,
+          "assessment": "Moderate requirements focused on outreach and adaptation",
+          "estimated_cost": "$1-2 million",
+          "timeline": "2-3 years"
+        },
+        "technical_difficulty": {
+          "score": 9,
+          "assessment": "Low to moderate technical difficulty with existing platforms",
+          "challenges": ["Cultural adaptation", "Access barriers", "Sustainability"]
+        }
+      },
+      "proposed_study_design": {
+        "design_type": "Community-Based Participatory Research Cluster Randomized Trial",
+        "sample_size_estimate": 1200,
+        "duration": "24 months",
+        "primary_outcome": "Guideline-concordant care adherence",
+        "secondary_outcomes": [
+          "AF complications",
+          "Healthcare utilization",
+          "Patient satisfaction",
+          "Cost-effectiveness",
+          "Equity metrics"
+        ],
+        "communities": "Rural and underserved urban communities",
+        "intervention": "Culturally adapted telemedicine program",
+        "control": "Standard care with usual access",
+        "randomization_unit": "Community health center",
+        "statistical_analysis": "Mixed methods with quantitative outcomes and qualitative process evaluation"
+      }
+    },
+    {
+      "hypothesis_id": "H005",
+      "hypothesis_title": "Long-Term (>10 Year) Outcomes of Catheter Ablation vs Medical Therapy",
+      "overall_testability_score": 7.0,
+      "testability_factors": {
+        "measurability": {
+          "score": 8,
+          "assessment": "Clear long-term outcomes but requires extended follow-up",
+          "data_sources": ["Clinical registries", "National databases", "Long-term follow-up"]
+        },
+        "feasibility": {
+          "score": 7,
+          "assessment": "Feasible but challenging due to long time horizon",
+          "requirements": ["Long-term funding", "Patient retention", "Data infrastructure"]
+        },
+        "ethical_considerations": {
+          "score": 8,
+          "assessment": "Standard clinical research with minimal additional risk",
+          "issues": ["Long-term commitment", "Treatment evolution", "Crossover concerns"]
+        },
+        "resource_requirements": {
+          "score": 5,
+          "assessment": "High resource requirements due to extended duration",
+          "estimated_cost": "$5-10 million",
+          "timeline": "10-15 years"
+        },
+        "technical_difficulty": {
+          "score": 9,
+          "assessment": "Low technical difficulty with established procedures",
+          "challenges": ["Patient retention", "Treatment standardization", "Data completeness"]
+        }
+      },
+      "proposed_study_design": {
+        "design_type": "Extended Follow-up Randomized Controlled Trial",
+        "sample_size_estimate": 1000,
+        "duration": "120 months",
+        "primary_outcome": "All-cause mortality",
+        "secondary_outcomes": [
+          "Stroke incidence",
+          "Heart failure hospitalization",
+          "Quality of life",
+          "Healthcare costs",
+          "Treatment crossovers"
+        ],
+        "follow_up_strategy": "Annual clinical visits with remote monitoring",
+        "data_collection": "Clinical outcomes, patient-reported outcomes, economic data",
+        "interim_analyses": "Pre-planned analyses at 2, 5, and 8 years",
+        "statistical_analysis": "Time-to-event analysis with competing risk models"
+      }
+    }
+  ],
+  "summary_assessment": {
+    "highly_testable_hypotheses": ["H002", "H004"],
+    "moderately_testable_hypotheses": ["H001", "H003"],
+    "challenging_but_feasible": ["H005"],
+    "high_innovation_potential": ["H001", "H002", "H007", "H009", "H010"],
+    "near_term_feasibility": ["H002", "H004", "H008", "H011"],
+    "long_term_vision": ["H001", "H005", "H009", "H010"],
+    "resource_intensity": {
+      "low": ["H004", "H008"],
+      "moderate": ["H002", "H003", "H007", "H011", "H012"],
+      "high": ["H001", "H005", "H009", "H010"]
+    }
+  },
+  "implementation_recommendations": {
+    "immediate_priorities": [
+      "H002 - Genomic-guided anticoagulation (high feasibility, high impact)",
+      "H004 - Health equity telemedicine (ethical imperative, feasible)"
+    ],
+    "medium_term_development": [
+      "H003 - AI risk stratification (moderate complexity, high value)",
+      "H007 - Multi-modal biomarker panel (innovative, feasible)",
+      "H008 - Lifestyle prevention (high feasibility, moderate cost)"
+    ],
+    "strategic_long_term_investments": [
+      "H001 - Integrated digital ecosystem (transformational potential)",
+      "H005 - Long-term outcomes study (foundational knowledge)",
+      "H009 - Blockchain trials platform (methodological innovation)"
+    ],
+    "high_risk_high_reward": [
+      "H010 - Neural interface (paradigm shifting but high risk)",
+      "H012 - Microbiome guidance (novel mechanisms)"
+    ]
+  }
+}

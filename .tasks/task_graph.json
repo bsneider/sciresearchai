@@ -388,8 +388,9 @@
         "can_defer": false,
         "milestone_position": 2
       },
-      "status": "in_progress",
-      "started_at": "2025-11-09T17:29:36.156572"
+      "status": "completed",
+      "started_at": "2025-11-09T17:29:36.156572",
+      "completed_at": "2025-11-09T17:36:09.954869"
     },
     {
       "id": "T-ANALYSIS-002",
