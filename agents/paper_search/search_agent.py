@@ -7,6 +7,8 @@ import asyncio
 import hashlib
 from typing import List, Dict, Optional
 
+from .api_integrations import APIIntegrationManager
+
 
 class RateLimiter:
     """Simple rate limiter for API calls"""
@@ -39,6 +41,9 @@ class SearchAgent:
     def __init__(self, api_keys: Optional[Dict[str, str]] = None):
         self.api_keys = api_keys or {}
         self.rate_limiter = RateLimiter(max_calls=1, time_window=1)
+
+        # Initialize API integration manager
+        self.api_manager = APIIntegrationManager(api_keys)
 
     async def optimize_query(self, query: str) -> str:
         """Optimize search query for better results across databases"""
@@ -166,86 +171,19 @@ class SearchAgent:
 
     async def search_semantic_scholar(self, query: str) -> List[Dict]:
         """Search Semantic Scholar database"""
-        if not self.api_keys.get("semantic_scholar"):
-            print("Warning: No Semantic Scholar API key provided")
-            return []
-
-        try:
-            # Make actual API call for production
-            response = await self._make_api_call("semantic_scholar", {"query": query})
-            return response.get("data", [])
-        except Exception:
-            # Fallback for testing and development
-            return [{
-                "paperId": "test_paper_1",
-                "title": "Machine Learning in Healthcare",
-                "abstract": "Test abstract about ML in healthcare...",
-                "year": 2023,
-                "citationCount": 100
-            }]
+        return await self.api_manager.search("semantic_scholar", query)
 
     async def search_arxiv(self, query: str) -> List[Dict]:
         """Search arXiv database"""
-        # Always search arXiv (no API key required)
-        try:
-            response = await self._make_api_call("arxiv", {"query": query})
-            return response.get("data", [])
-        except Exception:
-            # Fallback for testing and development
-            return [{
-                "id": "arxiv_test_1",
-                "title": "ArXiv Paper on Machine Learning",
-                "summary": "Test summary...",
-                "published": "2023-01-01"
-            }]
+        return await self.api_manager.search("arxiv", query)
 
     async def search_pubmed(self, query: str) -> List[Dict]:
         """Search PubMed/NCBI database"""
-        if not self.api_keys.get("pubmed"):
-            print("Warning: No PubMed email provided")
-            return []
-
-        try:
-            response = await self._make_api_call("pubmed", {"query": query})
-            return response.get("data", [])
-        except Exception:
-            # Fallback for testing and development
-            return [{
-                "pmid": "12345678",
-                "title": "PubMed Paper on Healthcare",
-                "abstract": "Test abstract from PubMed...",
-                "publication_date": "2023"
-            }]
+        return await self.api_manager.search("pubmed", query)
 
     async def search_all_databases(self, query: str) -> List[Dict]:
         """Search across all configured databases"""
-        search_tasks = []
-
-        # Queue searches for all available databases
-        if self.api_keys.get("semantic_scholar"):
-            search_tasks.append(self.search_semantic_scholar(query))
-
-        search_tasks.append(self.search_arxiv(query))
-
-        if self.api_keys.get("pubmed"):
-            search_tasks.append(self.search_pubmed(query))
-
-        # Execute searches in parallel
-        results = await asyncio.gather(*search_tasks, return_exceptions=True)
-
-        # Combine and format results
-        all_papers = []
-        for i, result in enumerate(results):
-            if isinstance(result, Exception):
-                print(f"Search {i} failed: {result}")
-                continue
-
-            # Add source information
-            for paper in result:
-                paper["source"] = self._get_source_name(i)
-                all_papers.append(paper)
-
-        return all_papers
+        return await self.api_manager.search_all(query)
 
     def _get_source_name(self, index: int) -> str:
         """Get database source name from index"""

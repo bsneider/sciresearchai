@@ -6,7 +6,7 @@ This PRD defines an AI-assisted scientific research system built on Claude Code 
 
 **Project Codename**: SciResearchAI
 **Target Platform**: Claude Code with multi-agent architecture
-**Core Mission**: Enable autonomous scientific research through specialized AI subagents
+**Core Mission**: Enable autonomous scientific research through specialized AI subagen
 
 ---
 

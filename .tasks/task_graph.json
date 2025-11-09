@@ -508,8 +508,8 @@
         "must_implement": [
           "Citation extraction from reference sections",
           "Citation network graph construction",
-          "Cross-paper relationship identification,
-          "Impact factor and citation metrics calculation,
+          "Cross-paper relationship identification",
+          "Impact factor and citation metrics calculation",
           "Neo4j integration for citation storage"
         ],
         "must_not_implement": [
@@ -587,10 +587,10 @@
       },
       "scope_boundaries": {
         "must_implement": [
-          "Base HypothesisGeneratorAgent class,
+          "Base HypothesisGeneratorAgent class",
           "Cross-paper knowledge synthesis algorithms",
           "Research gap identification framework",
-          "Testable hypothesis formulation logic,
+          "Testable hypothesis formulation logic",
           "Evidence-based hypothesis validation system"
         ],
         "must_not_implement": [
@@ -648,8 +648,8 @@
         "must_implement": [
           "Research landscape analysis algorithms",
           "Unexplored area identification methods",
-          "Trend analysis across paper collections,
-          "Methodology gap detection framework,
+          "Trend analysis across paper collections",
+          "Methodology gap detection framework",
           "Opportunity mapping for new research"
         ],
         "must_not_implement": [
@@ -706,9 +706,9 @@
       "scope_boundaries": {
         "must_implement": [
           "Multi-paper insight combination algorithms",
-          "Pattern recognition across research findings,
-          "Methodology synthesis framework,
-          "Concept integration from multiple sources,
+          "Pattern recognition across research findings",
+          "Methodology synthesis framework",
+          "Concept integration from multiple sources",
           "Synthesis quality assessment system"
         ],
         "must_not_implement": [
@@ -764,10 +764,10 @@
       },
       "scope_boundaries": {
         "must_implement": [
-          "End-to-end hypothesis generation workflow,
-          "Multi-step synthesis and validation pipeline,
-          "Hypothesis ranking and prioritization system,
-          "Evidence gathering and validation framework,
+          "End-to-end hypothesis generation workflow",
+          "Multi-step synthesis and validation pipeline",
+          "Hypothesis ranking and prioritization system",
+          "Evidence gathering and validation framework",
           "Research roadmap generation from hypotheses"
         ],
         "must_not_implement": [

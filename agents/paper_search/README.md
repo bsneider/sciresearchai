@@ -45,7 +45,8 @@ The SearchAgent follows TDD principles with comprehensive test coverage for:
 
 ## Dependencies
 
-- `requests`: HTTP client for API calls
+- `aiohttp`: Async HTTP client for API calls
+- `biopython`: NCBI/PubMed E-utilities integration
 - `tenacity`: Retry logic with exponential backoff
 - `asyncio`: Async/await for concurrent operations
 
@@ -57,6 +58,36 @@ API keys should be provided during initialization:
 api_keys = {
     "semantic_scholar": "semantic_scholar_api_key",  # Required for Semantic Scholar
     "arxiv": None,                                    # Not required (no key needed)
-    "pubmed": "email@example.com"                     # Required for higher rate limits
+    "pubmed": "email@example.com"                     # Required for NCBI access
 }
 ```
+
+## API Integration Details
+
+### Semantic Scholar API
+- **Rate Limiting**: 1 call per second with exponential backoff
+- **Authentication**: API key required in headers
+- **Data Format**: JSON with paper metadata, citations, authors
+- **Fields Retrieved**: paperId, title, abstract, year, citationCount, authors, venue, url
+
+### arXiv API
+- **Rate Limiting**: 1 call per 3 seconds (respectful use)
+- **Authentication**: None required (public API)
+- **Data Format**: XML parsed to structured data
+- **Attribution**: Proper User-Agent and attribution included
+- **Fields Retrieved**: id, title, summary, authors, categories, publication date, PDF URL
+
+### PubMed/NCBI API
+- **Rate Limiting**: 3 calls per second (NCBI guidelines)
+- **Authentication**: Email required (API key optional for higher limits)
+- **Data Format**: XML via BioPython Entrez
+- **Fields Retrieved**: PMID, title, abstract, authors, journal, publication date
+
+## Error Handling
+
+The system implements comprehensive error handling:
+- **Rate Limit Protection**: Configurable rate limiters per API
+- **Exponential Backoff**: Automatic retry with increasing delays
+- **Graceful Degradation**: Continues search if individual APIs fail
+- **Fallback Mechanisms**: Returns partial results when possible
+- **Health Monitoring**: Built-in API health checking
