@@ -1,0 +1,134 @@
+{
+  "search_summary": {
+    "timestamp": "2025-11-09T17:31:35.977719",
+    "research_topic": "Atrial fibrillation in cardiology",
+    "total_papers_found": 8,
+    "search_methods_used": [
+      "sample_semantic_scholar",
+      "sample_arxiv"
+    ],
+    "search_success": true,
+    "quality_indicators": {
+      "avg_citations": 208.125,
+      "papers_with_high_impact": 5,
+      "recent_publications": 6
+    }
+  },
+  "source_breakdown": {
+    "semantic_scholar": 6,
+    "arxiv": 2
+  },
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "2023 ESC Guidelines for the Management of Atrial Fibrillation",
+      "authors": [
+        "Hindricks, G.",
+        "Potpara, T.",
+        "Dagres, N."
+      ],
+      "year": 2023,
+      "citations": 892,
+      "relevance_score": 100,
+      "source": "sample"
+    },
+    {
+      "rank": 2,
+      "title": "Machine Learning Approaches for Early Detection of Atrial Fibrillation Using ECG Signals",
+      "authors": [
+        "Chen, L.",
+        "Wang, J.",
+        "Zhang, M."
+      ],
+      "year": 2023,
+      "citations": 156,
+      "relevance_score": 95,
+      "source": "sample"
+    },
+    {
+      "rank": 3,
+      "title": "Deep Learning for Automatic Detection of Atrial Fibrillation from Short-Term ECG Segments",
+      "authors": [
+        "Zhang, L.",
+        "Wang, J.",
+        "Liu, M."
+      ],
+      "year": 2023,
+      "citations": 0,
+      "relevance_score": 89,
+      "source": "arxiv"
+    },
+    {
+      "rank": 4,
+      "title": "Direct Oral Anticoagulants versus Warfarin in Elderly Patients with Atrial Fibrillation: A Systematic Review and Meta-Analysis",
+      "authors": [
+        "Rodriguez, L.",
+        "Kumar, S.",
+        "Patel, A."
+      ],
+      "year": 2022,
+      "citations": 234,
+      "relevance_score": 88,
+      "source": "sample"
+    },
+    {
+      "rank": 5,
+      "title": "Transformer-Based Models for Sequence-to-Sequence ECG Analysis in Atrial Fibrillation",
+      "authors": [
+        "Kim, S.",
+        "Park, J.",
+        "Lee, H."
+      ],
+      "year": 2023,
+      "citations": 0,
+      "relevance_score": 86,
+      "source": "arxiv"
+    },
+    {
+      "rank": 6,
+      "title": "Wearable Devices for Detection of Silent Atrial Fibrillation: Systematic Review of Clinical Validity",
+      "authors": [
+        "Garcia, M.",
+        "Thompson, D.",
+        "Lee, H."
+      ],
+      "year": 2022,
+      "citations": 189,
+      "relevance_score": 85,
+      "source": "sample"
+    },
+    {
+      "rank": 7,
+      "title": "Catheter Ablation for Persistent Atrial Fibrillation: Outcomes and Predictors of Success",
+      "authors": [
+        "Johnson, M.",
+        "Williams, K.",
+        "Brown, T."
+      ],
+      "year": 2023,
+      "citations": 127,
+      "relevance_score": 82,
+      "source": "sample"
+    },
+    {
+      "rank": 8,
+      "title": "Risk Prediction Models for Stroke in Atrial Fibrillation: Beyond CHA2DS2-VASc",
+      "authors": [
+        "Wilson, E.",
+        "Taylor, S.",
+        "Robinson, J."
+      ],
+      "year": 2024,
+      "citations": 67,
+      "relevance_score": 79,
+      "source": "sample"
+    }
+  ],
+  "paper_categories": {
+    "clinical_guidelines": 1,
+    "machine_learning_ai": 4,
+    "treatment_outcomes": 3,
+    "diagnostic_methods": 1,
+    "prevention": 1
+  }
+}

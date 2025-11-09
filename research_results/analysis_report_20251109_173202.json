@@ -1,0 +1,79 @@
+{
+  "analysis_metadata": {
+    "timestamp": "2025-11-09T17:32:02.827428",
+    "total_papers_analyzed": 8,
+    "analysis_type": "comprehensive_post_processing"
+  },
+  "paper_type_distribution": {
+    "clinical_guideline": 1,
+    "clinical_trial": 5,
+    "systematic_review": 2
+  },
+  "quality_metrics": {
+    "average_methodology_score": 21.9,
+    "average_clinical_relevance": 67.5,
+    "high_quality_papers_count": 2,
+    "high_quality_threshold": "top 25% by clinical relevance"
+  },
+  "target_audience_distribution": {
+    "clinicians": 5,
+    "policy_makers": 1,
+    "cardiologists": 4,
+    "electrophysiologists": 1,
+    "data_scientists": 1,
+    "researchers": 5,
+    "primary_care_physicians": 3
+  },
+  "research_gaps_addressed": {
+    "innovative_approach": 4,
+    "comparative_effectiveness": 1,
+    "general_research_contribution": 1,
+    "addresses_limitations": 1,
+    "long_term_outcomes": 1
+  },
+  "top_papers_by_relevance": [
+    {
+      "rank": 1,
+      "title": "2023 ESC Guidelines for the Management of Atrial Fibrillation",
+      "authors": [
+        "Hindricks, G.",
+        "Potpara, T.",
+        "Dagres, N."
+      ],
+      "year": 2023,
+      "clinical_relevance": 100,
+      "methodology_score": 50,
+      "paper_type": "clinical_guideline",
+      "target_audience": [
+        "clinicians",
+        "policy_makers",
+        "cardiologists",
+        "electrophysiologists"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Catheter Ablation for Persistent Atrial Fibrillation: Outcomes and Predictors of Success",
+      "authors": [
+        "Johnson, M.",
+        "Williams, K.",
+        "Brown, T."
+      ],
+      "year": 2023,
+      "clinical_relevance": 100,
+      "methodology_score": 30,
+      "paper_type": "clinical_trial",
+      "target_audience": [
+        "researchers",
+        "clinicians"
+      ]
+    }
+  ],
+  "recommendations_for_next_phase": [
+    "Prioritize papers with clinical_relevance >= 80 for detailed analysis",
+    "Focus on systematic reviews and clinical trials first",
+    "Include recent guidelines for current practice context",
+    "Consider machine learning papers separately for methodological review",
+    "Ensure representation of different target audiences in final selection"
+  ]
+}

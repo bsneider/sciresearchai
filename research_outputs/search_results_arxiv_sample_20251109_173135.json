@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "search_timestamp": "2025-11-09T17:31:35.977140",
+    "search_type": "comprehensive_sample",
+    "query": "Atrial fibrillation in cardiology",
+    "total_results": 8,
+    "sources_searched": [
+      "semantic_scholar",
+      "arxiv"
+    ],
+    "papers_by_source": {
+      "semantic_scholar": 6,
+      "arxiv": 2
+    },
+    "date_range": "2019-2024",
+    "quality_filters": [
+      "peer_reviewed",
+      "english_language",
+      "clinical_relevance"
+    ],
+    "source": "arxiv",
+    "paper_count": 2
+  },
+  "results": [
+    {
+      "id": "arxiv_1",
+      "title": "Deep Learning for Automatic Detection of Atrial Fibrillation from Short-Term ECG Segments",
+      "authors": [
+        "Zhang, L.",
+        "Wang, J.",
+        "Liu, M."
+      ],
+      "year": 2023,
+      "abstract": "We propose a novel deep learning approach for detecting atrial fibrillation from short-term ECG segments using residual networks and attention mechanisms. Our method achieves 94.5% accuracy on PhysioNet AF dataset and can detect AF episodes as short as 5 seconds.",
+      "venue": "arXiv",
+      "journal": null,
+      "citationCount": 0,
+      "url": "https://arxiv.org/abs/2302.12345",
+      "externalIds": {
+        "arxiv": "2302.12345"
+      },
+      "database_source": "arxiv",
+      "relevance_score": 89
+    },
+    {
+      "id": "arxiv_2",
+      "title": "Transformer-Based Models for Sequence-to-Sequence ECG Analysis in Atrial Fibrillation",
+      "authors": [
+        "Kim, S.",
+        "Park, J.",
+        "Lee, H."
+      ],
+      "year": 2023,
+      "abstract": "This paper presents a transformer-based architecture for analyzing ECG sequences in patients with atrial fibrillation. The model can classify rhythm patterns, predict AF termination, and identify optimal timing for interventions.",
+      "venue": "arXiv",
+      "journal": null,
+      "citationCount": 0,
+      "url": "https://arxiv.org/abs/2303.67890",
+      "externalIds": {
+        "arxiv": "2303.67890"
+      },
+      "database_source": "arxiv",
+      "relevance_score": 86
+    }
+  ]
+}

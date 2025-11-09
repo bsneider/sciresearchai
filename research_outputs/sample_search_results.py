@@ -128,7 +128,7 @@ def generate_sample_atrial_fibrillation_papers():
         {
             "id": "sample_9",
             "title": "Left Atrial Appendage Closure Versus Direct Oral Anticoagulants in High-Risk Patients",
-            "authors": "Chen, Y.", "Miller, D.", "Johnson, R.", "Davis, P.",
+            "authors": ["Chen, Y.", "Miller, D.", "Johnson, R.", "Davis, P."],
             "year": 2023,
             "abstract": "Prospective registry comparing outcomes of left atrial appendage closure (LAAC) versus DOACs in patients with contraindications to anticoagulation. 1,500 patients were followed for 3 years. LAAC was associated with lower rates of major bleeding (3.2% vs 8.7%) and similar stroke prevention efficacy compared to DOACs in this high-risk population.",
             "journal": "JACC: Cardiovascular Interventions",

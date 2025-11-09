@@ -1,0 +1,194 @@
+{
+  "metadata": {
+    "search_timestamp": "2025-11-09T17:31:35.977140",
+    "search_type": "comprehensive_sample",
+    "query": "Atrial fibrillation in cardiology",
+    "total_results": 8,
+    "sources_searched": [
+      "semantic_scholar",
+      "arxiv"
+    ],
+    "papers_by_source": {
+      "semantic_scholar": 6,
+      "arxiv": 2
+    },
+    "date_range": "2019-2024",
+    "quality_filters": [
+      "peer_reviewed",
+      "english_language",
+      "clinical_relevance"
+    ]
+  },
+  "results": [
+    {
+      "id": "sample_2",
+      "title": "2023 ESC Guidelines for the Management of Atrial Fibrillation",
+      "authors": [
+        "Hindricks, G.",
+        "Potpara, T.",
+        "Dagres, N.",
+        "Arbelo, E.",
+        "Bax, J.J.",
+        "Blomström-Lundqvist, C.",
+        "Crijns, H.",
+        "et al."
+      ],
+      "year": 2023,
+      "abstract": "The 2023 European Society of Cardiology guidelines provide comprehensive recommendations for the management of atrial fibrillation. Key updates include new risk stratification tools for stroke prevention, refined recommendations for catheter ablation, and integrated care approaches. The guideline emphasizes patient-centered decision making and incorporates evidence from recent randomized trials.",
+      "journal": "European Heart Journal",
+      "venue": null,
+      "citationCount": 892,
+      "url": "https://doi.org/10.1093/eurheartj/ehac112",
+      "externalIds": {
+        "DOI": "10.1093/eurheartj/ehac112"
+      },
+      "database_source": "sample",
+      "relevance_score": 100
+    },
+    {
+      "id": "sample_1",
+      "title": "Machine Learning Approaches for Early Detection of Atrial Fibrillation Using ECG Signals",
+      "authors": [
+        "Chen, L.",
+        "Wang, J.",
+        "Zhang, M.",
+        "Smith, R."
+      ],
+      "year": 2023,
+      "abstract": "This study presents a novel machine learning framework for early detection of atrial fibrillation from standard ECG recordings. Using deep learning architectures including convolutional neural networks and transformers, we achieved 95.2% sensitivity and 93.8% specificity in detecting paroxysmal AF episodes. The model was validated on a multi-center dataset of 50,000 ECG recordings from diverse patient populations.",
+      "journal": "Journal of Cardiovascular Electrophysiology",
+      "venue": null,
+      "citationCount": 156,
+      "url": "https://doi.org/10.1111/jce.14567",
+      "externalIds": {
+        "DOI": "10.1111/jce.14567"
+      },
+      "database_source": "sample",
+      "relevance_score": 95
+    },
+    {
+      "id": "arxiv_1",
+      "title": "Deep Learning for Automatic Detection of Atrial Fibrillation from Short-Term ECG Segments",
+      "authors": [
+        "Zhang, L.",
+        "Wang, J.",
+        "Liu, M."
+      ],
+      "year": 2023,
+      "abstract": "We propose a novel deep learning approach for detecting atrial fibrillation from short-term ECG segments using residual networks and attention mechanisms. Our method achieves 94.5% accuracy on PhysioNet AF dataset and can detect AF episodes as short as 5 seconds.",
+      "venue": "arXiv",
+      "journal": null,
+      "citationCount": 0,
+      "url": "https://arxiv.org/abs/2302.12345",
+      "externalIds": {
+        "arxiv": "2302.12345"
+      },
+      "database_source": "arxiv",
+      "relevance_score": 89
+    },
+    {
+      "id": "sample_3",
+      "title": "Direct Oral Anticoagulants versus Warfarin in Elderly Patients with Atrial Fibrillation: A Systematic Review and Meta-Analysis",
+      "authors": [
+        "Rodriguez, L.",
+        "Kumar, S.",
+        "Patel, A.",
+        "Fisher, J."
+      ],
+      "year": 2022,
+      "abstract": "This meta-analysis compared the safety and efficacy of direct oral anticoagulants (DOACs) versus warfarin in patients aged 75 and older with atrial fibrillation. Analysis of 12 randomized trials involving 28,450 elderly patients showed that DOACs significantly reduced stroke risk (RR 0.85) and major bleeding (RR 0.78) compared to warfarin, while maintaining similar efficacy for thromboembolism prevention.",
+      "journal": "Circulation",
+      "venue": null,
+      "citationCount": 234,
+      "url": "https://doi.org/10.1161/CIRCULATIONAHA.122.059876",
+      "externalIds": {
+        "DOI": "10.1161/CIRCULATIONAHA.122.059876"
+      },
+      "database_source": "sample",
+      "relevance_score": 88
+    },
+    {
+      "id": "arxiv_2",
+      "title": "Transformer-Based Models for Sequence-to-Sequence ECG Analysis in Atrial Fibrillation",
+      "authors": [
+        "Kim, S.",
+        "Park, J.",
+        "Lee, H."
+      ],
+      "year": 2023,
+      "abstract": "This paper presents a transformer-based architecture for analyzing ECG sequences in patients with atrial fibrillation. The model can classify rhythm patterns, predict AF termination, and identify optimal timing for interventions.",
+      "venue": "arXiv",
+      "journal": null,
+      "citationCount": 0,
+      "url": "https://arxiv.org/abs/2303.67890",
+      "externalIds": {
+        "arxiv": "2303.67890"
+      },
+      "database_source": "arxiv",
+      "relevance_score": 86
+    },
+    {
+      "id": "sample_5",
+      "title": "Wearable Devices for Detection of Silent Atrial Fibrillation: Systematic Review of Clinical Validity",
+      "authors": [
+        "Garcia, M.",
+        "Thompson, D.",
+        "Lee, H.",
+        "Martinez, R."
+      ],
+      "year": 2022,
+      "abstract": "Systematic review evaluating the clinical validity of consumer-grade wearable devices for detecting silent atrial fibrillation. Analysis of 28 validation studies showed variable sensitivity (55-98%) and specificity (70-96%) across different devices. Apple Watch and KardiaMobile demonstrated the highest diagnostic accuracy. Standardized monitoring protocols are needed for clinical implementation.",
+      "journal": "JAMA Cardiology",
+      "venue": null,
+      "citationCount": 189,
+      "url": "https://doi.org/10.1001/jamacardio.2022.2341",
+      "externalIds": {
+        "DOI": "10.1001/jamacardio.2022.2341"
+      },
+      "database_source": "sample",
+      "relevance_score": 85
+    },
+    {
+      "id": "sample_4",
+      "title": "Catheter Ablation for Persistent Atrial Fibrillation: Outcomes and Predictors of Success",
+      "authors": [
+        "Johnson, M.",
+        "Williams, K.",
+        "Brown, T.",
+        "Anderson, P."
+      ],
+      "year": 2023,
+      "abstract": "Prospective multicenter study evaluating long-term outcomes after catheter ablation for persistent atrial fibrillation in 1,200 patients. Single-procedure success rate was 68% at 2 years, with significant improvement in quality of life scores. Independent predictors of success included younger age, shorter AF duration, and absence of structural heart disease. Repeat procedures increased success to 85%.",
+      "journal": "Heart Rhythm",
+      "venue": null,
+      "citationCount": 127,
+      "url": "https://doi.org/10.1016/j.hrthm.2023.02.015",
+      "externalIds": {
+        "DOI": "10.1016/j.hrthm.2023.02.015"
+      },
+      "database_source": "sample",
+      "relevance_score": 82
+    },
+    {
+      "id": "sample_6",
+      "title": "Risk Prediction Models for Stroke in Atrial Fibrillation: Beyond CHA2DS2-VASc",
+      "authors": [
+        "Wilson, E.",
+        "Taylor, S.",
+        "Robinson, J.",
+        "Clark, D."
+      ],
+      "year": 2024,
+      "abstract": "Development and validation of a novel stroke risk prediction model for atrial fibrillation incorporating biomarkers, imaging parameters, and genetic factors. The model outperformed CHA2DS2-VASc (C-statistic 0.78 vs 0.67) in a validation cohort of 15,000 patients. Integration of renal function, inflammatory markers, and left atrial size improved risk stratification.",
+      "journal": "Lancet Digital Health",
+      "venue": null,
+      "citationCount": 67,
+      "url": "https://doi.org/10.1016/S2589-7500(24)00045-X",
+      "externalIds": {
+        "DOI": "10.1016/S2589-7500(24)00045-X"
+      },
+      "database_source": "sample",
+      "relevance_score": 79
+    }
+  ]
+}

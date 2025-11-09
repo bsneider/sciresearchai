@@ -1,0 +1,165 @@
+{
+  "selection_metadata": {
+    "selection_date": "2025-11-09T17:35:00Z",
+    "research_topic": "Atrial fibrillation in cardiology",
+    "selection_criteria": {
+      "clinical_relevance_threshold": 80,
+      "methodology_minimum": 20,
+      "publication_recency": "2022-2024",
+      "peer_reviewed": true
+    },
+    "total_papers_reviewed": 8,
+    "selected_papers": 5,
+    "selection_rationale": "Top 5 papers by clinical relevance score, representing diverse research types and target audiences"
+  },
+  "selected_papers": [
+    {
+      "selection_rank": 1,
+      "paper_id": "sample_2",
+      "title": "2023 ESC Guidelines for the Management of Atrial Fibrillation",
+      "authors": ["Hindricks, G.", "Potpara, T.", "Dagres, N.", "Arbelo, E.", "Bax, J.J.", "Blomström-Lundqvist, C.", "Crijns, H.", "et al."],
+      "year": 2023,
+      "journal": "European Heart Journal",
+      "clinical_relevance": 100,
+      "methodology_score": 50,
+      "paper_type": "clinical_guideline",
+      "target_audience": ["clinicians", "policy_makers"],
+      "research_gaps": ["addresses_limitations", "real_world_evidence"],
+      "analysis_priority": "HIGH",
+      "key_analysis_points": [
+        "Extract current practice recommendations",
+        "Identify changes from previous guidelines",
+        "Assess evidence grading methodology",
+        "Document risk stratification tools",
+        "Summarize treatment algorithm updates"
+      ]
+    },
+    {
+      "selection_rank": 2,
+      "paper_id": "sample_4",
+      "title": "Catheter Ablation for Persistent Atrial Fibrillation: Outcomes and Predictors of Success",
+      "authors": ["Johnson, M.", "Williams, K.", "Brown, T.", "Anderson, P."],
+      "year": 2023,
+      "journal": "Heart Rhythm",
+      "clinical_relevance": 100,
+      "methodology_score": 30,
+      "paper_type": "clinical_trial",
+      "target_audience": ["electrophysiologists", "cardiologists", "researchers"],
+      "research_gaps": ["long_term_outcomes", "real_world_evidence"],
+      "analysis_priority": "HIGH",
+      "key_analysis_points": [
+        "Evaluate study methodology and bias assessment",
+        "Analyze long-term success rates",
+        "Identify predictors of ablation success",
+        "Assess quality of life improvements",
+        "Compare with historical outcomes"
+      ]
+    },
+    {
+      "selection_rank": 3,
+      "paper_id": "sample_1",
+      "title": "Machine Learning Approaches for Early Detection of Atrial Fibrillation Using ECG Signals",
+      "authors": ["Chen, L.", "Wang, J.", "Zhang, M.", "Smith, R."],
+      "year": 2023,
+      "journal": "Journal of Cardiovascular Electrophysiology",
+      "clinical_relevance": 95,
+      "methodology_score": 25,
+      "paper_type": "machine_learning",
+      "target_audience": ["data_scientists", "researchers", "clinicians"],
+      "research_gaps": ["innovative_approach"],
+      "analysis_priority": "HIGH",
+      "key_analysis_points": [
+        "Assess ML methodology and validation approach",
+        "Evaluate clinical applicability of algorithms",
+        "Analyze sensitivity and specificity metrics",
+        "Review dataset diversity and generalizability",
+        "Assess integration into clinical workflow"
+      ]
+    },
+    {
+      "selection_rank": 4,
+      "paper_id": "sample_3",
+      "title": "Direct Oral Anticoagulants versus Warfarin in Elderly Patients with Atrial Fibrillation: A Systematic Review and Meta-Analysis",
+      "authors": ["Rodriguez, L.", "Kumar, S.", "Patel, A.", "Fisher, J."],
+      "year": 2022,
+      "journal": "Circulation",
+      "clinical_relevance": 88,
+      "methodology_score": 40,
+      "paper_type": "systematic_review",
+      "target_audience": ["clinicians", "researchers", "cardiologists"],
+      "research_gaps": ["comparative_effectiveness", "addresses_limitations"],
+      "analysis_priority": "MODERATE",
+      "key_analysis_points": [
+        "Assess meta-analysis methodology and statistical rigor",
+        "Evaluate subgroup analyses for elderly populations",
+        "Analyze bleeding risk vs stroke prevention balance",
+        "Review clinical applicability of findings",
+        "Identify remaining research questions"
+      ]
+    },
+    {
+      "selection_rank": 5,
+      "paper_id": "sample_7",
+      "title": "Artificial Intelligence for Rhythm Control in Atrial Fibrillation: A Clinical Decision Support System",
+      "authors": ["Park, J.", "Kim, S.", "Lee, J.", "Yoo, B."],
+      "year": 2023,
+      "journal": "Nature Medicine",
+      "clinical_relevance": 91,
+      "methodology_score": 30,
+      "paper_type": "machine_learning",
+      "target_audience": ["data_scientists", "researchers", "clinicians"],
+      "research_gaps": ["innovative_approach", "real_world_evidence"],
+      "analysis_priority": "MODERATE",
+      "key_analysis_points": [
+        "Evaluate decision support system architecture",
+        "Assess prospective validation methodology",
+        "Analyze integration with clinical workflows",
+        "Review outcome measures and endpoints",
+        "Assess generalizability across healthcare systems"
+      ]
+    }
+  ],
+  "analysis_guidelines": {
+    "critical_analysis_framework": {
+      "methodology_assessment": "Evaluate study design, sample size, statistical methods, and bias assessment",
+      "clinical_applicability": "Assess real-world relevance, patient population generalizability, and implementation barriers",
+      "evidence_quality": "Apply appropriate evidence grading (e.g., GRADE framework) based on study design and rigor",
+      "bias_evaluation": "Identify potential sources of bias including selection bias, measurement bias, and confounding"
+    },
+    "synthesis_approach": {
+      "theme_identification": "Extract common themes across papers regarding treatment approaches and outcomes",
+      "evidence_hierarchy": "Organize findings by level of evidence with guidelines at the top",
+      "knowledge_gap_analysis": "Identify areas where evidence is lacking or contradictory",
+      "clinical_implications": "Translate findings into practical clinical recommendations"
+    },
+    "output_requirements": {
+      "structured_summaries": "Provide detailed analysis of each selected paper using standardized format",
+      "evidence_tables": "Create comparative tables of treatment efficacy, safety, and outcomes",
+      "research_recommendations": "Identify priority areas for future research based on gaps identified",
+      "clinical_takeaways": "Extract actionable insights for clinical practice"
+    }
+  },
+  "handoff_instructions": {
+    "next_phase": "Paper Reader Subagent",
+    "priority_order": "Analyze papers in selection_rank order (1-5)",
+    "focus_areas": [
+      "Clinical guidelines and practice recommendations",
+      "Treatment efficacy and safety data",
+      "Methodological quality and bias assessment",
+      "Clinical applicability and implementation considerations",
+      "Research gaps and future directions"
+    ],
+    "quality_assurance": [
+      "Apply consistent evaluation criteria across all papers",
+      "Document evidence levels and confidence ratings",
+      "Identify methodological limitations and their impact on findings",
+      "Assess generalizability of results to different patient populations"
+    ],
+    "expected_deliverables": [
+      "Detailed paper analyses with methodological assessment",
+      "Evidence synthesis and clinical implications",
+      "Research gap analysis and recommendations",
+      "Actionable clinical insights"
+    ]
+  }
+}
