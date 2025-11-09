@@ -1,11 +1,17 @@
 ---
 allowed-tools:
-  - Bash
-  - Read
-  - Write
-  - Grep
-  - Glob
-description: "Usage: /gustav:velocity [sprint-id optional] - Analyze team velocity and performance metrics"
+  - create_file
+  - read_file
+  - replace_string_in_file
+  - list_dir
+  - grep_search
+  - file_search
+  - semantic_search
+  - manage_todo_list
+  - run_notebook_cell
+  - edit_notebook_file
+  - copilot_getNotebookSummary
+description: "Usage: /gustav:velocity [research-id optional] - Analyze research progress and performance metrics"
 ---
 
 Analyze team velocity, performance metrics, and sprint predictability: $ARGUMENTS

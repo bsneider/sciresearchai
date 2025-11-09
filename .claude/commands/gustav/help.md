@@ -1,7 +1,7 @@
 ---
 allowed-tools:
-  - Read
-description: "Usage: /gustav:help - Display Gustav framework overview and commands"
+  - read_file
+description: "Usage: /gustav:help - Display Gustav research framework overview and commands"
 ---
 
 **OUTPUT THE FOLLOWING EXACTLY AS IS - DO NOT ADD YOUR OWN TEXT**:
@@ -14,10 +14,10 @@ description: "Usage: /gustav:help - Display Gustav framework overview and comman
 ██    ██  ██    ██       ██     ██     ██   ██   ██  ██ 
  ██████    ██████   ███████     ██     ██   ██    ████
 
-                A sprint orchestrator
-                ---------------------
+              A research orchestrator
+              -----------------------
 
-Gustav turns your idea into an enterprise-grade application with protection against over-engineering, feature creep, and buggy code.
+Gustav Research turns your research question into comprehensive scientific analysis with protection against scope creep, bias, and incomplete literature coverage.
 
 ## Commands
 

@@ -1,41 +1,20 @@
 {
   "deferred_features": [
     {
-      "name": "Multi-domain Expansion",
-      "prd_reference": "lines 1705-1710",
-      "reason": "Beyond MVP scope - core system must work in single domain first",
+      "name": "Advanced Knowledge Graphs",
+      "prd_reference": "line 97",
+      "reason": "Complex implementation challenge - defer to Phase 4 after core system validated",
       "estimated_sprint": "Sprint 3",
-      "dependencies": ["Core agent system", "Domain-specific knowledge graphs"]
+      "dependencies": ["Core paper analysis system", "Neo4j infrastructure setup"]
     },
     {
-      "name": "Autonomous Lab Integration",
-      "prd_reference": "line 1713",
-      "reason": "Hardware integration requires physical infrastructure planning",
-      "estimated_sprint": "Sprint 4",
-      "dependencies": ["Physical lab equipment APIs", "Safety protocols"]
-    },
-    {
-      "name": "Federated Research",
-      "prd_reference": "line 1721",
-      "reason": "Complex cross-institution coordination requires mature infrastructure",
-      "estimated_sprint": "Sprint 5",
-      "dependencies": ["Privacy preservation", "Cross-institution auth"]
-    },
-    {
-      "name": "Advanced Interactive Visualizations",
-      "prd_reference": "line 1708",
-      "reason": "Core scientific visualization sufficient for MVP",
+      "name": "ToolUniverse Integration",
+      "prd_reference": "line 98",
+      "reason": "Evaluate necessity after MVP - 600+ tools may be overkill for initial system",
       "estimated_sprint": "Sprint 3",
-      "dependencies": ["Basic plotting system", "User interaction patterns"]
-    },
-    {
-      "name": "Collaborative Research",
-      "prd_reference": "line 1707",
-      "reason": "Single researcher workflow priority for MVP",
-      "estimated_sprint": "Sprint 4",
-      "dependencies": ["User management system", "Conflict resolution"]
+      "dependencies": ["Core research workflows", "Value assessment of additional tools"]
     }
   ],
-  "total_deferred": 5,
-  "estimated_additional_sprints": 3
+  "total_deferred": 2,
+  "estimated_additional_sprints": 1
 }

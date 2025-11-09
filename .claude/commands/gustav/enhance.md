@@ -1,12 +1,15 @@
 ---
 allowed-tools:
-  - Bash
-  - Read
-  - Edit
-  - Write
-  - Grep
-  - Glob
-description: "Usage: /gustav:enhance [feature-description] - Add new feature to existing sprint plan"
+  - create_file
+  - read_file
+  - replace_string_in_file
+  - list_dir
+  - grep_search
+  - file_search
+  - semantic_search
+  - fetch_webpage
+  - manage_todo_list
+description: "Usage: /gustav:enhance [research-area] - Add new research area to existing research plan"
 ---
 
 Intelligently add a new feature to an existing Gustav sprint plan: $ARGUMENTS

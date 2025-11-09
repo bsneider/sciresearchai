@@ -1,11 +1,14 @@
 ---
 allowed-tools:
-  - Bash
-  - Read
-  - Edit
-  - Grep
-  - Glob
-description: "Usage: /gustav:validate [milestone-id] - Validate milestone completion and application state"
+  - create_file
+  - read_file
+  - replace_string_in_file
+  - list_dir
+  - grep_search
+  - file_search
+  - semantic_search
+  - manage_todo_list
+description: "Usage: /gustav:validator [phase-id] - Validate research phase completion and quality"
 ---
 
 Validate that a milestone has been successfully completed and the application is ready for human review.

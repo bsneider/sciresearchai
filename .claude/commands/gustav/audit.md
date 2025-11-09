@@ -1,17 +1,15 @@
 ---
 allowed-tools:
-  - Bash,
-  - Read,
-  - Edit,
-  - Write,
-  - WebFetch,
-  - Grep,
-  - Glob,
-  - LS,
-  - MultiEdit,
-  - Task,
-  - WebSearch
-description: "Usage: /gustav:audit [scope: full|dependencies|code|config] - Security analysis and vulnerability assessment"
+  - create_file
+  - read_file
+  - replace_string_in_file
+  - list_dir
+  - grep_search
+  - file_search
+  - semantic_search
+  - fetch_webpage
+  - manage_todo_list
+description: "Usage: /gustav:audit [scope: full|research|data|ethics] - Research quality analysis and compliance assessment"
 ---
 
 Perform comprehensive security analysis and vulnerability assessment: $ARGUMENTS

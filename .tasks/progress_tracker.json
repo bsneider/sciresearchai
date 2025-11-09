@@ -1,13 +1,13 @@
 {
-  "sprint_id": "SPRINT-001",
+  "sprint_id": "SPRINT-002",
   "created_date": "2025-11-09",
-  "total_features": 12,
-  "total_tasks": 23,
+  "total_features": 9,
+  "total_tasks": 20,
   "total_milestones": 4,
   "status": "planned",
   "current_milestone": {
     "id": "M1",
-    "name": "Foundation Infrastructure",
+    "name": "Core Search Infrastructure",
     "position": 1,
     "status": "pending",
     "start_date": null,
@@ -25,7 +25,7 @@
     "M3",
     "M4"
   ],
-  "next_action": "Begin M1 implementation with T-ARCH-001",
+  "next_action": "Begin M1 implementation with T-SEARCH-001",
   "milestone_history": [],
   "task_history": [],
   "quality_metrics": {
@@ -33,30 +33,30 @@
     "actual_coverage": null,
     "planned_quality_score": 8.5,
     "actual_quality_score": null,
-    "slop_detection_target": 0.02,
-    "actual_slop_rate": null
+    "api_success_rate_target": 95,
+    "actual_api_success_rate": null
   },
   "risk_tracking": {
     "identified_risks": [
       {
         "id": "RISK-001",
-        "category": "technical",
-        "description": "Complex agent coordination may lead to race conditions",
-        "mitigation": "Event sourcing architecture with immutable events",
+        "category": "external",
+        "description": "API rate limits may impact research workflow speed",
+        "mitigation": "Implement proper rate limiting and backoff strategies",
         "status": "mitigated"
       },
       {
         "id": "RISK-002",
-        "category": "scope",
-        "description": "Feature creep beyond MVP requirements",
-        "mitigation": "Strict task boundaries and PRD traceability",
+        "category": "technical",
+        "description": "PDF parsing quality varies across paper formats",
+        "mitigation": "Implement multiple parsing strategies and error handling",
         "status": "mitigated"
       },
       {
         "id": "RISK-003",
         "category": "quality",
-        "description": "AI slop detection may miss sophisticated patterns",
-        "mitigation": "Multi-LLM validation and adversarial testing",
+        "description": "Hypothesis generation may lack novelty without domain knowledge",
+        "mitigation": "Focus on synthesis-based novelty with evidence validation",
         "status": "mitigated"
       }
     ],
@@ -64,10 +64,16 @@
     "mitigated_risks": 3
   },
   "resource_tracking": {
-    "planned_developer_days": 60,
+    "planned_developer_days": 70,
     "actual_developer_days": 0,
-    "planned_cost_usd": 5000,
+    "planned_cost_usd": 3000,
     "actual_cost_usd": 0,
     "resource_utilization": 0
+  },
+  "api_tracking": {
+    "external_apis": ["semantic_scholar", "arxiv", "pubmed"],
+    "rate_limits_enforced": true,
+    "monitoring_enabled": true,
+    "compliance_verified": true
   }
 }

@@ -12,9 +12,9 @@
         "implementation": "verify_task_dependencies(task_id, completed_tasks)"
       },
       {
-        "name": "resource_limit_check",
-        "description": "Validate task doesn't exceed resource limits",
-        "implementation": "check_resource_constraints(task_scope)"
+        "name": "api_rate_limit_check",
+        "description": "Validate external API usage respects rate limits",
+        "implementation": "check_api_rate_limits(planned_api_calls)"
       }
     ],
     "during_task": [
@@ -29,9 +29,9 @@
         "implementation": "verify_api_approval(endpoint, method)"
       },
       {
-        "name": "code_quality_check",
-        "description": "Real-time code quality and security scanning",
-        "implementation": "scan_code_quality_and_security(changed_files)"
+        "name": "rate_limit_enforcer",
+        "description": "Enforce API rate limits in real-time",
+        "implementation": "enforce_rate_limits(api_client, rate_limits)"
       }
     ],
     "post_task": [
@@ -46,9 +46,9 @@
         "implementation": "validate_quality_gates(task_outputs)"
       },
       {
-        "name": "rollback_point_creation",
-        "description": "Create rollback checkpoint if task is critical",
-        "implementation": "create_rollback_checkpoint(task_state)"
+        "name": "api_usage_audit",
+        "description": "Audit external API usage and compliance",
+        "implementation": "audit_api_usage(task_api_calls)"
       }
     ]
   },
@@ -70,44 +70,64 @@
       "devDependencies"
     ],
     "blocked_patterns": [
-      "console\\.log\\(.*\\)",
-      "debugger;",
+      "random\\.choice\\(.*\\)",
       "eval\\(",
-      "setTimeout\\(.*\\)",
-      "setInterval\\(.*\\)"
+      "exec\\(",
+      "subprocess\\.call\\("
     ]
+  },
+  "api_rate_limits": {
+    "semantic_scholar": {
+      "requests_per_second": 1,
+      "requests_per_minute": 60,
+      "burst_allowed": false
+    },
+    "arxiv": {
+      "requests_per_second": 3,
+      "requests_per_minute": 100,
+      "burst_allowed": true
+    },
+    "pubmed": {
+      "requests_per_second": 3,
+      "requests_per_minute": 180,
+      "burst_allowed": true,
+      "requires_email": true,
+      "api_key_benefits": "10 rps"
+    }
   },
   "quality_thresholds": {
     "code_coverage_min": 80,
     "complexity_max": 10,
     "duplicate_code_max": 3,
     "security_issues_max": 0,
-    "performance_score_min": 8
+    "performance_score_min": 8,
+    "api_success_rate_min": 95
   },
   "milestone_gates": {
     "M1": {
-      "required_tests": ["agent_hierarchy", "command_system", "state_management", "quality_control"],
+      "required_tests": ["api_integrations", "vector_search", "search_workflow", "rate_limiting"],
       "min_coverage": 85,
       "security_scan_required": true,
-      "performance_baseline_required": true
+      "performance_baseline_required": true,
+      "api_compliance_required": true
     },
     "M2": {
-      "required_tests": ["end_to_end_research", "hypothesis_generation", "experiment_execution", "result_analysis"],
+      "required_tests": ["pdf_parsing", "quality_assessment", "batch_processing", "citation_analysis"],
       "min_coverage": 85,
       "integration_tests_required": true,
-      "reproducibility_check_required": true
+      "accuracy_validation_required": true
     },
     "M3": {
-      "required_tests": ["multi_llm_validation", "slop_detection", "reproducibility_validation", "multi_agent_review"],
+      "required_tests": ["hypothesis_generation", "gap_analysis", "knowledge_synthesis", "validation"],
       "min_coverage": 90,
       "quality_metrics_required": true,
-      "human_approval_required": true
+      "domain_validation_required": true
     },
     "M4": {
-      "required_tests": ["latex_generation", "figure_creation", "citation_management", "publication_quality"],
+      "required_tests": ["command_integration", "end_to_end_workflow", "subagent_coordination", "error_handling"],
       "min_coverage": 85,
-      "output_validation_required": true,
-      "format_compliance_required": true
+      "integration_tests_required": true,
+      "production_readiness_required": true
     }
   },
   "rollback_strategy": {
@@ -120,18 +140,19 @@
     ],
     "validation_after_rollback": true
   },
-  "human_integration": {
-    "required_review_points": [
-      "after_milestone_completion",
-      "before_feature_deferral",
-      "on_scope_violation",
-      "on_quality_gate_failure"
+  "external_api_monitoring": {
+    "enabled_apis": ["semantic_scholar", "arxiv", "pubmed"],
+    "monitoring_metrics": [
+      "request_count",
+      "success_rate",
+      "response_time",
+      "rate_limit_hits",
+      "error_patterns"
     ],
-    "review_criteria": {
-      "technical_correctness": "Code follows best practices and is error-free",
-      "scope_compliance": "Implementation matches task boundaries exactly",
-      "quality_standards": "Meets all defined quality thresholds",
-      "prd_alignment": "Feature traces correctly to PRD requirements"
+    "alert_thresholds": {
+      "error_rate": 5,
+      "rate_limit_hits": 10,
+      "response_time_ms": 5000
     }
   }
 }

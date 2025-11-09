@@ -1,65 +1,65 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "today_iso": "2025-11-09",
   "prd_source": {
-    "filename": "PRD.md",
-    "hash": "sha256:abstract_placeholder_hash",
-    "total_lines": 1820
+    "filename": "PRD-markdown-only.md",
+    "hash": "sha256:updated_prd_hash_placeholder",
+    "total_lines": 504
   },
   "mvp_features": [
     {
       "id": "F001",
-      "name": "Agent Hierarchy Architecture",
-      "prd_lines": [41, 92],
-      "original_text": "Four-tier agent hierarchy with Orchestrator, Planning, Execution, and Validation agents",
-      "why_mvp": "Core foundation for entire multi-agent research system"
+      "name": "Paper Search Subagent",
+      "prd_lines": [69, 76],
+      "original_text": "Comprehensive literature discovery and retrieval across multiple databases",
+      "why_mvp": "Core foundation for accessing scientific literature"
     },
     {
       "id": "F002",
-      "name": "Command System Integration",
-      "prd_lines": [95, 110],
-      "original_text": "10 core research slash commands for Claude Code",
-      "why_mvp": "Primary interface for researchers to interact with AI agents"
+      "name": "Paper Reader Subagent",
+      "prd_lines": [77, 84],
+      "original_text": "Critical analysis and assessment of scientific papers",
+      "why_mvp": "Essential for evaluating research quality and extracting insights"
     },
     {
       "id": "F003",
-      "name": "State Management & Checkpointing",
-      "prd_lines": [146, 167],
-      "original_text": "Memory systems with rollback capability and state saves",
-      "why_mvp": "Essential for reproducibility and error recovery"
+      "name": "Hypothesis Subagent",
+      "prd_lines": [85, 91],
+      "original_text": "Novel hypothesis generation from synthesized knowledge",
+      "why_mvp": "Primary value proposition for generating new research directions"
     },
     {
       "id": "F004",
-      "name": "Quality Control Framework",
-      "prd_lines": [168, 221],
-      "original_text": "Multi-dimensional AI slop detection with validation gates",
-      "why_mvp": "Prevents low-quality AI outputs and ensures research integrity"
+      "name": "Command System Integration",
+      "prd_lines": [107, 120],
+      "original_text": "8 core research slash commands for Claude Code",
+      "why_mvp": "User interface for interacting with AI research capabilities"
     },
     {
       "id": "F005",
-      "name": "Research Workflow Engine",
-      "prd_lines": [223, 538],
-      "original_text": "End-to-end research pipeline from ideation to publication",
-      "why_mvp": "Core functionality enabling complete research cycles"
+      "name": "Literature Search Workflow",
+      "prd_lines": [126, 145],
+      "original_text": "End-to-end search process with ranking and filtering",
+      "why_mvp": "Complete pipeline for finding relevant research papers"
     },
     {
       "id": "F006",
-      "name": "Reproducibility System",
-      "prd_lines": [1072, 1254],
-      "original_text": "Complete artifact tracking and validation pipeline",
-      "why_mvp": "Critical for scientific validity and verification"
+      "name": "Critical Assessment Workflow",
+      "prd_lines": [146, 165],
+      "original_text": "Paper analysis and quality evaluation with insight extraction",
+      "why_mvp": "Quality validation and deep understanding of research content"
     },
     {
       "id": "F007",
-      "name": "Documentation Generation",
-      "prd_lines": [472, 537],
-      "original_text": "LaTeX paper generation pipeline with quality checks",
-      "why_mvp": "Required for publication-ready output generation"
+      "name": "Knowledge Synthesis & Hypothesis Generation",
+      "prd_lines": [166, 185],
+      "original_text": "Cross-paper insight synthesis and novel hypothesis creation",
+      "why_mvp": "Final output delivering research value through new hypotheses"
     }
   ],
   "protection_metrics": {
-    "features_deferred": 5,
-    "scope_reduction": 41.7,
+    "features_deferred": 2,
+    "scope_reduction": 22.2,
     "documentation_age": {
       "avg_days": 0,
       "oldest_days": 0,
