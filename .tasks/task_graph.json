@@ -1,0 +1,1103 @@
+{
+  "tasks": [
+    {
+      "id": "T-ARCH-001",
+      "title": "Implement Core Agent Hierarchy and Orchestration",
+      "prd_traceability": {
+        "feature_id": "F001",
+        "prd_lines": [41, 92],
+        "original_requirement": "Four-tier agent hierarchy with Orchestrator, Planning, Execution, and Validation agents"
+      },
+      "scope_boundaries": {
+        "must_implement": [
+          "Base Agent class with lifecycle management",
+          "Orchestrator agent with coordination logic",
+          "Event sourcing for agent communication",
+          "Agent spawning and termination"
+        ],
+        "must_not_implement": [
+          "Domain-specific agent logic",
+          "External API integrations",
+          "User interface components"
+        ],
+        "out_of_scope_check": "BLOCK if implementing domain logic"
+      },
+      "documentation_context": {
+        "primary_docs": [
+          {
+            "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing",
+            "version": "2025",
+            "last_verified": "2025-11-09"
+          }
+        ],
+        "version_locks": {
+          "@nestjs/common": "10.4.7",
+          "@nestjs/event-sourcing": "2.0.0"
+        },
+        "forbidden_patterns": ["Direct database writes", "Synchronous agent blocking"]
+      },
+      "hallucination_guards": {
+        "verify_before_use": ["Event store interfaces", "Agent lifecycle methods", "Message passing protocols"],
+        "forbidden_assumptions": ["No default event store assumed", "No specific cloud provider dependencies"]
+      },
+      "context_drift_prevention": {
+        "task_boundaries": "This task ONLY implements the core agent hierarchy and communication patterns",
+        "refer_to_other_tasks": {
+          "Domain agents": "T-ARCH-004",
+          "External integrations": "T-ARCH-006"
+        },
+        "max_file_changes": 3,
+        "if_exceeds": "STOP and verify scope"
+      },
+      "milestone_metadata": {
+        "milestone_id": "M1",
+        "milestone_name": "Foundation Infrastructure",
+        "is_milestone_critical": true,
+        "can_defer": false,
+        "milestone_position": 1
+      }
+    },
+    {
+      "id": "T-ARCH-002",
+      "title": "Create Command System and Claude Code Integration",
+      "prd_traceability": {
+        "feature_id": "F002",
+        "prd_lines": [95, 110],
+        "original_requirement": "10 core research slash commands for Claude Code"
+      },
+      "scope_boundaries": {
+        "must_implement": [
+          "Slash command parser and router",
+          "/research:init command handler",
+          "/research:ideate command handler",
+          "Command state management",
+          "Error handling and validation"
+        ],
+        "must_not_implement": [
+          "Command-specific business logic",
+          "External API calls",
+          "Database operations"
+        ],
+        "out_of_scope_check": "BLOCK if implementing specific research logic"
+      },
+      "documentation_context": {
+        "primary_docs": [
+          {
+            "url": "https://docs.anthropic.com/en/docs/claude-code",
+            "version": "2025",
+            "last_verified": "2025-11-09"
+          }
+        ],
+        "version_locks": {
+          "@anthropic-ai/claude-code-sdk": "1.0.0"
+        },
+        "forbidden_patterns": ["Blocking I/O in command handlers", "Direct CLI manipulation"]
+      },
+      "hallucination_guards": {
+        "verify_before_use": ["Claude Code command API", "Command registration patterns", "Async command handling"],
+        "forbidden_assumptions": ["No specific command output format assumed", "No terminal capabilities assumed"]
+      },
+      "context_drift_prevention": {
+        "task_boundaries": "This task ONLY handles command parsing, routing, and basic state management",
+        "refer_to_other_tasks": {
+          "Research logic": "T-WF-001",
+          "State persistence": "T-ARCH-003"
+        },
+        "max_file_changes": 4,
+        "if_exceeds": "STOP and verify scope"
+      },
+      "milestone_metadata": {
+        "milestone_id": "M1",
+        "milestone_name": "Foundation Infrastructure",
+        "is_milestone_critical": true,
+        "can_defer": false,
+        "milestone_position": 1
+      }
+    },
+    {
+      "id": "T-ARCH-003",
+      "title": "Implement State Management and Checkpointing System",
+      "prd_traceability": {
+        "feature_id": "F003",
+        "prd_lines": [146, 167],
+        "original_requirement": "Memory systems with rollback capability and state saves"
+      },
+      "scope_boundaries": {
+        "must_implement": [
+          "Research state schema definition",
+          "Checkpoint creation and restoration",
+          "Event sourcing implementation",
+          "State serialization/deserialization",
+          "Rollback functionality"
+        ],
+        "must_not_implement": [
+          "Specific research data models",
+          "External storage backends",
+          "User interface for state viewing"
+        ],
+        "out_of_scope_check": "BLOCK if implementing domain-specific state"
+      },
+      "documentation_context": {
+        "primary_docs": [
+          {
+            "url": "https://nestjs.com/docs/techniques/cqrs",
+            "version": "10.4.7",
+            "last_verified": "2025-11-09"
+          }
+        ],
+        "version_locks": {
+          "@nestjs/cqrs": "10.0.0",
+          "@nestjs/event-store": "1.0.0"
+        },
+        "forbidden_patterns": ["Mutable state objects", "Synchronous persistence operations"]
+      },
+      "hallucination_guards": {
+        "verify_before_use": ["CQRS implementation patterns", "Event store interfaces", "Snapshot creation methods"],
+        "forbidden_assumptions": ["No specific storage backend assumed", "No state size limits assumed"]
+      },
+      "context_drift_prevention": {
+        "task_boundaries": "This task ONLY implements generic state management and checkpointing infrastructure",
+        "refer_to_other_tasks": {
+          "Agent coordination": "T-ARCH-001",
+          "Database integration": "T-WF-004"
+        },
+        "max_file_changes": 4,
+        "if_exceeds": "STOP and verify scope"
+      },
+      "milestone_metadata": {
+        "milestone_id": "M1",
+        "milestone_name": "Foundation Infrastructure",
+        "is_milestone_critical": true,
+        "can_defer": false,
+        "milestone_position": 1
+      }
+    },
+    {
+      "id": "T-ARCH-004",
+      "title": "Build Quality Control Framework and Slop Detection",
+      "prd_traceability": {
+        "feature_id": "F004",
+        "prd_lines": [168, 221],
+        "original_requirement": "Multi-dimensional AI slop detection with validation gates"
+      },
+      "scope_boundaries": {
+        "must_implement": [
+          "Slop detection pipeline interface",
+          "Pattern-based detection rules",
+          "Multi-dimensional scoring system",
+          "Validation gate implementation",
+          "Quality threshold enforcement"
+        ],
+        "must_not_implement": [
+          "Domain-specific quality rules",
+          "External validation services",
+          "User quality preferences"
+        ],
+        "out_of_scope_check": "BLOCK if implementing domain-specific quality metrics"
+      },
+      "documentation_context": {
+        "primary_docs": [
+          {
+            "url": "https://arxiv.org/abs/2407.17557",
+            "version": "2024",
+            "last_verified": "2025-11-09"
+          }
+        ],
+        "version_locks": {
+          "natural": "6.0.0",
+          "compromise": "0.3.0"
+        },
+        "forbidden_patterns": ["Hardcoded quality thresholds", "Blocking quality checks"]
+      },
+      "hallucination_guards": {
+        "verify_before_use": ["Text analysis libraries", "Pattern matching algorithms", "Scoring system interfaces"],
+        "forbidden_assumptions": ["No specific LLM access assumed", "No quality dataset assumed"]
+      },
+      "context_drift_prevention": {
+        "task_boundaries": "This task ONLY implements generic quality control and slop detection infrastructure",
+        "refer_to_other_tasks": {
+          "Domain validation": "T-QA-002",
+          "Multi-LLM validation": "T-QA-003"
+        },
+        "max_file_changes": 5,
+        "if_exceeds": "STOP and verify scope"
+      },
+      "milestone_metadata": {
+        "milestone_id": "M1",
+        "milestone_name": "Foundation Infrastructure",
+        "is_milestone_critical": true,
+        "can_defer": false,
+        "milestone_position": 1
+      }
+    },
+    {
+      "id": "T-VAL-M1",
+      "title": "Validate Milestone 1: Foundation Infrastructure",
+      "type": "validation",
+      "milestone_id": "M1",
+      "validation_steps": [
+        "Run agent hierarchy tests",
+        "Execute command system integration tests",
+        "Verify state management and checkpointing",
+        "Test quality control framework",
+        "Generate milestone status report",
+        "PAUSE for human review"
+      ],
+      "success_criteria": {
+        "agent_system_launches": true,
+        "commands_process_correctly": true,
+        "state_persistence_works": true,
+        "quality_control_operational": true,
+        "no_critical_errors": true
+      },
+      "rollback_point": true
+    },
+    {
+      "id": "T-WF-001",
+      "title": "Implement Research Ideation and Hypothesis Generation",
+      "prd_traceability": {
+        "feature_id": "F005",
+        "prd_lines": [252, 301],
+        "original_requirement": "Hypothesis generation with multi-agent refinement"
+      },
+      "scope_boundaries": {
+        "must_implement": [
+          "Literature review integration",
+          "Hypothesis generation algorithms",
+          "Multi-agent refinement process",
+          "Novelty scoring system",
+          "Hypothesis validation logic"
+        ],
+        "must_not_implement": [
+          "Domain-specific hypothesis templates",
+          "External literature databases",
+          "User hypothesis editing"
+        ],
+        "out_of_scope_check": "BLOCK if implementing domain-specific ideation logic"
+      },
+      "documentation_context": {
+        "primary_docs": [
+          {
+            "url": "https://www.semanticscholar.org/product/api",
+            "version": "2025",
+            "last_verified": "2025-11-09"
+          }
+        ],
+        "version_locks": {
+          "@anthropic-ai/sdk": "0.24.0",
+          "openai": "4.52.7"
+        },
+        "forbidden_patterns": ["Hardcoded hypothesis templates", "Synchronous external API calls"]
+      },
+      "hallucination_guards": {
+        "verify_before_use": ["Semantic Scholar API", "Hypothesis generation algorithms", "Novelty scoring methods"],
+        "forbidden_assumptions": ["No specific literature sources assumed", "No hypothesis format assumed"]
+      },
+      "context_drift_prevention": {
+        "task_boundaries": "This task ONLY implements generic hypothesis generation and refinement",
+        "refer_to_other_tasks": {
+          "Literature integration": "T-WF-002",
+          "Quality validation": "T-QA-001"
+        },
+        "max_file_changes": 6,
+        "if_exceeds": "STOP and verify scope"
+      },
+      "milestone_metadata": {
+        "milestone_id": "M2",
+        "milestone_name": "Research Workflow Engine",
+        "is_milestone_critical": true,
+        "can_defer": false,
+        "milestone_position": 2
+      }
+    },
+    {
+      "id": "T-WF-002",
+      "title": "Build Experimental Design and Planning System",
+      "prd_traceability": {
+        "feature_id": "F005",
+        "prd_lines": [302, 330],
+        "original_requirement": "Design statistically valid experiments with success criteria"
+      },
+      "scope_boundaries": {
+        "must_implement": [
+          "Experimental design templates",
+          "Statistical power analysis",
+          "Baseline comparison setup",
+          "Success criteria definition",
+          "Task breakdown generation"
+        ],
+        "must_not_implement": [
+          "Domain-specific experimental methods",
+          "Statistical test implementations",
+          "Resource scheduling logic"
+        ],
+        "out_of_scope_check": "BLOCK if implementing domain-specific experiments"
+      },
+      "documentation_context": {
+        "primary_docs": [
+          {
+            "url": "https://www.nature.com/articles/s41586-023-06667-6",
+            "version": "2023",
+            "last_verified": "2025-11-09"
+          }
+        ],
+        "version_locks": {
+          "ml-statistics": "1.0.0",
+          "experimental-design": "2.0.0"
+        },
+        "forbidden_patterns": ["Hardcoded statistical methods", "Assumed effect sizes"]
+      },
+      "hallucination_guards": {
+        "verify_before_use": ["Experimental design patterns", "Statistical power analysis formulas", "Success criteria frameworks"],
+        "forbidden_assumptions": ["No specific statistical tests assumed", "No resource constraints assumed"]
+      },
+      "context_drift_prevention": {
+        "task_boundaries": "This task ONLY implements generic experimental design infrastructure",
+        "refer_to_other_tasks": {
+          "Hypothesis generation": "T-WF-001",
+          "Experiment execution": "T-WF-003"
+        },
+        "max_file_changes": 5,
+        "if_exceeds": "STOP and verify scope"
+      },
+      "milestone_metadata": {
+        "milestone_id": "M2",
+        "milestone_name": "Research Workflow Engine",
+        "is_milestone_critical": true,
+        "can_defer": false,
+        "milestone_position": 2
+      }
+    },
+    {
+      "id": "T-WF-003",
+      "title": "Implement Experiment Execution with Safety",
+      "prd_traceability": {
+        "feature_id": "F005",
+        "prd_lines": [331, 382],
+        "original_requirement": "Code generation and execution in sandboxed environments"
+      },
+      "scope_boundaries": {
+        "must_implement": [
+          "Sandbox execution environment",
+          "Code generation templates",
+          "Resource monitoring and limits",
+          "Docker container integration",
+          "Execution logging and telemetry"
+        ],
+        "must_not_implement": [
+          "Domain-specific code patterns",
+          "External compute services",
+          "Experiment result analysis"
+        ],
+        "out_of_scope_check": "BLOCK if implementing domain-specific execution logic"
+      },
+      "documentation_context": {
+        "primary_docs": [
+          {
+            "url": "https://docs.docker.com/engine/api/sdk/",
+            "version": "2025",
+            "last_verified": "2025-11-09"
+          }
+        ],
+        "version_locks": {
+          "dockerode": "4.0.0",
+          "@nestjs/schedules": "4.1.0"
+        },
+        "forbidden_patterns": ["Direct system command execution", "Unlimited resource usage"]
+      },
+      "hallucination_guards": {
+        "verify_before_use": ["Docker API interfaces", "Sandbox implementation patterns", "Resource monitoring methods"],
+        "forbidden_assumptions": ["No specific Docker images assumed", "No compute resources assumed"]
+      },
+      "context_drift_prevention": {
+        "task_boundaries": "This task ONLY implements generic sandboxed execution infrastructure",
+        "refer_to_other_tasks": {
+          "Experimental design": "T-WF-002",
+          "Result collection": "T-WF-004"
+        },
+        "max_file_changes": 6,
+        "if_exceeds": "STOP and verify scope"
+      },
+      "milestone_metadata": {
+        "milestone_id": "M2",
+        "milestone_name": "Research Workflow Engine",
+        "is_milestone_critical": true,
+        "can_defer": false,
+        "milestone_position": 2
+      }
+    },
+    {
+      "id": "T-WF-004",
+      "title": "Create Data Storage and Result Collection System",
+      "prd_traceability": {
+        "feature_id": "F006",
+        "prd_lines": [1077, 1144],
+        "original_requirement": "Complete artifact tracking and validation pipeline"
+      },
+      "scope_boundaries": {
+        "must_implement": [
+          "MongoDB integration for artifacts",
+          "File storage system",
+          "Result aggregation pipeline",
+          "Metadata extraction and storage",
+          "Data integrity verification"
+        ],
+        "must_not_implement": [
+          "Domain-specific data models",
+          "External storage services",
+          "Data visualization"
+        ],
+        "out_of_scope_check": "BLOCK if implementing domain-specific data structures"
+      },
+      "documentation_context": {
+        "primary_docs": [
+          {
+            "url": "https://www.mongodb.com/docs/manual/",
+            "version": "7.0",
+            "last_verified": "2025-11-09"
+          }
+        ],
+        "version_locks": {
+          "mongoose": "8.6.3",
+          "@types/mongodb": "4.0.7"
+        },
+        "forbidden_patterns": ["Unstructured data storage", "Missing metadata capture"]
+      },
+      "hallucination_guards": {
+        "verify_before_use": ["MongoDB connection patterns", "File system interfaces", "Data integrity checksums"],
+        "forbidden_assumptions": ["No specific storage limits assumed", "No data formats assumed"]
+      },
+      "context_drift_prevention": {
+        "task_boundaries": "This task ONLY implements generic data storage and collection infrastructure",
+        "refer_to_other_tasks": {
+          "Experiment execution": "T-WF-003",
+          "Reproducibility validation": "T-QA-004"
+        },
+        "max_file_changes": 5,
+        "if_exceeds": "STOP and verify scope"
+      },
+      "milestone_metadata": {
+        "milestone_id": "M2",
+        "milestone_name": "Research Workflow Engine",
+        "is_milestone_critical": true,
+        "can_defer": false,
+        "milestone_position": 2
+      }
+    },
+    {
+      "id": "T-WF-005",
+      "title": "Build Result Analysis and Interpretation System",
+      "prd_traceability": {
+        "feature_id": "F005",
+        "prd_lines": [383, 423],
+        "original_requirement": "Statistical analysis of results and visualization generation"
+      },
+      "scope_boundaries": {
+        "must_implement": [
+          "Statistical analysis pipeline",
+          "Visualization generation interface",
+          "Comparison with baselines",
+          "Significance testing framework",
+          "Interpretation narrative generation"
+        ],
+        "must_not_implement": [
+          "Domain-specific statistical methods",
+          "External visualization services",
+          "User-customizable analyses"
+        ],
+        "out_of_scope_check": "BLOCK if implementing domain-specific analysis"
+      },
+      "documentation_context": {
+        "primary_docs": [
+          {
+            "url": "https://plotly.com/javascript/",
+            "version": "2.34.0",
+            "last_verified": "2025-11-09"
+          }
+        ],
+        "version_locks": {
+          "simple-statistics": "7.8.3",
+          "plotly": "2.34.0"
+        },
+        "forbidden_patterns": ["Hardcoded analysis parameters", "Assumed result formats"]
+      },
+      "hallucination_guards": {
+        "verify_before_use": ["Statistical analysis libraries", "Visualization generation methods", "Significance testing algorithms"],
+        "forbidden_assumptions": ["No specific data distributions assumed", "No visualization preferences assumed"]
+      },
+      "context_drift_prevention": {
+        "task_boundaries": "This task ONLY implements generic analysis and interpretation infrastructure",
+        "refer_to_other_tasks": {
+          "Result collection": "T-WF-004",
+          "Quality validation": "T-QA-002"
+        },
+        "max_file_changes": 5,
+        "if_exceeds": "STOP and verify scope"
+      },
+      "milestone_metadata": {
+        "milestone_id": "M2",
+        "milestone_name": "Research Workflow Engine",
+        "is_milestone_critical": true,
+        "can_defer": false,
+        "milestone_position": 2
+      }
+    },
+    {
+      "id": "T-VAL-M2",
+      "title": "Validate Milestone 2: Research Workflow Engine",
+      "type": "validation",
+      "milestone_id": "M2",
+      "validation_steps": [
+        "Test end-to-end research workflow",
+        "Verify hypothesis generation quality",
+        "Execute sample experiments in sandbox",
+        "Validate result collection and analysis",
+        "Generate workflow performance report",
+        "PAUSE for human review"
+      ],
+      "success_criteria": {
+        "complete_workflow_executes": true,
+        "hypotheses_generated": true,
+        "experiments_run_safely": true,
+        "results_collected_analyzed": true,
+        "quality_checks_pass": true
+      },
+      "rollback_point": true
+    },
+    {
+      "id": "T-QA-001",
+      "title": "Implement Multi-LLM Validation System",
+      "prd_traceability": {
+        "feature_id": "F004",
+        "prd_lines": [216, 219],
+        "original_requirement": "Multi-LLM voting system for validation"
+      },
+      "scope_boundaries": {
+        "must_implement": [
+          "Multi-LLM API integration",
+          "Consensus scoring algorithms",
+          "Voting system implementation",
+          "Agreement level calculation",
+          "Conflict resolution logic"
+        ],
+        "must_not_implement": [
+          "Domain-specific validation rules",
+          "LLM prompt engineering",
+          "Custom model training"
+        ],
+        "out_of_scope_check": "BLOCK if implementing domain-specific validation"
+      },
+      "documentation_context": {
+        "primary_docs": [
+          {
+            "url": "https://platform.openai.com/docs/api-reference",
+            "version": "2025",
+            "last_verified": "2025-11-09"
+          }
+        ],
+        "version_locks": {
+          "openai": "4.52.7",
+          "@anthropic-ai/sdk": "0.24.0"
+        },
+        "forbidden_patterns": ["Hardcoded model preferences", "Synchronous LLM calls"]
+      },
+      "hallucination_guards": {
+        "verify_before_use": ["OpenAI API interfaces", "Anthropic API interfaces", "Consensus algorithm implementations"],
+        "forbidden_assumptions": ["No specific model responses assumed", "No consensus thresholds assumed"]
+      },
+      "context_drift_prevention": {
+        "task_boundaries": "This task ONLY implements generic multi-LLM validation infrastructure",
+        "refer_to_other_tasks": {
+          "Quality control": "T-ARCH-004",
+          "Reproducibility validation": "T-QA-004"
+        },
+        "max_file_changes": 5,
+        "if_exceeds": "STOP and verify scope"
+      },
+      "milestone_metadata": {
+        "milestone_id": "M3",
+        "milestone_name": "Quality & Validation",
+        "is_milestone_critical": true,
+        "can_defer": false,
+        "milestone_position": 3
+      }
+    },
+    {
+      "id": "T-QA-002",
+      "title": "Build Advanced Slop Detection and Quality Metrics",
+      "prd_traceability": {
+        "feature_id": "F004",
+        "prd_lines": [186, 220],
+        "original_requirement": "Multi-dimensional slop detection with pattern matching"
+      },
+      "scope_boundaries": {
+        "must_implement": [
+          "Pattern-based slop detection",
+          "Semantic coherence analysis",
+          "Citation verification system",
+          "Multi-dimensional scoring",
+          "Problematic span annotation"
+        ],
+        "must_not_implement": [
+          "Domain-specific quality rules",
+          "External fact-checking services",
+          "User quality preferences"
+        ],
+        "out_of_scope_check": "BLOCK if implementing domain-specific quality checks"
+      },
+      "documentation_context": {
+        "primary_docs": [
+          {
+            "url": "https://arxiv.org/abs/2407.17557",
+            "version": "2024",
+            "last_verified": "2025-11-09"
+          }
+        ],
+        "version_locks": {
+          "natural": "6.0.0",
+          "compromise": "0.3.0"
+        },
+        "forbidden_patterns": ["Hardcoded quality thresholds", "Assumed content patterns"]
+      },
+      "hallucination_guards": {
+        "verify_before_use": ["Text analysis algorithms", "Pattern matching methods", "Semantic similarity calculations"],
+        "forbidden_assumptions": ["No specific content types assumed", "No quality benchmarks assumed"]
+      },
+      "context_drift_prevention": {
+        "task_boundaries": "This task ONLY implements generic slop detection and quality measurement",
+        "refer_to_other_tasks": {
+          "Multi-LLM validation": "T-QA-001",
+          "Research workflow": "T-WF-005"
+        },
+        "max_file_changes": 6,
+        "if_exceeds": "STOP and verify scope"
+      },
+      "milestone_metadata": {
+        "milestone_id": "M3",
+        "milestone_name": "Quality & Validation",
+        "is_milestone_critical": true,
+        "can_defer": false,
+        "milestone_position": 3
+      }
+    },
+    {
+      "id": "T-QA-003",
+      "title": "Implement Reproducibility Validation Pipeline",
+      "prd_traceability": {
+        "feature_id": "F006",
+        "prd_lines": [1167, 1254],
+        "original_requirement": "Independent replication and result comparison"
+      },
+      "scope_boundaries": {
+        "must_implement": [
+          "Reproducibility package generation",
+          "Independent replication workflow",
+          "Result comparison algorithms",
+          "Environment isolation",
+          "Reproducibility reporting"
+        ],
+        "must_not_implement": [
+          "Domain-specific reproducibility criteria",
+          "External validation services",
+          "Custom environment setup"
+        ],
+        "out_of_scope_check": "BLOCK if implementing domain-specific reproducibility"
+      },
+      "documentation_context": {
+        "primary_docs": [
+          {
+            "url": "https://docs.docker.com/build/",
+            "version": "2025",
+            "last_verified": "2025-11-09"
+          }
+        ],
+        "version_locks": {
+          "dockerode": "4.0.0",
+          "archiver": "6.0.0"
+        },
+        "forbidden_patterns": ["Assumed environment consistency", "Manual reproducibility steps"]
+      },
+      "hallucination_guards": {
+        "verify_before_use": ["Docker image building", "Package archiving methods", "Difference tolerance algorithms"],
+        "forbidden_assumptions": ["No specific reproducibility criteria assumed", "No environment similarities assumed"]
+      },
+      "context_drift_prevention": {
+        "task_boundaries": "This task ONLY implements generic reproducibility validation infrastructure",
+        "refer_to_other_tasks": {
+          "Data storage": "T-WF-004",
+          "Quality control": "T-ARCH-004"
+        },
+        "max_file_changes": 5,
+        "if_exceeds": "STOP and verify scope"
+      },
+      "milestone_metadata": {
+        "milestone_id": "M3",
+        "milestone_name": "Quality & Validation",
+        "is_milestone_critical": true,
+        "can_defer": false,
+        "milestone_position": 3
+      }
+    },
+    {
+      "id": "T-QA-004",
+      "title": "Create Multi-Agent Review and Critique System",
+      "prd_traceability": {
+        "feature_id": "F005",
+        "prd_lines": [424, 471],
+        "original_requirement": "Multi-perspective analysis with adversarial testing"
+      },
+      "scope_boundaries": {
+        "must_implement": [
+          "Multi-agent review coordination",
+          "Adversarial testing framework",
+          "Consensus building algorithms",
+          "Revision recommendation system",
+          "Review quality assessment"
+        ],
+        "must_not_implement": [
+          "Domain-specific review criteria",
+          "Human expert integration",
+          "Custom review workflows"
+        ],
+        "out_of_scope_check": "BLOCK if implementing domain-specific review logic"
+      },
+      "documentation_context": {
+        "primary_docs": [
+          {
+            "url": "https://arxiv.org/abs/2310.08440",
+            "version": "2023",
+            "last_verified": "2025-11-09"
+          }
+        ],
+        "version_locks": {
+          "@nestjs/cqrs": "10.0.0",
+          "uuid": "9.0.1"
+        },
+        "forbidden_patterns": ["Single-agent review processes", "Hardcoded review criteria"]
+      },
+      "hallucination_guards": {
+        "verify_before_use": ["Multi-agent coordination patterns", "Adversarial testing methods", "Consensus algorithms"],
+        "forbidden_assumptions": ["No specific review expertise assumed", "No consensus thresholds assumed"]
+      },
+      "context_drift_prevention": {
+        "task_boundaries": "This task ONLY implements generic multi-agent review and critique infrastructure",
+        "refer_to_other_tasks": {
+          "Multi-LLM validation": "T-QA-001",
+          "Quality control": "T-ARCH-004"
+        },
+        "max_file_changes": 6,
+        "if_exceeds": "STOP and verify scope"
+      },
+      "milestone_metadata": {
+        "milestone_id": "M3",
+        "milestone_name": "Quality & Validation",
+        "is_milestone_critical": true,
+        "can_defer": false,
+        "milestone_position": 3
+      }
+    },
+    {
+      "id": "T-VAL-M3",
+      "title": "Validate Milestone 3: Quality & Validation",
+      "type": "validation",
+      "milestone_id": "M3",
+      "validation_steps": [
+        "Test multi-LLM validation accuracy",
+        "Verify slop detection effectiveness",
+        "Validate reproducibility pipeline",
+        "Execute multi-agent review process",
+        "Generate quality assurance report",
+        "PAUSE for human review"
+      ],
+      "success_criteria": {
+        "validation_accuracy_high": true,
+        "slop_detection_effective": true,
+        "reproducibility_works": true,
+        "review_system_operational": true,
+        "quality_metrics_met": true
+      },
+      "rollback_point": true
+    },
+    {
+      "id": "T-PUB-001",
+      "title": "Implement LaTeX Document Generation Pipeline",
+      "prd_traceability": {
+        "feature_id": "F007",
+        "prd_lines": [476, 507],
+        "original_requirement": "LaTeX generation pipeline with quality checks"
+      },
+      "scope_boundaries": {
+        "must_implement": [
+          "LaTeX template system",
+          "Document structure generation",
+          "Automated compilation",
+          "Citation integration",
+          "Quality validation"
+        ],
+        "must_not_implement": [
+          "Domain-specific templates",
+          "Journal-specific formatting",
+          "Custom LaTeX packages"
+        ],
+        "out_of_scope_check": "BLOCK if implementing domain-specific document formats"
+      },
+      "documentation_context": {
+        "primary_docs": [
+          {
+            "url": "https://www.latex-project.org/help/documentation/",
+            "version": "2024",
+            "last_verified": "2025-11-09"
+          }
+        ],
+        "version_locks": {
+          "katex": "0.16.9",
+          "latex.js": "0.12.0"
+        },
+        "forbidden_patterns": ["Hardcoded document structures", "Assumed LaTeX installations"]
+      },
+      "hallucination_guards": {
+        "verify_before_use": ["LaTeX compilation APIs", "Template generation methods", "Citation formatting algorithms"],
+        "forbidden_assumptions": ["No specific document styles assumed", "No LaTeX package availability assumed"]
+      },
+      "context_drift_prevention": {
+        "task_boundaries": "This task ONLY implements generic LaTeX generation infrastructure",
+        "refer_to_other_tasks": {
+          "Figure generation": "T-PUB-002",
+          "Quality validation": "T-QA-002"
+        },
+        "max_file_changes": 5,
+        "if_exceeds": "STOP and verify scope"
+      },
+      "milestone_metadata": {
+        "milestone_id": "M4",
+        "milestone_name": "Publication System",
+        "is_milestone_critical": true,
+        "can_defer": false,
+        "milestone_position": 4
+      }
+    },
+    {
+      "id": "T-PUB-002",
+      "title": "Build Figure and Visualization Generation",
+      "prd_traceability": {
+        "feature_id": "F007",
+        "prd_lines": [509, 516],
+        "original_requirement": "Automated visualization generation with publication quality"
+      },
+      "scope_boundaries": {
+        "must_implement": [
+          "Figure template system",
+          "Plotly.js integration",
+          "D3.js visualization support",
+          "Publication quality validation",
+          "Automated caption generation"
+        ],
+        "must_not_implement": [
+          "Domain-specific plot types",
+          "Custom visualization algorithms",
+          "Interactive web figures"
+        ],
+        "out_of_scope_check": "BLOCK if implementing domain-specific visualizations"
+      },
+      "documentation_context": {
+        "primary_docs": [
+          {
+            "url": "https://plotly.com/javascript/",
+            "version": "2.34.0",
+            "last_verified": "2025-11-09"
+          }
+        ],
+        "version_locks": {
+          "plotly": "2.34.0",
+          "d3": "7.9.0"
+        },
+        "forbidden_patterns": ["Hardcoded figure styles", "Assumed data formats"]
+      },
+      "hallucination_guards": {
+        "verify_before_use": ["Plotly.js chart generation", "D3.js visualization methods", "Figure quality validation"],
+        "forbidden_assumptions": ["No specific chart types assumed", "No data distributions assumed"]
+      },
+      "context_drift_prevention": {
+        "task_boundaries": "This task ONLY implements generic figure generation infrastructure",
+        "refer_to_other_tasks": {
+          "LaTeX generation": "T-PUB-001",
+          "Result analysis": "T-WF-005"
+        },
+        "max_file_changes": 4,
+        "if_exceeds": "STOP and verify scope"
+      },
+      "milestone_metadata": {
+        "milestone_id": "M4",
+        "milestone_name": "Publication System",
+        "is_milestone_critical": true,
+        "can_defer": false,
+        "milestone_position": 4
+      }
+    },
+    {
+      "id": "T-PUB-003",
+      "title": "Create Citation Management and Reference System",
+      "prd_traceability": {
+        "feature_id": "F007",
+        "prd_lines": [494, 496],
+        "original_requirement": "Citation manager with BibTeX formatting"
+      },
+      "scope_boundaries": {
+        "must_implement": [
+          "Citation extraction and parsing",
+          "BibTeX generation and formatting",
+          "Reference validation",
+          "Citation style support",
+          "Integration with literature sources"
+        ],
+        "must_not_implement": [
+          "Domain-specific citation formats",
+          "External citation databases",
+          "Custom citation styles"
+        ],
+        "out_of_scope_check": "BLOCK if implementing domain-specific citation logic"
+      },
+      "documentation_context": {
+        "primary_docs": [
+          {
+            "url": "https://www.bibtex.org/format/",
+            "version": "2024",
+            "last_verified": "2025-11-09"
+          }
+        ],
+        "version_locks": {
+          "bibtex-parser": "0.2.0",
+          "citation-js": "0.6.0"
+        },
+        "forbidden_patterns": ["Hardcoded citation formats", "Assumed reference sources"]
+      },
+      "hallucination_guards": {
+        "verify_before_use": ["BibTeX format specifications", "Citation parsing methods", "Reference validation algorithms"],
+        "forbidden_assumptions": ["No specific citation styles assumed", "No reference sources assumed"]
+      },
+      "context_drift_prevention": {
+        "task_boundaries": "This task ONLY implements generic citation management infrastructure",
+        "refer_to_other_tasks": {
+          "LaTeX generation": "T-PUB-001",
+          "Literature integration": "T-WF-001"
+        },
+        "max_file_changes": 4,
+        "if_exceeds": "STOP and verify scope"
+      },
+      "milestone_metadata": {
+        "milestone_id": "M4",
+        "milestone_name": "Publication System",
+        "is_milestone_critical": true,
+        "can_defer": false,
+        "milestone_position": 4
+      }
+    },
+    {
+      "id": "T-VAL-M4",
+      "title": "Validate Milestone 4: Publication System",
+      "type": "validation",
+      "milestone_id": "M4",
+      "validation_steps": [
+        "Test LaTeX document generation",
+        "Verify figure quality and formatting",
+        "Validate citation management",
+        "Generate complete sample paper",
+        "Run publication quality checks",
+        "PAUSE for human review"
+      ],
+      "success_criteria": {
+        "documents_compile_successfully": true,
+        "figures_meet_standards": true,
+        "citations_formatted_correctly": true,
+        "quality_checks_pass": true,
+        "end_to_end_workflow_works": true
+      },
+      "rollback_point": false
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M1",
+      "name": "Foundation Infrastructure",
+      "description": "Core agent system, commands, state management, and quality control framework",
+      "tasks": ["T-ARCH-001", "T-ARCH-002", "T-ARCH-003", "T-ARCH-004"],
+      "launch_ready": true,
+      "validation_criteria": {
+        "agent_system_launches": "Agent hierarchy initializes and coordinates",
+        "commands_process_correctly": "All 10 research commands parse and route",
+        "state_persistence_works": "Checkpoints create, save, and restore",
+        "quality_control_operational": "Slop detection pipeline activates",
+        "no_critical_errors": "All systems start without blocking errors"
+      },
+      "human_review_required": true,
+      "rollback_point": true
+    },
+    {
+      "id": "M2",
+      "name": "Research Workflow Engine",
+      "description": "End-to-end research pipeline from ideation through analysis",
+      "tasks": ["T-WF-001", "T-WF-002", "T-WF-003", "T-WF-004", "T-WF-005"],
+      "launch_ready": true,
+      "validation_criteria": {
+        "complete_workflow_executes": "Research runs from problem to results",
+        "hypotheses_generated": "Testable hypotheses created with novelty scores",
+        "experiments_run_safely": "Code executes in sandboxed environments",
+        "results_collected_analyzed": "Data captured and statistical analysis performed",
+        "quality_checks_pass": "All validation gates passed"
+      },
+      "human_review_required": true,
+      "rollback_point": true
+    },
+    {
+      "id": "M3",
+      "name": "Quality & Validation",
+      "description": "Advanced quality control and reproducibility validation",
+      "tasks": ["T-QA-001", "T-QA-002", "T-QA-003", "T-QA-004"],
+      "launch_ready": true,
+      "validation_criteria": {
+        "validation_accuracy_high": "Multi-LLM consensus >90% agreement",
+        "slop_detection_effective": "False negative rate <2%",
+        "reproducibility_works": "100% experiment replication success",
+        "review_system_operational": "Multi-agent critiques identify flaws",
+        "quality_metrics_met": "All quality thresholds achieved"
+      },
+      "human_review_required": true,
+      "rollback_point": true
+    },
+    {
+      "id": "M4",
+      "name": "Publication System",
+      "description": "LaTeX document generation with figures and citations",
+      "tasks": ["T-PUB-001", "T-PUB-002", "T-PUB-003"],
+      "launch_ready": true,
+      "validation_criteria": {
+        "documents_compile_successfully": "LaTeX compiles without errors",
+        "figures_meet_standards": "Publication quality visualizations",
+        "citations_formatted_correctly": "BibTeX references properly formatted",
+        "quality_checks_pass": "Slop detection <2% on generated content",
+        "end_to_end_workflow_works": "Complete research-to-publication pipeline"
+      },
+      "human_review_required": true,
+      "rollback_point": false
+    }
+  ],
+  "milestone_strategy": {
+    "max_tasks_per_milestone": 5,
+    "min_tasks_per_milestone": 3,
+    "validation_frequency": "every_milestone",
+    "human_review_points": ["M1", "M2", "M3", "M4"],
+    "rollback_strategy": "checkpoint_based_with_full_recovery"
+  },
+  "scope_enforcement": {
+    "max_tasks_per_feature": 8,
+    "total_tasks": 23,
+    "complexity_score": "high",
+    "anti_creep_rules": [
+      "No domain-specific logic in infrastructure tasks",
+      "No external dependencies without approval",
+      "No features beyond PRD without explicit defer",
+      "No task exceeds 6 file changes",
+      "All features trace to PRD lines"
+    ]
+  }
+}

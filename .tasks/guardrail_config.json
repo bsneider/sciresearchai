@@ -1,0 +1,137 @@
+{
+  "protection_hooks": {
+    "pre_task": [
+      {
+        "name": "scope_validation",
+        "description": "Verify task remains within defined boundaries",
+        "implementation": "check_scope_boundaries(task_definition, current_changes)"
+      },
+      {
+        "name": "dependency_check",
+        "description": "Ensure task dependencies are satisfied",
+        "implementation": "verify_task_dependencies(task_id, completed_tasks)"
+      },
+      {
+        "name": "resource_limit_check",
+        "description": "Validate task doesn't exceed resource limits",
+        "implementation": "check_resource_constraints(task_scope)"
+      }
+    ],
+    "during_task": [
+      {
+        "name": "file_change_monitor",
+        "description": "Track file changes and prevent scope creep",
+        "implementation": "monitor_file_changes(max_files: task.max_file_changes)"
+      },
+      {
+        "name": "api_call_validator",
+        "description": "Validate external API calls against approved list",
+        "implementation": "verify_api_approval(endpoint, method)"
+      },
+      {
+        "name": "code_quality_check",
+        "description": "Real-time code quality and security scanning",
+        "implementation": "scan_code_quality_and_security(changed_files)"
+      }
+    ],
+    "post_task": [
+      {
+        "name": "completion_verification",
+        "description": "Ensure all deliverables are complete",
+        "implementation": "verify_task_deliverables(task_id, artifacts_created)"
+      },
+      {
+        "name": "quality_gate_validation",
+        "description": "Check quality criteria are met",
+        "implementation": "validate_quality_gates(task_outputs)"
+      },
+      {
+        "name": "rollback_point_creation",
+        "description": "Create rollback checkpoint if task is critical",
+        "implementation": "create_rollback_checkpoint(task_state)"
+      }
+    ]
+  },
+  "scope_creep_detection": {
+    "max_files_per_task": 6,
+    "max_lines_per_file": 500,
+    "forbidden_keywords": [
+      "TODO: implement domain specific",
+      "HACK: temporary bypass",
+      "FIXME: remove before production",
+      "hardcode",
+      "magic number"
+    ],
+    "forbidden_imports": [
+      "*-beta",
+      "*-alpha",
+      "*-rc",
+      "*-experimental",
+      "devDependencies"
+    ],
+    "blocked_patterns": [
+      "console\\.log\\(.*\\)",
+      "debugger;",
+      "eval\\(",
+      "setTimeout\\(.*\\)",
+      "setInterval\\(.*\\)"
+    ]
+  },
+  "quality_thresholds": {
+    "code_coverage_min": 80,
+    "complexity_max": 10,
+    "duplicate_code_max": 3,
+    "security_issues_max": 0,
+    "performance_score_min": 8
+  },
+  "milestone_gates": {
+    "M1": {
+      "required_tests": ["agent_hierarchy", "command_system", "state_management", "quality_control"],
+      "min_coverage": 85,
+      "security_scan_required": true,
+      "performance_baseline_required": true
+    },
+    "M2": {
+      "required_tests": ["end_to_end_research", "hypothesis_generation", "experiment_execution", "result_analysis"],
+      "min_coverage": 85,
+      "integration_tests_required": true,
+      "reproducibility_check_required": true
+    },
+    "M3": {
+      "required_tests": ["multi_llm_validation", "slop_detection", "reproducibility_validation", "multi_agent_review"],
+      "min_coverage": 90,
+      "quality_metrics_required": true,
+      "human_approval_required": true
+    },
+    "M4": {
+      "required_tests": ["latex_generation", "figure_creation", "citation_management", "publication_quality"],
+      "min_coverage": 85,
+      "output_validation_required": true,
+      "format_compliance_required": true
+    }
+  },
+  "rollback_strategy": {
+    "checkpoint_frequency": "every_task",
+    "retention_policy": "keep_all_milestones",
+    "recovery_options": [
+      "rollback_to_previous_task",
+      "rollback_to_milestone_start",
+      "rollback_to_known_good_state"
+    ],
+    "validation_after_rollback": true
+  },
+  "human_integration": {
+    "required_review_points": [
+      "after_milestone_completion",
+      "before_feature_deferral",
+      "on_scope_violation",
+      "on_quality_gate_failure"
+    ],
+    "review_criteria": {
+      "technical_correctness": "Code follows best practices and is error-free",
+      "scope_compliance": "Implementation matches task boundaries exactly",
+      "quality_standards": "Meets all defined quality thresholds",
+      "prd_alignment": "Feature traces correctly to PRD requirements"
+    }
+  }
+}
