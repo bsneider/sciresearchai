@@ -32,6 +32,70 @@ This innovation assessment evaluates 12 novel research hypotheses generated from
 - **H009:** Clinical Research + Blockchain Technology + Regulatory Science
 - **H010:** Neuroscience + Cardiology + Bioengineering
 
+## Revised Scoring Methodology — Skeptical Scientific Method
+
+The original scores in this document emphasized novelty and potential impact. To align the assessment with the scientific method's emphasis on falsifiability and critical testing, we introduce a revised, skepticism-forward scoring rubric. This rubric is designed to foreground why an idea might fail by explicitly scoring evidence, assumptions, and failure modes.
+
+Principles
+- Prioritize empirical support and reproducibility over speculative upside.
+- Score hypotheses by both upside (impact if true) and downside/risk (likelihood of failure or untestability).
+- Penalize ideas that rely on weak or untested assumptions, lack plausible mechanisms, or present intractable regulatory/ethical barriers.
+
+Scoring dimensions (0–10 each) and weights (weighted sum -> 0–10 scale):
+- Evidence Strength (weight 0.30): direct empirical support, prior studies, meta-analytic evidence.
+- Plausibility & Mechanistic Basis (weight 0.25): mechanistic rationale, causal pathways, biological plausibility.
+- Technical Feasibility & Scalability (weight 0.15): engineering and operational feasibility at scale.
+- Reproducibility & Robustness (weight 0.10): likelihood results replicate across datasets and contexts.
+- Regulatory / Ethical / Adoption Risk (weight 0.10): foreseeable regulatory hurdles, ethical constraints, adoption barriers.
+- Potential Impact if True (weight 0.10): magnitude of benefit if hypothesis is validated.
+
+Scoring rules / adjustments:
+- Weighted score = sum(dimension_score * weight). Report on 0–10 scale.
+- Apply an explicit "untestable/unfalsifiable" penalty: if a hypothesis is poorly specified or not directly testable within a reasonable timeframe, subtract 1.0–3.0 points depending on severity.
+- Document key assumptions and top 3 failure modes for each hypothesis. If a single failure mode would invalidate the entire approach, down-weight Plausibility by 30–50% before computing the weighted sum.
+
+How to use this rubric quickly:
+1. For each hypothesis, fill scores 0–10 for the six dimensions.
+2. List 2–3 core assumptions and 3 biggest failure modes.
+3. If any failure mode is critical (single point of failure), reduce Plausibility by 40% before aggregation.
+4. Compute weighted score and report both the weighted score and the assumption/failure-mode notes.
+
+Example re-scorings (demonstrating more skepticism):
+
+- H001: Integrated Digital Health Ecosystem (original: 10/10)
+   - Evidence Strength: 6 (some pilot systems and published trials, but mixed generalizability)
+   - Plausibility & Mechanistic Basis: 6 (plausible but depends on many interoperable systems)
+   - Technical Feasibility & Scalability: 5 (integration complexity is high)
+   - Reproducibility & Robustness: 4 (real-world deployments vary widely)
+   - Regulatory/Ethical/Adoption Risk: 3 (data governance and liability are significant)
+   - Potential Impact if True: 10
+   - Weighted score = 6*0.30 + 6*0.25 + 5*0.15 + 4*0.10 + 3*0.10 + 10*0.10 = 1.8+1.5+0.75+0.4+0.3+1.0 = 5.75 -> 5.8/10
+   - Notes: integration and governance are single points of failure; the high original score reflected upside but underweighted system risk.
+
+- H009: Blockchain-Based Clinical Trial Platform (original: 10/10)
+   - Evidence Strength: 3 (mostly proofs-of-concept and limited pilots)
+   - Plausibility & Mechanistic Basis: 5 (blockchain can provide integrity, but it does not solve trial recruitment or clinical validity)
+   - Technical Feasibility & Scalability: 4 (scalability and UX are nontrivial)
+   - Reproducibility & Robustness: 3 (few mature deployments)
+   - Regulatory/Ethical/Adoption Risk: 2 (regulatory acceptance is uncertain)
+   - Potential Impact if True: 10
+   - Weighted score = 3*0.30 + 5*0.25 + 4*0.15 + 3*0.10 + 2*0.10 + 10*0.10 = 0.9+1.25+0.6+0.3+0.2+1.0 = 4.25 -> 4.3/10
+   - Notes: regulatory acceptance and recruitment dynamics are major untested risks; blockchain solves some technical trust problems but not core clinical challenges.
+
+- H010: Neural Interface for AF Therapy (original: 10/10)
+   - Evidence Strength: 2 (very early preclinical/engineering work)
+   - Plausibility & Mechanistic Basis: 4 (mechanistic rationale exists but specificity and long-term safety are unknown)
+   - Technical Feasibility & Scalability: 2 (device development and safety testing are high-barrier)
+   - Reproducibility & Robustness: 2 (preclinical variability and translation risk)
+   - Regulatory/Ethical/Adoption Risk: 2 (significant safety/regulatory hurdles)
+   - Potential Impact if True: 10
+   - Weighted score = 2*0.30 + 4*0.25 + 2*0.15 + 2*0.10 + 2*0.10 + 10*0.10 = 0.6+1.0+0.3+0.2+0.2+1.0 = 3.3 -> 3.3/10
+   - Notes: very high translational risk; requires long-term safety data and a high investment timeline.
+
+Interpretation: Using this skepticism-forward rubric dramatically lowers the headline scores for highly speculative, high-upside ideas, reflecting the realistic probability that many will fail or be delayed. This does not mean such ideas should be discarded; rather, it clarifies risk and prioritizes where early, low-cost tests can most reduce uncertainty.
+
+Recommendation: Re-evaluate all hypotheses in this document using the rubric above and include a short assumptions/failure-modes section for each. For portfolio decisions, prioritize a mix of (a) lower-risk, medium-impact ideas with solid evidence and (b) small bets on high-impact, high-risk ideas where early experiments can quickly invalidate or support the hypothesis.
+
 ## Innovation Potential Assessment
 
 ### High-Innovation Hypotheses (Novelty Score ≥9)
