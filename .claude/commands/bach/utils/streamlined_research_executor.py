@@ -306,12 +306,10 @@ class StreamlinedResearchExecutor:
         return recommendations
 
     def save_results(self, output_file: Optional[str] = None) -> str:
-        """Save results to a single, clean file."""
+        """Save results to a single, clean file (only if explicitly requested)."""
         if output_file is None:
-            # Clean topic name for filename
-            safe_topic = self.research_topic.replace(" ", "_").replace("/", "_")[:50]
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            output_file = f"research_outputs/{safe_topic}_results_{timestamp}.json"
+            # Don't save by default - let the main Bach class handle organized saving
+            return "No file saved (handled by main Bach class)"
 
         # Ensure directory exists
         os.makedirs(os.path.dirname(output_file), exist_ok=True)

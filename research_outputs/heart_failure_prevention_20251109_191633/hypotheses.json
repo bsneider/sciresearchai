@@ -1,0 +1,43 @@
+{
+  "topic": "heart failure prevention",
+  "date": "2025-11-09T19:16:32.992899",
+  "hypotheses": [
+    {
+      "id": "H001",
+      "title": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clini...",
+      "statement": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clinical practice",
+      "gap_addressed": "Gap between guidelines and real-world implementation",
+      "type": "implementation",
+      "evidence_level": "Strong",
+      "feasibility": "Medium",
+      "impact_potential": "High",
+      "weighted_score": 7.4
+    },
+    {
+      "id": "H002",
+      "title": "AI-powered-enabled risk stratification will achieve improved prediction accuracy in patient populati...",
+      "statement": "AI-powered-enabled risk stratification will achieve improved prediction accuracy in patient populations",
+      "gap_addressed": "Limited research in diverse populations",
+      "type": "technology",
+      "evidence_level": "Strong",
+      "feasibility": "Medium",
+      "impact_potential": "High",
+      "weighted_score": 7.4
+    }
+  ],
+  "summary": {
+    "total_hypotheses": 2,
+    "high_scoring": 2,
+    "top_hypothesis": {
+      "id": "H001",
+      "title": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clini...",
+      "statement": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clinical practice",
+      "gap_addressed": "Gap between guidelines and real-world implementation",
+      "type": "implementation",
+      "evidence_level": "Strong",
+      "feasibility": "Medium",
+      "impact_potential": "High",
+      "weighted_score": 7.4
+    }
+  }
+}

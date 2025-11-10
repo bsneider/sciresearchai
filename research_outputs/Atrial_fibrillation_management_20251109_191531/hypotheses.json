@@ -1,0 +1,32 @@
+{
+  "topic": "Atrial fibrillation management",
+  "date": "2025-11-09T19:15:31.191084",
+  "hypotheses": [
+    {
+      "id": "H001",
+      "title": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clini...",
+      "statement": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clinical practice",
+      "gap_addressed": "Gap between guidelines and real-world implementation",
+      "type": "implementation",
+      "evidence_level": "Strong",
+      "feasibility": "High",
+      "impact_potential": "High",
+      "weighted_score": 7.9
+    }
+  ],
+  "summary": {
+    "total_hypotheses": 1,
+    "high_scoring": 1,
+    "top_hypothesis": {
+      "id": "H001",
+      "title": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clini...",
+      "statement": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clinical practice",
+      "gap_addressed": "Gap between guidelines and real-world implementation",
+      "type": "implementation",
+      "evidence_level": "Strong",
+      "feasibility": "High",
+      "impact_potential": "High",
+      "weighted_score": 7.9
+    }
+  }
+}

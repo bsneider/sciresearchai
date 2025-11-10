@@ -1,0 +1,229 @@
+{
+  "topic": "Atrial fibrillation management",
+  "date": "2025-11-09T19:15:31.191084",
+  "papers": [
+    {
+      "id": "38717433.0",
+      "pmid": "38717433.0",
+      "title": "Cross-Cutting mHealth Behavior Change Techniques to Support Treatment Adherence and Self-Management of Complex Medical Conditions: Systematic Review.",
+      "abstract": "Mobile health (mHealth) interventions have immense potential to support disease self-management for people with complex medical conditions following treatment regimens that involve taking medicine and other self-management activities. However, there is no consensus on what discrete behavior change techniques (BCTs) should be used in an effective adherence and self-management-promoting mHealth solution for any chronic illness. Reviewing the extant literature to identify effective, cross-cutting BCTs in mHealth interventions for adherence and self-management promotion could help accelerate the development, evaluation, and dissemination of behavior change interventions with potential generalizability across complex medical conditions. This study aimed to identify cross-cutting, mHealth-based BCTs to incorporate into effective mHealth adherence and self-management interventions for people with complex medical conditions, by systematically reviewing the literature across chronic medical conditions with similar adherence and self-management demands. A registered systematic review was conducted to identify published evaluations of mHealth adherence and self-management interventions for chronic medical conditions with complex adherence and self-management demands. The methodological characteristics and BCTs in each study were extracted using a standard data collection form. A total of 122 studies were reviewed; the majority involved people with type 2 diabetes (28/122, 23%), asthma (27/122, 22%), and type 1 diabetes (19/122, 16%). mHealth interventions rated as having a positive outcome on adherence and self-management used more BCTs (mean 4.95, SD 2.56) than interventions with no impact on outcomes (mean 3.57, SD 1.95) or those that used >1 outcome measure or analytic approach (mean 3.90, SD 1.93; P=.02). The following BCTs were associated with positive outcomes: self-monitoring outcomes of behavior (39/59, 66%), feedback on outcomes of behavior (34/59, 58%), self-monitoring of behavior (34/59, 58%), feedback on behavior (29/59, 49%), credible source (24/59, 41%), and goal setting (behavior; 14/59, 24%). In adult-only samples, prompts and cues were associated with positive outcomes (34/45, 76%). In adolescent and young adult samples, information about health consequences (1/4, 25%), problem-solving (1/4, 25%), and material reward (behavior; 2/4, 50%) were associated with positive outcomes. In interventions explicitly targeting medicine taking, prompts and cues (25/33, 76%) and credible source (13/33, 39%) were associated with positive outcomes. In interventions focused on self-management and other adherence targets, instruction on how to perform the behavior (8/26, 31%), goal setting (behavior; 8/26, 31%), and action planning (5/26, 19%) were associated with positive outcomes. To support adherence and self-management in people with complex medical conditions, mHealth tools should purposefully incorporate effective and developmentally appropriate BCTs. A cross-cutting approach to BCT selection could accelerate the development of much-needed mHealth interventions for target populations, although mHealth intervention developers should continue to consider the unique needs of the target population when designing these tools.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:15:31.251670",
+      "authors": [
+        {
+          "name": "Cyd K Eaton; Emma McWilliams; Dana Yablon; Irem Kesim; Renee Ge; Karissa Mirus; Takeera Sconiers; Alfred Donkoh; Melanie Lawrence; Cynthia George; Mary Leigh Morrison; Emily Muther; Gabriela R Oates; Meghana Sathe; Gregory S Sawicki; Carolyn Snell; Kristin Riekert"
+        }
+      ],
+      "year": 2024,
+      "journal": "JMIR mHealth and uHealth",
+      "venue": "JMIR mHealth and uHealth",
+      "doi": "10.2196/49024",
+      "url": "https://doi.org/10.2196/49024",
+      "quality_score": 4.333333333333333
+    },
+    {
+      "id": "37470711.0",
+      "pmid": "37470711.0",
+      "title": "Bidirectional processes linking social determinants of health and pediatric sickle cell anemia management: A qualitative study.",
+      "abstract": "Children with sickle cell anemia (SCA) have substantial medical needs and more unmet basic needs than children with other medical conditions. Despite a recent focus on social determinants of health (SDoH), there remains an incomplete understanding of the processes linking SDoH and disease management, particularly for youth with SCA. This study elucidated these processes and identified ways to mitigate deleterious effects of adverse SDoH on SCA management. Parents/primary caregivers (N = 27) of children with SCA (≤12 years old) participated in semi-structured interviews regarding SCA management and SDoH and completed quantitative measures of basic needs. Qualitative data were systematically coded and analyzed using applied thematic analysis. Quantitative data were presented descriptively. Three qualitative themes were identified. First, SCA management is bidirectionally linked with the social environment, whereby challenges of SCA management can hinder basic needs from being met, and unmet basic needs and financial hardship hinder SCA management. Second, due to limited resources, parents/caregivers are faced with difficult choices between prioritizing basic needs versus SCA management. Third, addressing material, emotional, and informational needs may improve SCA management. Quantitatively, 73% of families endorsed ≥1 basic need, including food insecurity (42%), housing instability (62%), and/or energy insecurity 19% (vs. 20%). Despite documented associations, there remains a poor understanding of the processes linking SDoH and health. Findings underscore how day-to-day conditions undermine the management of SCA treatments, symptoms, and complications, limiting treatment effectiveness. Understanding these processes may inform family-centered, health equity interventions and policies to improve living conditions, disease management, and health outcomes.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:15:31.251718",
+      "authors": [
+        {
+          "name": "Kristin A Long; Ariel O Blakey; Christina M Amaro; Jenna S Eilenberg; Annelise Brochier; Arvin Garg; Mari-Lynn Drainoni; Farzana Pashankar; Erica B Esrick; Patricia L Kavanagh"
+        }
+      ],
+      "year": 2023,
+      "journal": "Pediatric blood & cancer",
+      "venue": "Pediatric blood & cancer",
+      "doi": "10.1002/pbc.30539",
+      "url": "https://doi.org/10.1002/pbc.30539",
+      "quality_score": 4.0
+    },
+    {
+      "id": "36928609.0",
+      "pmid": "36928609.0",
+      "title": "Impact of Cerebral Microbleeds in Stroke Patients with Atrial Fibrillation.",
+      "abstract": "Cerebral microbleeds are associated with the risks of ischemic stroke and intracranial hemorrhage, causing clinical dilemmas for antithrombotic treatment decisions. We aimed to evaluate the risks of intracranial hemorrhage and ischemic stroke associated with microbleeds in patients with atrial fibrillation treated with vitamin K antagonists, direct oral anticoagulants, antiplatelets, and combination therapy (i.e. concurrent oral anticoagulant and antiplatelet). We included patients with documented atrial fibrillation from the pooled individual patient data analysis by the Microbleeds International Collaborative Network. Risks of subsequent intracranial hemorrhage and ischemic stroke were compared between patients with and without microbleeds, stratified by antithrombotic use. A total of 7,839 patients were included. The presence of microbleeds was associated with an increased relative risk of intracranial hemorrhage (adjusted hazard ratio [aHR] = 2.74, 95% confidence interval = 1.76-4.26) and ischemic stroke (aHR = 1.29, 95% confidence interval = 1.04-1.59). For the entire cohort, the absolute incidence of ischemic stroke was higher than intracranial hemorrhage regardless of microbleed burden. However, for the subgroup of patients taking combination of anticoagulant and antiplatelet therapy, the absolute risk of intracranial hemorrhage exceeded that of ischemic stroke in those with 2 to 4 microbleeds (25 vs 12 per 1,000 patient-years) and ≥ 11 microbleeds (94 vs 48 per 1,000 patient-years). Patients with atrial fibrillation and high burden of microbleeds receiving combination therapy have a tendency of higher rate of intracranial hemorrhage than ischemic stroke, with potential for net harm. Further studies are needed to help optimize stroke preventive strategies in this high-risk group. ANN NEUROL 2023;94:61-74.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:15:31.251755",
+      "authors": [
+        {
+          "name": "Yannie Soo; Annaelle Zietz; Brian Yiu; Vincent C T Mok; Alexandros A Polymeris; David Seiffge; Gareth Ambler; Duncan Wilson; Thomas Wai Hong Leung; Suk Fung Tsang; Winnie Chu; Jill Abrigo; Cyrus Cheng; Keon-Joo Lee; Jae-Sung Lim; Masayuki Shiozawa; Masatoshi Koga; Hugues Chabriat; Michael Hennerici; Yuen Kwun Wong; Henry Mak; Roger Collet; Shigeru Inamura; Kazuhisa Yoshifuji; Ethem Murat Arsava; Solveig Horstmann; Jan Purrucker; Bonnie Y K Lam; Adrian Wong; Young Dae Kim; Tae-Jin Song; Robin Lemmens; Sebastian Eppinger; Thomas Gattringer; Ender Uysal; Derya Selçuk Demirelli; Natan M Bornstein; Einor Ben Assayag; Hen Hallevi; Jeremy Molad; Masashi Nishihara; Jun Tanaka; Shelagh B Coutts; L Jaap Kappelle; Rustam Al-Shahi Salman; Rolf Jager; Gregory Y H Lip; Martina B Goeldlin; Leonidas D Panos; Jean-Louis Mas; Laurence Legrand; Chris Karayiannis; Thanh Phan; Maximilian Bellut; Francesca Chappell; Stephen Makin; Derek Hayden; David Williams; Dianne H K van Dam-Nolen; Paul J Nederkoorn; Carmen Barbato; Simone Browning; Kim Wiegertjes; Anil Man Tuladhar; Anne-Marie Mendyk; Sebastian Köhler; Robert van Oostenburgge; Ying Zhou; Chao Xu; Saima Hilal; Bibek Gyanwali; Christopher Chen; Min Lou; Julie Staals; Regis Bordet; Nagaendran Kandiah; Frank-Erik de Leeuw; Robert Simister; Jeroen Hendrikse; Joanna Wardlaw; Peter Kelly; Felix Fluri; Velandai Srikanth; David Calvet; Simon Jung; Vincent I H Kwa; Eric E Smith; Hideo Hara; Yusuke Yakushiji; Dilek Necioglu Orken; Franz Fazekas; Vincent Thijs; Ji-Hoe Heo; Roland Veltkamp; Hakan Ay; Toshio Imaizumi; Kui Kai Lau; Eric Jouvent; Kazunori Toyoda; Sohei Yoshimura; Hee-Joon Bae; Joan Martí-Fàbregas; Luis Prats-Sánchez; Philippe Lyrer; Jonathan Best; David Werring; Stefan T Engelter; Nils Peters"
+        }
+      ],
+      "year": 2023,
+      "journal": "Annals of neurology",
+      "venue": "Annals of neurology",
+      "doi": "10.1002/ana.26642",
+      "url": "https://doi.org/10.1002/ana.26642",
+      "quality_score": 3.3333333333333335
+    },
+    {
+      "id": "40326781.0",
+      "pmid": "40326781.0",
+      "title": "A multidisciplinary team approach in the 2024 ESC guidelines for the management of patients with Atrial Fibrillation - what is the role of nurses and allied professionals? A Clinical Consensus Statement of the Association of Cardiovascular Nursing and Allied Professions (ACNAP) and the European Heart Rhythm Association (EHRA) of the ESC.",
+      "abstract": "The complexity of atrial fibrillation (AF) requires an integrated, multifaceted, multidisciplinary, and holistic team approach to optimize the management of AF patients. Active engagement of patients and involvement of nurses and various allied professionals (AP) and a strong collaboration with physicians is crucial in this respect as indicated by the 2024 European Society of Cardiology (ESC) Guidelines on the management of AF. This is also reflected in these latest guidelines by the concept of AF-CARE, which emphasizes the importance of including the patient, carers, and various healthcare professionals. In this Clinical Consensus Statement, the role of nurses and APs is highlighted and includes optimal approaches on their involvement in the implementation and execution for these guideline recommendations in daily clinical practice. Moreover, additional detail will be provided to the key components and their requirements to allow this integrated multidisciplinary care to be implemented alongside the perspective of the patient. This Statement also examines the challenges and opportunities in relation to their application to clinical practice and how optimal multidisciplinary care can be implemented.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:15:31.251788",
+      "authors": [
+        {
+          "name": "Lien Desteghe; Geraldine Lee; Sotiris Antoniou; Jose L Merino; Lis Neubeck; Catherine Ross; Emma Svennberg; Jeroen M Hendriks"
+        }
+      ],
+      "year": 2025,
+      "journal": "European journal of cardiovascular nursing",
+      "venue": "European journal of cardiovascular nursing",
+      "doi": "10.1093/eurjcn/zvaf083",
+      "url": "https://doi.org/10.1093/eurjcn/zvaf083",
+      "quality_score": 3.3333333333333335
+    },
+    {
+      "id": "34169176.0",
+      "pmid": "34169176.0",
+      "title": "Stay in treatment: Predicting dropout from pediatric weight management study protocol.",
+      "abstract": "Childhood obesity is a serious public health concern. Multidisciplinary pediatric weight management programs have been deemed effective. However, effectiveness of these programs is impacted by attrition, limiting health benefits to children, and inefficiently utilizing scarce resources. We have developed a model (the Outcomes Forecasting System, OFS) that isolates variables associated with attrition from pediatric weight management, with the potential to forecast participant dropout. In Aim 1, we will increase the power and precision of the OFS and then validate the model through the consistent acquisition of key patient, family, and treatment data, from three different weight management sites. In Aim 2, external validity will be established through the application of the OFS at a fourth pediatric weight management program. Aim 3 will be a pilot clinical trial, incorporating an intervention built on the results of Aims 1 and 2 and utilizing the OFS to reduce attrition. A greater understanding of the patient, family, and disease-specific factors that predict dropout from pediatric weight management can be utilized to prevent attrition. The goal of the current study is to refine the OFS to a level of precision and efficiency to be a valuable tool to any weight management program. By identifying the most pertinent factors driving attrition across weight management sites, new avenues for treatment will be identified. This study will result in a valuable forecasting tool that will be applicable for diverse programs and populations, decrease program costs, and improve patient retention, adherence, and outcomes. NCT04364282.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:15:31.251820",
+      "authors": [
+        {
+          "name": "Diane C Berry; Erinn T Rhodes; Sarah Hampl; Caroline Blackwell Young; Gail Cohen; Ihuoma Eneli; Amy Fleischman; Edward Ip; Brooke Sweeney; Timothy T Houle; Joseph Skelton"
+        }
+      ],
+      "year": 2021,
+      "journal": "Contemporary clinical trials communications",
+      "venue": "Contemporary clinical trials communications",
+      "doi": "10.1016/j.conctc.2021.100799",
+      "url": "https://doi.org/10.1016/j.conctc.2021.100799",
+      "quality_score": 3.0
+    },
+    {
+      "id": "37855681.0",
+      "pmid": "37855681.0",
+      "title": "Costs of Care for Operative and Nonoperative Management of Emergency General Surgery Conditions.",
+      "abstract": "Many emergency general surgery (EGS) conditions can be managed operatively or nonoperatively, with outcomes that vary by diagnosis. We hypothesized that operative management would lead to higher in-hospital costs but to cost savings over time. EGS conditions account for $28 billion in health care costs in the United States annually. Compared with scheduled surgery, patients who undergo emergency surgery are at increased risk of complications, readmissions, and death, with accompanying costs of care that are up to 50% higher than elective surgery. Our prior work demonstrated that operative management had variable impacts on clinical outcomes depending on the EGS condition. This was a nationwide, retrospective study using fee-for-service Medicare claims data. We included patients 65.5 years of age or older with a principal diagnosis for an EGS condition 7/1/2015-6/30/2018. EGS conditions were categorized as: colorectal, general abdominal, hepatopancreaticobiliary (HPB), intestinal obstruction, and upper gastrointestinal. We used near-far matching with a preference-based instrumental variable to adjust for confounding and selection bias. Outcomes included Medicare payments for the index hospitalization and at 30, 90, and 180 days. Of 507,677 patients, 30.6% received an operation. For HPB conditions, costs for operative management were initially higher but became equivalent at 90 and 180 days. For all others, operative management was associated with higher inpatient costs, which persisted, though narrowed, over time. Out-of-pocket costs were nearly equivalent for operative and nonoperative management. Compared with nonoperative management, costs were higher or equivalent for operative management of EGS conditions through 180 days, which could impact decision-making for clinicians, patients, and health systems in situations where clinical outcomes are similar.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:15:31.251849",
+      "authors": [
+        {
+          "name": "Elinore J Kaufman; Christopher J Wirtalla; Luke J Keele; Mark D Neuman; Claire B Rosen; Solomiya Syvyk; Justin Hatchimonji; Sara Ginzberg; Ari Friedman; Sanford E Roberts; Rachel R Kelz"
+        }
+      ],
+      "year": 2024,
+      "journal": "Annals of surgery",
+      "venue": "Annals of surgery",
+      "doi": "10.1097/SLA.0000000000006134",
+      "url": "https://doi.org/10.1097/SLA.0000000000006134",
+      "quality_score": 3.0
+    },
+    {
+      "id": "33112018.0",
+      "pmid": "33112018.0",
+      "title": "Difference in the prevalence of intracardiac thrombus on the first presentation of atrial fibrillation versus flutter in the pediatric and congenital heart disease population.",
+      "abstract": "Guidelines recommend trans-esophageal echocardiography (TEE) for patients with atrial fibrillation (AF) or atrial flutter (AFL) for >48 h, due to risk of intracardiac thrombus formation. With growing evidence that AFL in adults with structurally normal hearts has less thrombogenic potential compared to AF, and the need for TEE questioned, we compared prevalence of intracardiac thrombus detected by TEE in pediatric and congenital heart disease (CHD) patients presenting in AF and AFL. Single-center, cross-sectional analysis for unique first-time presentations of patients for either AF, AFL, or intra-atrial reentrant tachycardia (IART) between 2000 and 2019. Patients were categorized by presenting arrhythmia (AF vs. AFL/IART), with the exclusion of other forms of atrial tachycardia, hemodynamic instability, chronic anti-coagulation before TEE, and presentation for a reason other than TEE examination for thrombus. A total of 201 patients had TEE with co-diagnosis of AF or AFL. Of these, 105 patients (29 AF, 76 AFL) met inclusion criteria, with no difference in age between AF (median 24.9 years; IQR 18.6-38.3 years) and AFL/IART (23.3 years; 15.4-38.4 years). The prevalence of thrombus in the entire cohort was 9.5%, with no difference between AF (13.8%) and AFL groups (7.9%), p = .46. Patients with thrombus demonstrated no difference in age, systemic ventricular function, cardiac complexity, or CHADS2/CHA2DS2VASc score at presentation. The risk for intracardiac thrombus is high in the pediatric and CHD population, with no apparent distinguishing factors to warrant a change in the recommendations for TEE, with all levels of cardiac complexity being at risk for clot.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:15:31.251879",
+      "authors": [
+        {
+          "name": "Omar Meziab; Luciana Marcondes; Kevin G Friedman; Edward T O'Leary; Michelle Gurvitz; Christina J VanderPluym; Edward P Walsh; John K Triedman; Douglas Y Mah"
+        }
+      ],
+      "year": 2020,
+      "journal": "Journal of cardiovascular electrophysiology",
+      "venue": "Journal of cardiovascular electrophysiology",
+      "doi": "10.1111/jce.14791",
+      "url": "https://doi.org/10.1111/jce.14791",
+      "quality_score": 3.0
+    },
+    {
+      "id": "38562370.0",
+      "pmid": "38562370.0",
+      "title": "Prospective Evaluation of Dental Practitioners' Knowledge, Attitude, and Practice Toward Adult Dental Pain Management: A Cross-Sectional Multicenter Study.",
+      "abstract": "Background Dental pain among adults is a prevalent concern impacting oral health and quality of life. Dental pain management presents a significant challenge for dental practitioners in effectively alleviating patient discomfort. Among the medications available, non-steroidal anti-inflammatory drugs (NSAIDs) are considered the most effective analgesics in dental care. While numerous studies have been conducted to assess the role of antibiotics in dental practice, there is a scarcity of studies specifically examining the prescription patterns of analgesics. The primary aim of this study was to evaluate the knowledge, attitudes, and practices of dental practitioners (DPs) in India concerning the management of adult dental pain. Method This survey utilized a computer-aided questionnaire-based approach. A total of 110 dentists, including 16 from metropolitan areas and 84 from non-metropolitan cities practicing at dental healthcare setups, clinics, and hospitals, were interviewed as part of the survey. The participants comprised dental professionals specializing in prosthodontics, endodontics, orthodontics, periodontics, oral surgery, pedodontics, and oral medicine. The study was conducted between September 2022 and January 2023. Results The primary reason patients seek dental consultation, as reported by 95% of dentists, is tooth cavities, followed by tooth sensitivity, post-root canal treatment, and pulpitis. All surveyed dentists prescribed NSAIDs to their patients for managing dental pain. Local anesthesia (LA) was the second choice for 75% of dentists, prescribed to 23% of their patients. The primary use of NSAIDs was for patients experiencing severe pain and to manage post-procedure pain. Eighty percent of DPs recognized ketorolac as a fast-acting molecule, providing immediate relief within 10-15 minutes. Overall, analysis indicated that 98% of DPs are satisfied and 67% are extremely satisfied with ketorolac among monotherapies for dental pain management due to its quick onset of action, fast pain relief, and usefulness in post-surgical pain management. Conclusion NSAIDs like ketorolac, diclofenac, and aceclofenac were the preferred prescriptions for overall dental pain management. Dental practitioners associated ketorolac with fast pain relief, quick onset of action, and effectiveness in post-surgical pain management, emphasizing its lasting effects. The insights from the study contribute to enhancing dental pain management strategies.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:15:31.251908",
+      "authors": [
+        {
+          "name": "Kirti Shukla; Kranthi Kiran Pebbili; Seema V Bhagat; Rahul Rathod; Bhavesh P Kotak"
+        }
+      ],
+      "year": 2024,
+      "journal": "Cureus",
+      "venue": "Cureus",
+      "doi": "10.7759/cureus.55388",
+      "url": "https://doi.org/10.7759/cureus.55388",
+      "quality_score": 3.0
+    },
+    {
+      "id": "39401169.0",
+      "pmid": "39401169.0",
+      "title": "Intensity of Social Needs Case Management Services and Changes in Hospital and Emergency Department Use Among Adult Medicaid Beneficiaries.",
+      "abstract": "We identify the association between high- and low-intensity case management services on hospital and emergency department (ED) use among CommunityConnect patients. Social needs case management services vary in intensity, including the modality, workforce specialization, and maximum caseload. CommunityConnect is a social needs case management program implemented by Contra Costa Health, a county safety-net health system in California's San Francisco Bay Area. Due to the endogeneity of high-intensity services assigned to high-risk patients, we instrument for service intensity using the number of specialist case managers hired each month of enrollment. Zero-inflated negative binomial models with 2-stage residual inclusion estimated total and avoidable hospital admissions and ED visits 12 months post-enrollment for adult Medicaid beneficiaries enrolled between August 2017 and December 2018 (n = 19,782). Compared with low-intensity case management, high-intensity services were associated with a reduction in the incidence rates of inpatient admissions [incidence rate ratio (IRR) = 0.341, 95% CI: 0.106-1.102; P = 0.072], ED visits (IRR = 0.608, 95% CI: 0.188-1.965; P = 0.058), and avoidable ED visits (IRR = 0.579, 95% CI: 0.179-1.872; P = 0.091). No significant association was found between service intensity and the likelihood of an event being an excess zero. High-intensity social needs case management may be more effective than low-intensity service at reducing health care use for individuals with non-zero use, suggesting that intensive case management may be especially helpful in supporting discharge and transitions of care.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:15:31.251936",
+      "authors": [
+        {
+          "name": "Crystal Guo; Timothy T Brown; Hector P Rodriguez; Margae Knox; Mark D Fleming; Elizabeth A Hernandez; Daniel M Brown; Amanda L Brewster"
+        }
+      ],
+      "year": 2024,
+      "journal": "Medical care",
+      "venue": "Medical care",
+      "doi": "10.1097/MLR.0000000000002071",
+      "url": "https://doi.org/10.1097/MLR.0000000000002071",
+      "quality_score": 2.6666666666666665
+    },
+    {
+      "id": "38699880.0",
+      "pmid": "38699880.0",
+      "title": "Airway management in patients with suspected or confirmed cervical spine injury: Guidelines from the Difficult Airway Society (DAS), Association of Anaesthetists (AoA), British Society of Orthopaedic Anaesthetists (BSOA), Intensive Care Society (ICS), Neuro Anaesthesia and Critical Care Society (NACCS), Faculty of Prehospital Care and Royal College of Emergency Medicine (RCEM).",
+      "abstract": "There are concerns that airway management in patients with suspected or confirmed cervical spine injury may exacerbate an existing neurological deficit, cause a new spinal cord injury or be hazardous due to precautions to avoid neurological injury. However, there are no evidence-based guidelines for practicing clinicians to support safe and effective airway management in this setting. An expert multidisciplinary, multi-society working party conducted a systematic review of contemporary literature (January 2012-June 2022), followed by a three-round Delphi process to produce guidelines to improve airway management for patients with suspected or confirmed cervical spine injury. We included 67 articles in the systematic review, and successfully agreed 23 recommendations. Evidence supporting recommendations was generally modest, and only one moderate and two strong recommendations were made. Overall, recommendations highlight key principles and techniques for pre-oxygenation and facemask ventilation; supraglottic airway device use; tracheal intubation; adjuncts during tracheal intubation; cricoid force and external laryngeal manipulation; emergency front-of-neck airway access; awake tracheal intubation; and cervical spine immobilisation. We also signpost to recommendations on pre-hospital care, military settings and principles in human factors. It is hoped that the pragmatic approach to airway management made within these guidelines will improve the safety and efficacy of airway management in adult patients with suspected or confirmed cervical spine injury.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:15:31.251964",
+      "authors": [
+        {
+          "name": "Matthew D Wiles; Helen A Iliff; Katherine Brooks; Egidio J Da Silva; Mike Donnellon; Adrian Gardner; Matthew Harris; Caroline Leech; Steve Mathieu; Paul Moor; Lara Prisco; Kate Rivett; Frances Tait; Kariem El-Boghdadly"
+        }
+      ],
+      "year": 2024,
+      "journal": "Anaesthesia",
+      "venue": "Anaesthesia",
+      "doi": "10.1111/anae.16290",
+      "url": "https://doi.org/10.1111/anae.16290",
+      "quality_score": 2.3333333333333335
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H001",
+      "title": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clini...",
+      "statement": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clinical practice",
+      "gap_addressed": "Gap between guidelines and real-world implementation",
+      "type": "implementation",
+      "evidence_level": "Strong",
+      "feasibility": "High",
+      "impact_potential": "High",
+      "weighted_score": 7.9
+    }
+  ],
+  "summary": {
+    "papers_found": 10,
+    "recent_papers": 8,
+    "highly_cited": 0,
+    "hypotheses_generated": 1,
+    "high_scoring_hypotheses": 1,
+    "top_hypothesis": {
+      "id": "H001",
+      "title": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clini...",
+      "statement": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clinical practice",
+      "gap_addressed": "Gap between guidelines and real-world implementation",
+      "type": "implementation",
+      "evidence_level": "Strong",
+      "feasibility": "High",
+      "impact_potential": "High",
+      "weighted_score": 7.9
+    },
+    "research_maturity": "Emerging (active recent research)",
+    "action_level": "DEVELOPMENT - Moderate potential, needs validation"
+  }
+}
