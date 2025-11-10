@@ -19,11 +19,18 @@ from typing import Dict, List, Optional, Any, Union
 from dataclasses import dataclass
 from enum import Enum
 
-# Import MCP client capabilities
+# Import MCP client capabilities (ResearchMCPClient implementation)
 try:
-    import mcp_client
+    # import the ResearchMCPClient and helpers provided in the bach utils
+    from ..mcp.mcp_client import (
+        create_research_mcp_client,
+        ResearchMCPClient,
+        ArxivMCP,
+        SemanticScholarMCP,
+        PubmedMCP,
+    )
     MCP_AVAILABLE = True
-except ImportError:
+except Exception:
     MCP_AVAILABLE = False
     logging.warning("MCP client not available, using direct API calls only")
 
@@ -31,6 +38,14 @@ except ImportError:
 import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', '..', 'agents', 'paper_search'))
 from api_integrations import APIIntegrationManager
+
+# Import local PubMed data loader
+try:
+    from ..apis.local_pubmed_data import LocalPubMedDataLoader, LocalPubMedConfig
+    LOCAL_PUBMED_AVAILABLE = True
+except ImportError:
+    LOCAL_PUBMED_AVAILABLE = False
+    logging.warning("Local PubMed data loader not available")
 
 
 class SearchStrategy(Enum):
@@ -80,105 +95,74 @@ class SearchResult:
 
 
 class MCPSearchProvider:
-    """MCP-based search provider for scientific databases"""
-    
+    """MCP-based search provider that adapts the ResearchMCPClient implementation.
+
+    This class uses the concrete MCP client implementation in `bach/utils/mcp/mcp_client.py` when
+    available. It provides the same interface expected by `BachSearchManager` but delegates
+    to the ResearchMCPClient wrappers for arXiv, Semantic Scholar, and PubMed.
+    """
+
     def __init__(self):
         self.available = MCP_AVAILABLE
-        self.clients = {}
-        
+        self.client: Optional[ResearchMCPClient] = None
+        self.clients: Dict[str, Any] = {}
+
     async def initialize(self):
-        """Initialize MCP clients for available databases"""
+        """Initialize and register MCP-backed clients (arXiv, Semantic Scholar, PubMed).
+
+        Returns True if at least one MCP-backed provider was successfully initialized.
+        """
         if not self.available:
             return False
-            
+
         try:
-            # Initialize Semantic Scholar MCP client
-            if await self._init_semantic_scholar_mcp():
-                logging.info("Semantic Scholar MCP client initialized")
-                
-            # Initialize arXiv MCP client
-            if await self._init_arxiv_mcp():
-                logging.info("arXiv MCP client initialized")
-                
-            # Initialize PubMed MCP client
-            if await self._init_pubmed_mcp():
-                logging.info("PubMed MCP client initialized")
-                
-            return len(self.clients) > 0
-            
+            # Create the underlying ResearchMCPClient which handles starting/connecting to servers
+            self.client = await create_research_mcp_client()
+
+            # Wrap the concrete MCP adapters if the client initialized
+            if self.client:
+                try:
+                    self.clients['arxiv'] = ArxivMCP(self.client)
+                except Exception:
+                    self.clients['arxiv'] = None
+
+                try:
+                    self.clients['semantic_scholar'] = SemanticScholarMCP(self.client)
+                except Exception:
+                    self.clients['semantic_scholar'] = None
+
+                try:
+                    self.clients['pubmed'] = PubmedMCP(self.client)
+                except Exception:
+                    self.clients['pubmed'] = None
+
+            return any(v is not None for v in self.clients.values())
         except Exception as e:
             logging.error(f"MCP initialization failed: {e}")
             return False
-    
-    async def _init_semantic_scholar_mcp(self) -> bool:
-        """Initialize Semantic Scholar MCP client"""
-        try:
-            # This would connect to a Semantic Scholar MCP server
-            # Implementation depends on available MCP servers
-            self.clients['semantic_scholar'] = None  # Placeholder
-            return False  # Not implemented yet
-        except Exception:
-            return False
-    
-    async def _init_arxiv_mcp(self) -> bool:
-        """Initialize arXiv MCP client"""
-        try:
-            # This would connect to an arXiv MCP server
-            self.clients['arxiv'] = None  # Placeholder
-            return False  # Not implemented yet
-        except Exception:
-            return False
-    
-    async def _init_pubmed_mcp(self) -> bool:
-        """Initialize PubMed MCP client"""
-        try:
-            # This would connect to a PubMed MCP server
-            self.clients['pubmed'] = None  # Placeholder
-            return False  # Not implemented yet
-        except Exception:
-            return False
-    
+
     def is_available(self, database: str) -> bool:
-        """Check if MCP client is available for database"""
+        """Check if an MCP client is available for the given database"""
         return database in self.clients and self.clients[database] is not None
-    
+
     async def search(self, database: str, query: str, limit: int = 100) -> List[Dict[str, Any]]:
-        """Search via MCP client"""
+        """Search via MCP client adapter"""
         if not self.is_available(database):
             raise ValueError(f"MCP client for {database} not available")
-        
+
+        provider = self.clients[database]
         try:
-            client = self.clients[database]
-            # MCP search call would go here
-            # This is a placeholder implementation
-            results = []
-            
-            # Convert to standardized format
-            standardized = []
-            for result in results:
-                standardized.append(self._standardize_result(result, database))
-            
-            return standardized
-            
+            if database == 'arxiv':
+                return await provider.search(query, limit)
+            elif database == 'semantic_scholar':
+                return await provider.search(query, limit)
+            elif database == 'pubmed':
+                return await provider.search(query, limit)
+            else:
+                raise ValueError(f"Unsupported MCP database: {database}")
         except Exception as e:
             logging.error(f"MCP search error for {database}: {e}")
-            raise
-    
-    def _standardize_result(self, result: Dict[str, Any], source: str) -> Dict[str, Any]:
-        """Standardize MCP result to common format"""
-        # Convert MCP result format to our standardized format
-        # Implementation depends on MCP server response format
-        return {
-            "id": result.get("id", ""),
-            "title": result.get("title", ""),
-            "abstract": result.get("abstract", ""),
-            "authors": result.get("authors", []),
-            "year": result.get("year"),
-            "source": source,
-            "url": result.get("url"),
-            "pdf_url": result.get("pdf_url"),
-            "retrieved_via": "mcp"
-        }
+            return []
 
 
 class BachSearchManager:
@@ -187,6 +171,11 @@ class BachSearchManager:
     def __init__(self, api_keys: Optional[Dict[str, str]] = None):
         self.api_manager = APIIntegrationManager(api_keys)
         self.mcp_provider = MCPSearchProvider()
+        # Initialize local PubMed loader if available
+        if LOCAL_PUBMED_AVAILABLE:
+            self.local_pubmed = LocalPubMedDataLoader()
+        else:
+            self.local_pubmed = None
         self.initialized = False
         
     async def initialize(self):
@@ -197,6 +186,11 @@ class BachSearchManager:
         # Initialize MCP provider
         mcp_success = await self.mcp_provider.initialize()
         logging.info(f"MCP initialization: {'success' if mcp_success else 'failed'}")
+        
+        # Initialize local PubMed if available
+        if self.local_pubmed:
+            local_pubmed_success = self.local_pubmed.initialize()
+            logging.info(f"Local PubMed initialization: {'success' if local_pubmed_success else 'failed'}")
         
         self.initialized = True
     
@@ -235,7 +229,7 @@ class BachSearchManager:
         return results
     
     async def _search_mcp_first(self, query: str, config: SearchConfig) -> List[SearchResult]:
-        """Try MCP first, fallback to API"""
+        """Try MCP first, fallback to API or local sources"""
         results = []
         
         for db in config.databases:
@@ -245,6 +239,11 @@ class BachSearchManager:
                     mcp_results = await self.mcp_provider.search(db, query, config.max_results_per_db)
                     results.extend([self._dict_to_search_result(r) for r in mcp_results])
                     logging.info(f"Used MCP for {db}: {len(mcp_results)} results")
+                # Check local_pubmed before general API fallback
+                elif db == "local_pubmed" and self.local_pubmed and self.local_pubmed.is_available():
+                    local_results = self.local_pubmed.search(query, limit=config.max_results_per_db)
+                    results.extend([self._dict_to_search_result(r) for r in local_results])
+                    logging.info(f"Used local PubMed: {len(local_results)} results")
                 else:
                     # Fallback to API
                     api_results = await self.api_manager.search(db, query, config.max_results_per_db)
@@ -258,14 +257,20 @@ class BachSearchManager:
         return results
     
     async def _search_api_only(self, query: str, config: SearchConfig) -> List[SearchResult]:
-        """Use API calls only"""
+        """Use API calls only (including local PubMed)"""
         results = []
         
         for db in config.databases:
             try:
-                api_results = await self.api_manager.search(db, query, config.max_results_per_db)
-                results.extend([self._dict_to_search_result(r) for r in api_results])
-                logging.info(f"API search {db}: {len(api_results)} results")
+                # Check if this is local_pubmed
+                if db == "local_pubmed" and self.local_pubmed and self.local_pubmed.is_available():
+                    local_results = self.local_pubmed.search(query, limit=config.max_results_per_db)
+                    results.extend([self._dict_to_search_result(r) for r in local_results])
+                    logging.info(f"Used local PubMed: {len(local_results)} results")
+                else:
+                    api_results = await self.api_manager.search(db, query, config.max_results_per_db)
+                    results.extend([self._dict_to_search_result(r) for r in api_results])
+                    logging.info(f"API search {db}: {len(api_results)} results")
             except Exception as e:
                 logging.error(f"API search failed for {db}: {e}")
                 continue
@@ -295,6 +300,14 @@ class BachSearchManager:
         all_tasks = []
         
         for db in config.databases:
+            # Check local_pubmed first (fast synchronous search)
+            if db == "local_pubmed" and self.local_pubmed and self.local_pubmed.is_available():
+                task = asyncio.create_task(
+                    self._search_single_local_pubmed(query, config.max_results_per_db)
+                )
+                all_tasks.append(task)
+                continue
+            
             # Add MCP task if available
             if self.mcp_provider.is_available(db):
                 task = asyncio.create_task(
@@ -337,6 +350,17 @@ class BachSearchManager:
             return [self._dict_to_search_result(r) for r in api_results]
         except Exception as e:
             logging.error(f"API search failed for {db}: {e}")
+            return []
+    
+    async def _search_single_local_pubmed(self, query: str, limit: int) -> List[SearchResult]:
+        """Single local PubMed search task (wrapped for async compatibility)"""
+        try:
+            if self.local_pubmed and self.local_pubmed.is_available():
+                local_results = self.local_pubmed.search(query, limit=limit)
+                return [self._dict_to_search_result(r) for r in local_results]
+            return []
+        except Exception as e:
+            logging.error(f"Local PubMed search failed: {e}")
             return []
     
     def _dict_to_search_result(self, data: Dict[str, Any]) -> SearchResult:
@@ -414,6 +438,11 @@ class BachSearchManager:
             "semantic_scholar": self.mcp_provider.is_available("semantic_scholar"),
             "arxiv": self.mcp_provider.is_available("arxiv"),
             "pubmed": self.mcp_provider.is_available("pubmed")
+        }
+        
+        # Check local PubMed availability
+        capabilities["local"] = {
+            "local_pubmed": self.local_pubmed.is_available() if self.local_pubmed else False
         }
         
         return capabilities

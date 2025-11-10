@@ -1,0 +1,37 @@
+{
+  "research_topic": "atrial fibrillation",
+  "date": "2025-11-09T17:53:39.253734",
+  "papers_analyzed": 1,
+  "research_gaps": [
+    "Limited long-term outcome data",
+    "Limited research in diverse populations"
+  ],
+  "hypotheses": [
+    {
+      "id": "H001",
+      "title": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clini...",
+      "statement": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clinical practice",
+      "gap_addressed": "Limited long-term outcome data",
+      "type": "implementation",
+      "evidence_level": "Limited",
+      "feasibility": "High",
+      "impact_potential": "Variable",
+      "weighted_score": 5.7
+    },
+    {
+      "id": "H002",
+      "title": "Digital-enabled risk stratification will achieve improved prediction accuracy in patient populations",
+      "statement": "Digital-enabled risk stratification will achieve improved prediction accuracy in patient populations",
+      "gap_addressed": "Limited research in diverse populations",
+      "type": "technology",
+      "evidence_level": "Limited",
+      "feasibility": "High",
+      "impact_potential": "Variable",
+      "weighted_score": 5.7
+    }
+  ],
+  "recommendations": [
+    "Consider 2 medium-scoring hypotheses (5.0-6.9) for future research",
+    "2 hypotheses have high feasibility - focus resources here"
+  ]
+}

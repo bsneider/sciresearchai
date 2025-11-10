@@ -1,0 +1,30 @@
+{
+  "topic": "atrial fibrillation",
+  "date": "2025-11-09T17:53:30.223193",
+  "papers": [
+    {
+      "title": "Graph-Time Spectral Analysis for Atrial Fibrillation",
+      "abstract": "Atrial fibrillation is a clinical arrhythmia with multifactorial mechanisms\nstill unresolved. Time-frequency analysis of epicardial electrograms has been\ninvestigated to study atrial fibrillation. However, deeper understanding of\natrial fibrillation can be achieved if the spatial dimension can be\nincorporated. Unfortunately, the physical models describing the spatial\nrelations of atrial fibrillation signals are complex and non-linear; hence, the\nconventional signal processing techniques to study electrograms in the joint\nspace, time, and frequency domain are less suitable. In this study, we wish to\nput forward a radically different approach to analyze atrial fibrillation with\na higher-level model. This approach relies on graph signal processing to\nrepresent the spatial relations between epicardial electrograms and put forward\na graph-time spectral analysis for atrial fibrillation. To capture the\nfrequency content along both the time and graph domain, we proposed the joint\ngraph and short-time Fourier transform. The latter allows us to analyze the\nspatial variability of the electrogram temporal frequencies. With this\ntechnique, we have found that the spatial variation of the atrial electrograms\ndecreases during atrial fibrillation due to the reduction of the high temporal\nfrequencies of the atrial waves. The proposed analysis further confirms that\nthe ventricular activity is smoother over the atrial area compared with the\natrial activity. Besides using the proposed graph-time analysis to conduct a\nfirst study on atrial fibrillation, we applied it to the cancellation of\nventricular activity from atrial electrograms. Experimental results on\nsimulated and real data further corroborate the findings in this atrial\nfibrillation study.",
+      "source": "arxiv",
+      "citations": 0,
+      "year": 2019,
+      "relevance": 20
+    }
+  ],
+  "analysis": {
+    "total_papers": 1,
+    "year_range": "2019-2019",
+    "avg_citations": 0.0,
+    "top_venues": [
+      "Unknown"
+    ],
+    "key_themes": [
+      "fibrillation",
+      "atrial"
+    ]
+  },
+  "recommendations": [
+    "Limited recent research - potential gap in current literature",
+    "Focus on top 1 papers for detailed analysis"
+  ]
+}
