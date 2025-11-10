@@ -1,0 +1,365 @@
+{
+  "priority_matrix_metadata": {
+    "generation_date": "2025-11-09T19:35:00.000000",
+    "hypotheses_evaluated": 10,
+    "evaluation_criteria": ["novelty", "impact", "feasibility", "urgency", "resource_requirements"],
+    "scoring_method": "weighted_composite_score"
+  },
+  "evaluation_weights": {
+    "novelty_score": 0.25,
+    "impact_potential": 0.30,
+    "feasibility_score": 0.25,
+    "urgency_level": 0.15,
+    "resource_efficiency": 0.05
+  },
+  "hypothesis_assessments": [
+    {
+      "hypothesis_id": "H001",
+      "title": "Multi-modal Neonatal Cardiac Risk Prediction",
+      "detailed_assessment": {
+        "novelty_score": 9.5,
+        "impact_potential": 9.0,
+        "feasibility_score": 8.0,
+        "urgency_level": 9.0,
+        "resource_efficiency": 6.0,
+        "composite_score": 8.5,
+        "risk_factors": ["ethical_concerns_neonatal", "data_integration_complexity", "multi-center_coordination"],
+        "success_factors": ["high_clinical_need", "existing_data_infrastructure", "clear_endpoints"],
+        "timeline_estimate": "3-5_years",
+        "estimated_cost": "$2.5-4M",
+        "required_expertise": ["neonatology", "pediatric_cardiology", "genetics", "machine_learning", "biostatistics"]
+      },
+      "testability_analysis": {
+        "study_design_feasibility": "high",
+        "sample_size_adequacy": "adequate_with_consortium",
+        "ethical_approval_likelihood": "moderate",
+        "data_availability": "good_with_integration",
+        "technical_feasibility": "challenging_but_achievable",
+        "regulatory_barriers": "moderate"
+      },
+      "research_priority": {
+        "rank": 1,
+        "priority_category": "high_priority",
+        "implementation_phase": "pilot_study",
+        "recommended_funding": "NIH_R01_or_consortium_grant",
+        "key_milestones": ["data_integration_prototype", "multicenter_validation", "clinical_pilot"]
+      }
+    },
+    {
+      "hypothesis_id": "H002",
+      "title": "Longitudinal Disease Progression AI",
+      "detailed_assessment": {
+        "novelty_score": 9.0,
+        "impact_potential": 8.5,
+        "feasibility_score": 7.5,
+        "urgency_level": 8.0,
+        "resource_efficiency": 7.0,
+        "composite_score": 8.2,
+        "risk_factors": ["longitudinal_data_collection", "patient_retention", "model_complexity"],
+        "success_factors": ["high_clinical_value", "existing_cohorts", "progressive_validation_possible"],
+        "timeline_estimate": "4-6_years",
+        "estimated_cost": "$2-3.5M",
+        "required_expertise": ["cardiology", "biostatistics", "machine_learning", "clinical_research"]
+      },
+      "testability_analysis": {
+        "study_design_feasibility": "high",
+        "sample_size_adequacy": "adequate_with_existing_cohorts",
+        "ethical_approval_likelihood": "high",
+        "data_availability": "good_with_retention_efforts",
+        "technical_feasibility": "moderate",
+        "regulatory_barriers": "low"
+      },
+      "research_priority": {
+        "rank": 2,
+        "priority_category": "high_priority",
+        "implementation_phase": "retrospective_validation",
+        "recommended_funding": "NIH_R01_or_foundation_grant",
+        "key_milestones": ["retrospective_model_development", "prospective_validation", "clinical_implementation"]
+      }
+    },
+    {
+      "hypothesis_id": "H003",
+      "title": "AI-Guided Genetic Testing Strategy",
+      "detailed_assessment": {
+        "novelty_score": 8.5,
+        "impact_potential": 8.0,
+        "feasibility_score": 8.5,
+        "urgency_level": 7.0,
+        "resource_efficiency": 8.0,
+        "composite_score": 8.0,
+        "risk_factors": ["integration_with_genetic_services", "clinical_adoption"],
+        "success_factors": ["clear_roi", "existing_genetic_infrastructure", "measurable_outcomes"],
+        "timeline_estimate": "2-3_years",
+        "estimated_cost": "$1-2M",
+        "required_expertise": ["genetics", "cardiology", "health_economics", "AI", "clinical_trials"]
+      },
+      "testability_analysis": {
+        "study_design_feasibility": "high",
+        "sample_size_adequacy": "adequate",
+        "ethical_approval_likelihood": "high",
+        "data_availability": "good",
+        "technical_feasibility": "high",
+        "regulatory_barriers": "low_to_moderate"
+      },
+      "research_priority": {
+        "rank": 3,
+        "priority_category": "high_priority",
+        "implementation_phase": "clinical_trial",
+        "recommended_funding": "foundation_grant_or_industry_partnership",
+        "key_milestones": ["algorithm_development", "randomized_pilot", "cost-effectiveness_analysis"]
+      }
+    },
+    {
+      "hypothesis_id": "H004",
+      "title": "Fetal Cardiac AI Intervention",
+      "detailed_assessment": {
+        "novelty_score": 9.2,
+        "impact_potential": 8.5,
+        "feasibility_score": 7.0,
+        "urgency_level": 8.5,
+        "resource_efficiency": 6.5,
+        "composite_score": 7.9,
+        "risk_factors": ["fetal_data_quality", "maternal_ethical_concerns", "prediction_reliability"],
+        "success_factors": "novel_application", "high_clinical_impact", "clear_use_case"],
+        "timeline_estimate": "4-5_years",
+        "estimated_cost": "$3-5M",
+        "required_expertise": ["maternal_fetal_medicine", "pediatric_cardiology", "AI", "ethics"]
+      },
+      "testability_analysis": {
+        "study_design_feasibility": "moderate",
+        "sample_size_adequacy": "challenging",
+        "ethical_approval_likelihood": "moderate_to_high",
+        "data_availability": "limited_but_growing",
+        "technical_feasibility": "challenging",
+        "regulatory_barriers": "moderate"
+      },
+      "research_priority": {
+        "rank": 4,
+        "priority_category": "medium_priority",
+        "implementation_phase": "feasibility_study",
+        "recommended_funding": "NIH_R01_or_major_consortium",
+        "key_milestones": ["fetal_database_development", "algorithm_validation", "clinical_integration_study"]
+      }
+    },
+    {
+      "hypothesis_id": "H005",
+      "title": "Clinical Implementation AI Assistant",
+      "detailed_assessment": {
+        "novelty_score": 7.8,
+        "impact_potential": 7.0,
+        "feasibility_score": 9.0,
+        "urgency_level": 7.0,
+        "resource_efficiency": 8.5,
+        "composite_score": 7.7,
+        "risk_factors": ["clinical_adoption", "workflow_integration", "physician_acceptance"],
+        "success_factors": ["clear_benefits", "measurable_outcomes", "incremental_implementation"],
+        "timeline_estimate": "2-3_years",
+        "estimated_cost": "$0.8-1.5M",
+        "required_expertise": ["clinical_informatics", "cardiology", "human-computer_interaction", "implementation_science"]
+      },
+      "testability_analysis": {
+        "study_design_feasibility": "high",
+        "sample_size_adequacy": "adequate",
+        "ethical_approval_likelihood": "high",
+        "data_availability": "good",
+        "technical_feasibility": "high",
+        "regulatory_barriers": "low"
+      },
+      "research_priority": {
+        "rank": 5,
+        "priority_category": "medium_priority",
+        "implementation_phase": "pilot_implementation",
+        "recommended_funding": "pilot_grant_or_quality_improvement_funding",
+        "key_milestones": ["system_development", "usability_testing", "clinical_pilot", "scale_up_plan"]
+      }
+    },
+    {
+      "hypothesis_id": "H006",
+      "title": "Rare Disease AI Pattern Recognition",
+      "detailed_assessment": {
+        "novelty_score": 8.8,
+        "impact_potential": 7.0,
+        "feasibility_score": 6.5,
+        "urgency_level": 6.5,
+        "resource_efficiency": 6.0,
+        "composite_score": 7.1,
+        "risk_factors": ["rare_disease_data_scarcity", "validation_challenges", "clinical_applicability"],
+        "success_factors": ["novel_insights", "research_collaboration", "disease_classification_advances"],
+        "timeline_estimate": "3-4_years",
+        "estimated_cost": "$1.5-2.5M",
+        "required_expertise": ["genomics", "bioinformatics", "rare_disease_expertise", "AI"]
+      },
+      "testability_analysis": {
+        "study_design_feasibility": "moderate",
+        "sample_size_adequacy": "challenging_due_to_rarity",
+        "ethical_approval_likelihood": "high",
+        "data_availability": "limited",
+        "technical_feasibility": "moderate_to_high",
+        "regulatory_barriers": "low"
+      },
+      "research_priority": {
+        "rank": 6,
+        "priority_category": "medium_priority",
+        "implementation_phase": "methodological_development",
+        "recommended_funding": "rare_disease_grant_or_consortium",
+        "key_milestones": ["data_aggregation", "algorithm_development", "expert_validation", "clinical_application"]
+      }
+    },
+    {
+      "hypothesis_id": "H007",
+      "title": "Cross-Institutional Federated Learning",
+      "detailed_assessment": {
+        "novelty_score": 8.0,
+        "impact_potential": 8.0,
+        "feasibility_score": 7.5,
+        "urgency_level": 7.0,
+        "resource_efficiency": 7.5,
+        "composite_score": 7.6,
+        "risk_factors": ["technical_complexity", "institutional_coordination", "data_standardization"],
+        "success_factors": ["privacy_preservation", "scalability", "multi-center_benefits"],
+        "timeline_estimate": "3-4_years",
+        "estimated_cost": "$2-3M",
+        "required_expertise": ["machine_learning", "health_informatics", "privacy_law", "systems_integration"]
+      },
+      "testability_analysis": {
+        "study_design_feasibility": "moderate",
+        "sample_size_adequacy": "excellent_with_federation",
+        "ethical_approval_likelihood": "high",
+        "data_availability": "excellent",
+        "technical_feasibility": "moderate",
+        "regulatory_barriers": "moderate"
+      },
+      "research_priority": {
+        "rank": 7,
+        "priority_category": "medium_priority",
+        "implementation_phase": "technical_development",
+        "recommended_funding": "NSF_or_privacy_focused_grant",
+        "key_milestones": ["federated_architecture", "pilot_institutions", "scalability_validation", "deployment_framework"]
+      }
+    },
+    {
+      "hypothesis_id": "H008",
+      "title": "Pediatric Cardiac Rehabilitation AI",
+      "detailed_assessment": {
+        "novelty_score": 7.5,
+        "impact_potential": 7.0,
+        "feasibility_score": 8.5,
+        "urgency_level": 6.0,
+        "resource_efficiency": 8.0,
+        "composite_score": 7.3,
+        "risk_factors": ["patient_engagement", "technology_adoption", "outcome_measurement"],
+        "success_factors": ["clear_benefits", "patient_focused", "measurable_improvements"],
+        "timeline_estimate": "2-3_years",
+        "estimated_cost": "$0.8-1.5M",
+        "required_expertise": ["rehabilitation_medicine", "behavioral_science", "AI", "clinical_trials"]
+      },
+      "testability_analysis": {
+        "study_design_feasibility": "high",
+        "sample_size_adequacy": "adequate",
+        "ethical_approval_likelihood": "high",
+        "data_availability": "good",
+        "technical_feasibility": "high",
+        "regulatory_barriers": "low"
+      },
+      "research_priority": {
+        "rank": 8,
+        "priority_category": "medium_priority",
+        "implementation_phase": "clinical_trial",
+        "recommended_funding": "rehabilitation_or_quality_of_life_grant",
+        "key_milestones": ["system_development", "feasibility_study", "randomized_trial", "implementation_guide"]
+      }
+    },
+    {
+      "hypothesis_id": "H009",
+      "title": "Medication Adherence Prediction",
+      "detailed_assessment": {
+        "novelty_score": 7.2,
+        "impact_potential": 7.0,
+        "feasibility_score": 9.0,
+        "urgency_level": 6.0,
+        "resource_efficiency": 9.0,
+        "composite_score": 7.5,
+        "risk_factors": ["behavioral_complexity", "social_determinants", "intervention_effectiveness"],
+        "success_factors": ["high_feasibility", "clear_outcomes", "low_technical_barriers"],
+        "timeline_estimate": "1-2_years",
+        "estimated_cost": "$0.5-1M",
+        "required_expertise": ["pharmacy", "behavioral_science", "AI", "social_work"]
+      },
+      "testability_analysis": {
+        "study_design_feasibility": "high",
+        "sample_size_adequacy": "adequate",
+        "ethical_approval_likelihood": "high",
+        "data_availability": "good",
+        "technical_feasibility": "high",
+        "regulatory_barriers": "low"
+      },
+      "research_priority": {
+        "rank": 9,
+        "priority_category": "low_priority",
+        "implementation_phase": "pilot_study",
+        "recommended_funding": "pilot_grant_or_industry_partnership",
+        "key_milestones": ["prediction_model", "intervention_pilot", "effectiveness_validation"]
+      }
+    },
+    {
+      "hypothesis_id": "H010",
+      "title": "AI-Powered Surgical Planning",
+      "detailed_assessment": {
+        "novelty_score": 8.5,
+        "impact_potential": 8.5,
+        "feasibility_score": 6.0,
+        "urgency_level": 5.5,
+        "resource_efficiency": 6.5,
+        "composite_score": 7.2,
+        "risk_factors": ["safety_critical_application", "surgeon_acceptance", "liability_concerns"],
+        "success_factors": ["high_impact", "surgical_precision", "outcome_improvement"],
+        "timeline_estimate": "5-7_years",
+        "estimated_cost": "$4-6M",
+        "required_expertise": ["cardiac_surgery", "AI", "radiology", "regulatory_affairs"]
+      },
+      "testability_analysis": {
+        "study_design_feasibility": "low_to_moderate",
+        "sample_size_adequacy": "challenging",
+        "ethical_approval_likelihood": "moderate",
+        "data_availability": "good",
+        "technical_feasibility": "challenging",
+        "regulatory_barriers": "high"
+      },
+      "research_priority": {
+        "rank": 10,
+        "priority_category": "low_priority",
+        "implementation_phase": "preclinical_development",
+        "recommended_funding": "major_research_grant_or_industry_consortium",
+        "key_milestones": ["simulation_validation", "ex_vivo_testing", "limited_clinical_trial", "regulatory_approval"]
+      }
+    }
+  ],
+  "priority_summary": {
+    "high_priority_hypotheses": ["H001", "H002", "H003"],
+    "medium_priority_hypotheses": ["H004", "H005", "H006", "H007", "H008"],
+    "low_priority_hypotheses": ["H009", "H010"],
+    "recommended_immediate_focus": ["H001", "H003"],
+    "quick_wins": ["H005", "H009"],
+    "high_impact_long_term": ["H001", "H002", "H004", "H010"]
+  },
+  "research_portfolio_recommendations": {
+    "phase_1_immediate_0-2_years": {
+      "hypotheses": ["H003", "H005", "H009"],
+      "focus": "feasibility_and_pilot_studies",
+      "estimated_budget": "$3-4M",
+      "expected_outcomes": ["proof_of_concept", "clinical_pilot_data", "implementation_frameworks"]
+    },
+    "phase_2_development_2-4_years": {
+      "hypotheses": ["H001", "H002", "H006", "H007", "H008"],
+      "focus": "full_scale_development_and_validation",
+      "estimated_budget": "$8-12M",
+      "expected_outcomes": ["validated_models", "multi_center_data", "clinical_readiness"]
+    },
+    "phase_3_advanced_4-7_years": {
+      "hypotheses": ["H004", "H010"],
+      "focus": "advanced_applications_and_regulatory_approval",
+      "estimated_budget": "$7-11M",
+      "expected_outcomes": ["regulatory_approval", "clinical_deployment", "paradigm_shifts"]
+    }
+  }
+}

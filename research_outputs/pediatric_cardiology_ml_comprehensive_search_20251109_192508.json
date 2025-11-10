@@ -1,0 +1,1027 @@
+{
+  "search_metadata": {
+    "search_date": "2025-11-09T19:25:08.670888",
+    "research_topic": "pediatric cardiology machine learning",
+    "databases_searched": [
+      "local_pubmed",
+      "semantic_scholar"
+    ],
+    "total_local_results": 63,
+    "total_semantic_results": 0,
+    "after_deduplication": 63,
+    "final_curated": 50
+  },
+  "search_strategy": {
+    "local_queries": [
+      "pediatric cardiology",
+      "children heart disease",
+      "congenital heart",
+      "pediatric cardiac",
+      "child cardiology"
+    ],
+    "semantic_query": "pediatric cardiology machine learning OR children heart disease artificial intelligence OR congenital heart defect deep learning",
+    "relevance_scoring": "custom_algorithm"
+  },
+  "results": [
+    {
+      "id": "40148010.0",
+      "pmid": "40148010.0",
+      "title": "Electrocardiogram-based deep learning to predict left ventricular systolic dysfunction in paediatric and adult congenital heart disease in the USA: a multicentre modelling study.",
+      "abstract": "Left ventricular systolic dysfunction (LVSD) is independently associated with cardiovascular events in patients with congenital heart disease. Although artificial intelligence-enhanced electrocardiogram (AI-ECG) analysis is predictive of LVSD in the general adult population, it has yet to be applied comprehensively across congenital heart disease lesions. We trained a convolutional neural network on paired ECG-echocardiograms (≤2 days apart) across the lifespan of a wide range of congenital heart disease lesions to detect left ventricular ejection fraction (LVEF) of 40% or less. Model performance was evaluated on single ECG-echocardiogram pairs per patient at Boston Children's Hospital (Boston, MA, USA) and externally at the Children's Hospital of Philadelphia (Philadelphia, PA, USA) using area under the receiver operating (AUROC) and precision-recall (AUPRC) curves. The training cohort comprised 124 265 ECG-echocardiogram pairs (49 158 patients; median age 10·5 years [IQR 3·5-16·8]; 3381 [2·7%] of 124 265 ECG-echocardiogram pairs with LVEF ≤40%). Test groups included internal testing (21 068 patients; median age 10·9 years [IQR 3·7-17·0]; 3381 [2·7%] of 124 265 ECG-echocardiogram pairs with LVEF ≤40%) and external validation (42 984 patients; median age 10·8 years [IQR 4·9-15·0]; 1313 [1·7%] of 76 400 ECG-echocardiogram pairs with LVEF ≤40%) cohorts. High model performance was achieved during internal testing (AUROC 0·95, AUPRC 0·33) and external validation (AUROC 0·96, AUPRC 0·25) for a wide range of congenital heart disease lesions. Patients with LVEF greater than 40% by echocardiogram who were deemed high risk by AI-ECG were more likely to have future dysfunction compared with low-risk patients (hazard ratio 12·1 [95% CI 8·4-17·3]; p<0·0001). High-risk patients by AI-ECG were at increased risk of mortality in the overall cohort and lesion-specific subgroups. Common salient features highlighted across congenital heart disaese lesions include precordial QRS complexes and T waves, with common high-risk ECG features including deep V2 S waves and lateral precordial T wave inversion. A case study on patients with ventricular pacing showed similar findings. Our externally validated algorithm shows promise in prediction of current and future LVSD in patients with congenital heart disease, providing a clinically impactful, inexpensive, and convenient cardiovascular health tool in this population. Kostin Innovation Fund, Thrasher Research Fund Early Career Award, Boston Children's Hospital Electrophysiology Research Education Fund, National Institutes of Health, National Institute of Childhood Diseases and Human Development, and National Library of Medicine.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.710852",
+      "authors": [
+        {
+          "name": "Joshua Mayourian; Ivor B Asztalos; Amr El-Bokl; Platon Lukyanenko; Ryan L Kobayashi; William G La Cava; Sunil J Ghelani; Victoria L Vetter; John K Triedman"
+        }
+      ],
+      "year": 2025,
+      "journal": "The Lancet. Digital health",
+      "venue": "The Lancet. Digital health",
+      "doi": "10.1016/j.landig.2025.01.001",
+      "url": "https://doi.org/10.1016/j.landig.2025.01.001",
+      "quality_score": 6.333333333333333,
+      "relevance_score": 1.0
+    },
+    {
+      "id": "38714589.0",
+      "pmid": "38714589.0",
+      "title": "Genetic Testing Resources and Practice Patterns Among Pediatric Cardiomyopathy Programs.",
+      "abstract": "The use of genetic testing has enhanced the diagnostic accuracy of heritable genetic cardiomyopathies. However, it remains unclear how genetic information is interpreted and incorporated into clinical practice for children with cardiomyopathy. The primary aim of this study was to understand how clinical practice differs regarding sequence variant classifications amongst pediatric cardiologists who treat children with cardiomyopathy. A secondary aim was to understand the availability of genetic testing and counseling resources across participating pediatric cardiomyopathy programs. An electronic survey was distributed to pediatric heart failure, cardiomyopathy, or heart transplantation physicians between August and September 2022. A total of 106 individual providers from 68 unique centers responded to the survey. Resources for genetic testing and genetic counseling vary among large pediatric cardiomyopathy programs. A minority of centers reported having a geneticist (N = 16, 23.5%) or a genetic counselor (N = 21, 31%) on faculty within the division of pediatric cardiology. A total of 9 centers reported having both (13%). Few centers (N = 13, 19%) have a formal process in place to re-engage patients who were previously discharged from cardiology follow-up if variant reclassification would alter clinical management. Clinical practice patterns were uniform in response to pathogenic or likely pathogenic variants but were more variable for variants of uncertain significance. Efforts to better incorporate genetic expertise and resources into the clinical practice of pediatric cardiomyopathy may help to standardize the interpretation of genetic information and better inform clinical decision-making surrounding heritable cardiomyopathies.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.689990",
+      "authors": [
+        {
+          "name": "Justin Godown; Emily H Kim; Melanie D Everitt; Wendy K Chung; Irene D Lytrivi; Sonya Kirmani; Paul F Kantor; Stephanie M Ware; Jean A Ballweg; Ashwin K Lal; Neha Bansal; Jeffrey Towbin; Steven E Lipshultz; Teresa M Lee"
+        }
+      ],
+      "year": 2025,
+      "journal": "Pediatric cardiology",
+      "venue": "Pediatric cardiology",
+      "doi": "10.1007/s00246-024-03498-6",
+      "url": "https://doi.org/10.1007/s00246-024-03498-6",
+      "quality_score": 5.0,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "39424499.0",
+      "pmid": "39424499.0",
+      "title": "AI-PEDURO - Artificial intelligence in pediatric urology: Protocol for a living scoping review and online repository.",
+      "abstract": "Artificial intelligence (AI) and machine learning (ML) methods are increasingly being applied in pediatric urology across a growing number of settings, with more extensive databases and wider interest for use in clinical practice. More than 30 ML models have been published in the pediatric urology literature, but many lack items required by contemporary reporting frameworks to be high quality. For example, most studies lack multi-institution validation, validation over time, and validation within the clinical environment, resulting in a large discrepancy between the number of models developed versus the number of models deployed in a clinical setting, a phenomenon known as the AI chasm. Furthermore, pediatric urology is a unique subspecialty of urology with low frequency conditions and complex phenotypes where clinical management can rely on a lower quality of evidence. To establish the AI in PEDiatric UROlogy (AI-PEDURO) collaborative, which will carry out a living scoping review and create an online repository (www.aipeduro.com) for models in the field and facilitate an evidence synthesis of AI models in pediatric urology. The scoping review will follow PRISMA-ScR guidelines. We will include ML models identified through standardized search methods of four databases, hand-search papers, and user-submitted models. Retrieved records will be included if they involve ML algorithms for prediction, classification, or risk stratification for pediatric urology conditions. The results will be tabulated and assessed for trends within the literature. Based on data availability, models will be divided into clinical disease sections (e.g. hydronephrosis, hypospadias, vesicoureteral reflux). A risk assessment will be performed using the APPRAISE-AI tool. The retrieved model cards (brief summary model characteristics in table form) will be uploaded to the online repository for open access to clinicians, patients, and data scientists, and will be linked to the Digital Object Identifier (DOI) for each article. We hope this living scoping review and online repository will offer a valuable reference for pediatric urologists to assess disease-specific ML models' scope, validity, and credibility to encourage opportunities for collaboration, external validation, clinical testing, and responsible deployment. In addition, the repository may aid in identifying areas in need of further research.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.690098",
+      "authors": [
+        {
+          "name": "Adree Khondker; Jethro C C Kwong; Mandy Rickard; Lauren Erdman; Andrew T Gabrielson; David-Dan Nguyen; Jin Kyu Kim; Tariq Abbas; Nicolas Fernandez; Katherine Fischer; Lisette A 't Hoen; Daniel T Keefe; Caleb P Nelson; Bernarda Viteri; Hsin-Hsiao Scott Wang; John Weaver; Priyank Yadav; Armando J Lorenzo"
+        }
+      ],
+      "year": 2025,
+      "journal": "Journal of pediatric urology",
+      "venue": "Journal of pediatric urology",
+      "doi": "10.1016/j.jpurol.2024.10.003",
+      "url": "https://doi.org/10.1016/j.jpurol.2024.10.003",
+      "quality_score": 4.5,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "34820983.0",
+      "pmid": "34820983.0",
+      "title": "Circumstances surrounding end-of-life in pediatric patients pre- and post-heart transplant: a report from the Pediatric Heart Transplant Society.",
+      "abstract": "Although mortality has decreased considerably in pediatric heart transplantation, waitlist and post-transplant death rates remain notable. End-of-life focused research in this population, however, is very limited. This Pediatric Heart Transplant Society study aimed to describe the circumstances surrounding death of pediatric heart transplant patients. A retrospective analysis of the multi-institutional, international, Pediatric Heart Transplant Society registry was conducted. Descriptive statistics and univariate analyses were performed to 1) describe end-of-life in pediatric pre- and post-heart transplant patients and 2) examine associations between location of death and technological interventions at end-of-life with demographic and disease factors. Of 9217 patients (0-18 years) enrolled in the registry between 1993 and 2018, 2804 (30%) deaths occurred; 1310 while awaiting heart transplant and 1494 post-heart transplant. The majority of waitlist deaths (89%) occurred in the hospital, primarily in ICU (74%) with most receiving mechanical ventilation (77%). Fewer post-transplant deaths occurred in the hospital (22%). Out-of-hospital death was associated with older patient age (p < .01). ICU deaths with high use of technological interventions at end-of-life were common, particularly in patients awaiting heart transplant. In this high mortality population, findings raise challenging considerations for clinicians, families, and policy makers on how to balance quality of life amidst high risk for hospital-based death.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.690126",
+      "authors": [
+        {
+          "name": "Melissa K Cousino; Sunkyung Yu; Elizabeth D Blume; Heather T Henderson; Seth A Hollander; Sairah Khan; John Jerry Parent; Kurt R Schumacher"
+        }
+      ],
+      "year": 2022,
+      "journal": "Pediatric transplantation",
+      "venue": "Pediatric transplantation",
+      "doi": "10.1111/petr.14196",
+      "url": "https://doi.org/10.1111/petr.14196",
+      "quality_score": 4.5,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "34074851.0",
+      "pmid": "34074851.0",
+      "title": "Factors Associated With Initiation of Extracorporeal Cardiopulmonary Resuscitation in the Pediatric Population: An International Survey.",
+      "abstract": "Although extracorporeal cardiopulmonary resuscitation (ECPR) is increasingly utilized in the pediatric critical care environment, our understanding regarding pediatric candidacy for ECPR remains unknown. Our objective is to explore current practice and indications for pediatric ECPR. Scenario-based, self-administered, online survey, evaluating clinical determinants that may impact pediatric ECPR initiation with respect to four scenarios: postoperative cardiac surgery, cardiac failure secondary to myocarditis, septic shock, and chronic respiratory failure in a former preterm child. Responders are pediatric critical care physicians from four societies. 249 physicians, mostly from North America, answered the survey. In cardiac scenarios, 40% of the responders would initiate ECPR, irrespective of CPR duration, compared with less than 20% in noncardiac scenarios. Nearly 33% of responders would consider ECPR if CPR duration was less than 60 minutes in noncardiac scenarios. Factors strongly decreasing the likelihood to initiate ECPR were out-of-hospital unwitnessed cardiac arrest and blood pH <6.60. Additional factors reducing this likelihood were multiple organ failure, pre-existing neurologic delay, >10 doses of adrenaline, poor CPR quality, and lactate >18 mmol/l. Pediatric intensive care unit location for cardiac arrest, good CPR quality, 24/7 in-house extracorporeal membrane oxygenation (ECMO) team moderately increase the likelihood of initiating ECPR. This international survey of pediatric ECPR initiation practices reveals significant differences regarding ECPR candidacy based on patient category, location of arrest, duration of CPR, witness status, and last blood pH. Further research identifying prognostic factors measurable before ECMO initiation should help define the optimal ECPR initiation strategy.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.690182",
+      "authors": [
+        {
+          "name": "Duy-Anh Nguyen; Aurélie De Mul; Aparna U Hoskote; Paola Cogo; Eduardo M da Cruz; Simon Erickson; Javier J Lasa; Ravi R Thiagarajan; Melania M Bembea; Oliver Karam"
+        }
+      ],
+      "year": 2022,
+      "journal": "ASAIO journal (American Society for Artificial Internal Organs : 1992)",
+      "venue": "ASAIO journal (American Society for Artificial Internal Organs : 1992)",
+      "doi": "10.1097/MAT.0000000000001495",
+      "url": "https://doi.org/10.1097/MAT.0000000000001495",
+      "quality_score": 4.5,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "31960528.0",
+      "pmid": "31960528.0",
+      "title": "Marijuana in pediatric and adult congenital heart disease heart transplant listing: A survey of provider practices and attitudes.",
+      "abstract": "Despite increasing legalization and use of marijuana, there is no consensus among pediatric heart transplant institutions or providers regarding users' eligibility for cardiac transplant. We sent a survey to pediatric and ACHD transplant providers (physicians, surgeons, transplant coordinators, and pharmacists) assessing their current institution's policies and their personal opinions about marijuana use in patients being considered for heart transplantation. Of the respondents, 84% practice in the United States and Canada. Most providers (80%) care for both pediatric and ACHD patients. Respondents included cardiologists (77%) and surgeons (11%), with the remaining being coordinators and pharmacists. Most providers (73%) reported their institution had no policy regarding marijuana use in heart transplant candidates. Only 20% of respondents' institutions consider mode of consumption, with 87% and 53% approving of oral and transdermal routes, respectively, and only 7% approving of vaporized or smoked routes. While 73% of providers would consider illegal marijuana use an absolute/relative contraindication to heart transplant listing, the number decreases to 57% for legal recreational users and 21% for legal medical users. Most providers personally believe marijuana to be physically and mentally/emotionally harmful to pediatric patients (67% and 72%, respectively). Many institutions lack a policy regarding marijuana use in pediatric and ACHD heart transplant candidates, and there is considerable disagreement among providers on the best practice. With increasing legalization and use of marijuana, each institution will have to address this issue thoughtfully to continue to provide high-quality, consistent, and equitable care for pediatric and ACHD heart transplant candidates.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.690295",
+      "authors": [
+        {
+          "name": "Kari A Phillips; Philip T Thrush; Ashwin K Lal; Steven J Kindel; Chesney Castleberry; Joshua Sparks; Kevin P Daly; Jonathan N Johnson"
+        }
+      ],
+      "year": 2020,
+      "journal": "Pediatric transplantation",
+      "venue": "Pediatric transplantation",
+      "doi": "10.1111/petr.13640",
+      "url": "https://doi.org/10.1111/petr.13640",
+      "quality_score": 4.0,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "37017255.0",
+      "pmid": "37017255.0",
+      "title": "Social cognition and behavioral outcomes in congenital heart disease: profiles and neuropsychiatric comorbidities.",
+      "abstract": "Autism spectrum disorders are more prevalent in children with congenital heart disease (CHD) than in the general population. Children with CHD without diagnosed autism are also at increased risk for neurodevelopmental and psychiatric impairments. We characterized social and behavioral outcomes in children with CHD and examined neurodevelopmental and psychiatric comorbidities. Children without diagnosed autism who underwent infant open-heart surgery were eligible. Parent-reports assessed social communication, unusual behaviors, self-regulation, anxiety, and executive function (EF). Neuropsychological tests assessing theory of mind (ToM), working memory, and verbal comprehension were administered. Outcomes were compared to normative data. Linear regressions were estimated with parent-reported scores and ToM abilities as outcomes. Predictors were anxiety symptoms, parent-reported EF, and working memory scores. Covariates were age, parental education, ADHD diagnosis, and verbal comprehension. Clinically relevant comorbidities were identified (<i>N</i> children scoring ≥1<i>SD</i> below the norm). Fifty-six children (10.8 ± 1.8 years) participated virtually. Compared to norms, children with CHD had impaired ToM, more unusual behaviors (<i>p</i> = .002), and less self-regulation (<i>p</i> = .018), but better social communication (<i>p</i> = .014). \"Autism-like\" traits were positively associated with anxiety symptoms (<i>ß</i>(95% CI) = 0.28(0.08-0.49), <i>p</i> = .008) and worse working memory (<i>ß</i>(95% CI) = -0.36(-0.59-0.13), <i>p</i> = .003). Twenty-one out of 22 children who displayed clinically relevant social and behavioral scores also showed anxiety symptoms (<i>n</i> = 4), impaired EF (<i>n</i> = 7), or both (<i>n</i> = 10). Children with CHD without diagnosed autism have elevated unusual behaviors, lower self-regulation, and impaired ToM. There is a high risk of co-existing anxiety and impaired EF which may increase disease burden. Targeted therapeutic interventions are needed to reduce long-term psychosocial risks in these children.<b>Abbreviation</b>Attention deficit/hyperactivity disorder (ADHD), Autism Spectrum Rating Scale (ASRS), Behavior Rating Inventory of Executive Functions for school-aged children, 2nd Edition (BRIEF-2), cardiopulmonary bypass (CPB), congenital heart disease (CHD), Empathy/Systematizing Quotient Child Version (ESQ-C), Multidimensional Anxiety Scale for Children, 2nd Edition (MASC-2), Social Responsiveness Scale (School-age form), 2nd Edition (SRS-2), theory of mind (ToM), Theory of Mind Task Battery (ToM-TB), Wechsler Intelligence Scale for Children, 5th edition (WISC-V).",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.710760",
+      "authors": [
+        {
+          "name": "Melanie Ehrler; David C Bellinger; Adam R Cassidy; Jane W Newburger; Johanna Calderon"
+        }
+      ],
+      "year": 2023,
+      "journal": "Child neuropsychology : a journal on normal and abnormal development in childhood and adolescence",
+      "venue": "Child neuropsychology : a journal on normal and abnormal development in childhood and adolescence",
+      "doi": "10.1080/09297049.2023.2196398",
+      "url": "https://doi.org/10.1080/09297049.2023.2196398",
+      "quality_score": 7.666666666666667,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "33143781.0",
+      "pmid": "33143781.0",
+      "title": "Neurodevelopmental evaluation strategies for children with congenital heart disease aged birth through 5 years: recommendations from the cardiac neurodevelopmental outcome collaborative.",
+      "abstract": "This paper provides specific guidelines for the neurodevelopmental evaluation of children aged birth through 5 years with complex congenital heart disease. There is wide recognition that children with congenital heart disease are at high risk for neurodevelopmental impairments that are first apparent in infancy and often persist as children mature. Impairments among children with complex congenital heart disease cross developmental domains and affect multiple functional abilities. The guidelines provided are derived from the substantial body of research generated over the past 30 years describing the characteristic developmental profiles and the long-term trajectories of children surviving with complex congenital heart conditions. The content and the timing of the guidelines are consistent with the 2012 American Heart Association and the American Academy of Pediatrics scientific statement documenting the need for ongoing developmental monitoring and assessment from infancy through adolescence. The specific guidelines offered in this article were developed by a multidisciplinary clinical research team affiliated with the Cardiac Neurodevelopmental Outcome Collaborative, a not-for-profit organisation established to determine and implement best neurodevelopmental practices for children with congenital heart disease. The guidelines are designed for use in clinical and research applications and offer an abbreviated core protocol and an extended version that expands the scope of the evaluation. The guidelines emphasise the value of early risk identification, use of evidence-based assessment instruments, consideration of family and cultural preferences, and the importance of providing multidimensional community-based services to remediate risk.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.710795",
+      "authors": [
+        {
+          "name": "Janice Ware; Jennifer L Butcher; Beatrice Latal; Anjali Sadhwani; Caitlin K Rollins; Cheryl L Brosig Soto; Samantha C Butler; Patricia B Eiler-Sims; Catherine V Ullman Shade; Gil Wernovsky"
+        }
+      ],
+      "year": 2020,
+      "journal": "Cardiology in the young",
+      "venue": "Cardiology in the young",
+      "doi": "10.1017/S1047951120003534",
+      "url": "https://doi.org/10.1017/S1047951120003534",
+      "quality_score": 7.333333333333333,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "35301110.0",
+      "pmid": "35301110.0",
+      "title": "Waitlist Outcomes for Children With Congenital Heart Disease: Lessons Learned From Over 5000 Heart Transplant Listings in the United States.",
+      "abstract": "We evaluated the impact of pediatric heart-allocation policy changes over time and the approval of the Berlin ventricular assist device (VAD) on waitlist (WL) outcomes for children with congenital heart disease (CHD). The Scientific Registry of Transplant Recipients database was evaluated to include all children (age < 18) with CHD and cardiomyopathy (CMP) on the WL between 1999 and 2019, divided into 4 eras: Era 1 (1999-2008); Era 2 (2009-2011); Era 3 (2012-2016); and Era 4 (2016-2019). WL characteristics and survival outcomes were evaluated for patients with CHD over time and were compared to those with CMP listed currently (Era 4). We included 5185 children with CHD on the WL during the study period; 1999 (39%) were listed in Era 1; 693 (13%) in Era 2; 1196 (23%) in Era 3; and 1297 (25%) in Era 4. Compared to the CHD WL in eras 1 and 2, those in Era 4 were less likely to be infants (48% vs 49% vs 43%), on mechanical ventilation (30% vs 26% vs 19%), on extracorporeal membrane oxygenation (15% vs 9.7% vs 6.2%), and were more likely to be on a VAD (2.4% vs 2.2% vs 6.0%) (P < .05 for all). WL survival improved in children with CHD from Era 1 to Era 4 (P < .001). However, in Era 4, children with CHD had lower WL survival than those with CMP (P < .001). Children with CHD are increasingly being listed with less advanced heart failure, and they have had improved WL survival over time; however, WL outcomes remain inferior to those with CMP. Advances in pediatric medical and VAD therapy may improve future WL outcomes.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.710907",
+      "authors": [
+        {
+          "name": "Madeleine Townsend; Tara Karamlou; Gerard Boyle; Kevin Daly; Shriprasad Deshpande; Scott R Auerbach; Sarah Worley; Wei Liu; Elizabeth Saarel; Shahnawaz Amdani"
+        }
+      ],
+      "year": 2022,
+      "journal": "Journal of cardiac failure",
+      "venue": "Journal of cardiac failure",
+      "doi": "10.1016/j.cardfail.2022.03.004",
+      "url": "https://doi.org/10.1016/j.cardfail.2022.03.004",
+      "quality_score": 6.0,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "38713124.0",
+      "pmid": "38713124.0",
+      "title": "A prospective multicenter feasibility study of a miniaturized implantable continuous flow ventricular assist device in smaller children with heart failure.",
+      "abstract": "There is no FDA-approved left ventricular assist device (LVAD) for smaller children permitting routine hospital discharge. Smaller children supported with LVADs typically remain hospitalized for months awaiting heart transplant-a major burden for families and a challenge for hospitals. We describe the initial outcomes of the Jarvik 2015, a miniaturized implantable continuous flow LVAD, in the NHLBI-funded Pumps for Kids, Infants, and Neonates (PumpKIN) study, for bridge-to-heart transplant. Children weighing 8 to 30 kg with severe systolic heart failure and failing optimal medical therapy were recruited at 7 centers in the United States. Patients with severe right heart failure and single-ventricle congenital heart disease were excluded. The primary feasibility endpoint was survival to 30 days without severe stroke or non-operational device failure. Of 7 children implanted, the median age was 2.2 (range 0.7, 7.1) years, median weight 10 (8.2 to 20.7) kilograms; 86% had dilated cardiomyopathy; 29% were INTERMACS profile 1. The median duration of Jarvik 2015 support was 149 (range 5 to 188) days where all 7 children survived including 5 to heart transplant, 1 to recovery, and 1 to conversion to a paracorporeal device. One patient experienced an ischemic stroke on day 53 of device support in the setting of myocardial recovery. One patient required ECMO support for intractable ventricular arrhythmias and was eventually transplanted from paracorporeal biventricular VAD support. The median pump speed was 1600 RPM with power ranging from 1-4 Watts. The median plasma free hemoglobin was 19, 30, 19 and 30 mg/dL at 7, 30, 90 and 180 days or time of explant, respectively. All patients reached the primary feasibility endpoint. Patient-reported outcomes with the device were favorable with respect to participation in a full range of activities. Due to financial issues with the manufacturer, the study was suspended after consent of the eighth patient. The Jarvik 2015 LVAD appears to hold important promise as an implantable continuous flow device for smaller children that may support hospital discharge. The FDA has approved the device to proceed to a 22-subject pivotal trial. Whether this device will survive to commercialization remains unclear because of the financial challenges faced by industry seeking to develop pediatric medical devices. (Supported by NIH/NHLBI HHS Contract N268201200001I, clinicaltrials.gov 02954497).",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.710935",
+      "authors": [
+        {
+          "name": "Christopher S Almond; Ryan Davies; Iki Adachi; Marc Richmond; Sabrina Law; Hari Tunuguntla; Chad Mao; Fawwaz Shaw; Jodie Lantz; Peter D Wearden; Lori C Jordan; Rebecca N Ichord; Kristin Burns; Victor Zak; Ashley Magnavita; Selena Gonzales; Jennifer Conway; Aamir Jeewa; D 'Andrea Freemon; Mario Stylianou; Lynn Sleeper; John C Dykes; Michael Ma; Francis Fynn-Thompson; Angela Lorts; David Morales; Christina Vanderpluym; Kurt Dasse; M Patricia Massicotte; Robert Jaquiss; William T Mahle"
+        }
+      ],
+      "year": 2024,
+      "journal": "The Journal of heart and lung transplantation : the official publication of the International Society for Heart Transplantation",
+      "venue": "The Journal of heart and lung transplantation : the official publication of the International Society for Heart Transplantation",
+      "doi": "10.1016/j.healun.2024.02.003",
+      "url": "https://doi.org/10.1016/j.healun.2024.02.003",
+      "quality_score": 5.666666666666667,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "36328157.0",
+      "pmid": "36328157.0",
+      "title": "Edoxaban for Thromboembolism Prevention in Pediatric Patients With Cardiac Disease.",
+      "abstract": "Standard of care (SOC) anticoagulation for thromboembolism (TE) prevention in children with cardiac disease includes low molecular weight heparins or vitamin K antagonists. Limited data exists for alternate use of direct oral anticoagulants in children. The investigators aimed to obtain safety and efficacy data for edoxaban in children. We performed a phase 3, multinational, prospective, randomized, open-label, blinded-endpoint trial in patients <18 years of age with cardiac disease (ENNOBLE-ATE [Edoxaban for Prevention of Blood Vessels Being Blocked by Clots (Thrombotic Events) in Children at Risk Because of Cardiac Disease] trial). Patients were randomized 2:1 to age- and weight-based oral edoxaban once daily vs SOC for 3 months (main study period), stratified by cardiac diagnosis. Both groups could continue in an open-label edoxaban extension arm through 1 year. The primary endpoint was adjudicated clinically relevant bleeding (CRB). The main secondary endpoint was symptomatic TE or asymptomatic intracardiac thrombosis. The modified intention-to-treat cohort included 167 children. One patient per group experienced a nonmajor CRB in the main period. Treatment-emergent adverse events occurred in 46.8% (51 of 109) with edoxaban and 41.4% (24 of 58) with SOC. One SOC patient experienced 2 TE events (DVT with PE). Among 147 children in the extension, 1 CRB event (0.7%) and 4 TEs occurred (2.8%; 2 strokes and 2 of 33 Kawasaki disease patients with coronary artery thromboses and/or myocardial infarctions). Edoxaban is a potential alternative mode of thromboprophylaxis in children with cardiac disease showing low rates of CRB and TEs with advantages of once daily dosing and infrequent monitoring requirement. (ENNOBLE-ATE [Edoxaban for Prevention of Blood Vessels Being Blocked by Clots] (Thrombotic Events) in Children at Risk Because of Cardiac Disease trial; NCT03395639).",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.711015",
+      "authors": [
+        {
+          "name": "Michael A Portman; Jeffrey P Jacobs; Jane W Newburger; Felix Berger; Michael A Grosso; Anil Duggal; Ben Tao; Neil A Goldenberg"
+        }
+      ],
+      "year": 2022,
+      "journal": "Journal of the American College of Cardiology",
+      "venue": "Journal of the American College of Cardiology",
+      "doi": "10.1016/j.jacc.2022.09.031",
+      "url": "https://doi.org/10.1016/j.jacc.2022.09.031",
+      "quality_score": 5.333333333333333,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "36763356.0",
+      "pmid": "36763356.0",
+      "title": "Trends in In-Hospital Cardiac Arrest and Mortality Among Children With Cardiac Disease in the Intensive Care Unit: A Systematic Review and Meta-analysis.",
+      "abstract": "Data on trends in incidence and mortality for in-hospital cardiac arrest (IHCA) in children with cardiac disease in the intensive care unit (ICU) are lacking. Additionally, there is limited information on factors associated with IHCA and mortality in this population. To investigate incidence, trends, and factors associated with IHCA and mortality in children with cardiac disease in the ICU. A systematic review was conducted using PubMed, Web of Science, EMBASE, and CINAHL, from inception to September 2021. Observational studies on IHCA in pediatric ICU patients with cardiac disease were selected (age cutoffs in studies varied from age ≤18 y to age ≤21 y). Quality of studies was assessed using the National Institutes of Health Quality Assessment Tools. Data on incidence, mortality, and factors associated with IHCA or mortality were extracted by 2 independent observers. Random-effects meta-analysis was used to compute pooled proportions and pooled ORs. Metaregression, adjusted for type of study and diagnostic category, was used to evaluate trends in incidence and mortality. Primary outcomes were incidence of IHCA and in-hospital mortality. Secondary outcomes were proportions of patients who underwent extracorporeal membrane oxygenation (ECMO) cardiopulmonary resuscitation (ECPR) and those who did not achieve return of spontaneous circulation (ROSC). Of the 2574 studies identified, 25 were included in the systematic review (131 724 patients) and 18 in the meta-analysis. Five percent (95% CI, 4%-6%) of children with cardiac disease in the ICU experienced IHCA. The pooled in-hospital mortality among children who experienced IHCA was 51% (95% CI, 42%-59%). Thirty-nine percent (95% CI, 29%-51%) did not achieve ROSC; in centers with ECMO, 22% (95% CI, 14%-33%) underwent ECPR, whereas 22% (95% CI, 12%-38%) were unable to be resuscitated. Both incidence of IHCA and associated in-hospital mortality decreased significantly in the last 20 years (both P for trend < .001), whereas the proportion of patients not achieving ROSC did not significantly change (P for trend = .90). Neonatal age, prematurity, comorbidities, univentricular physiology, arrhythmias, prearrest mechanical ventilation or ECMO, and higher surgical complexity were associated with increased incidence of IHCA and mortality odds. This systematic review and meta-analysis found that 5% of children with cardiac disease in the ICU experienced IHCA. Decreasing trends in IHCA incidence and mortality suggest that education on preventive interventions, use of ECMO, and post-arrest care may have been effective; however, there remains a crucial need for developing resuscitation strategies specific to children with cardiac disease.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.711043",
+      "authors": [
+        {
+          "name": "Francesca Sperotto; Marco Daverio; Angela Amigoni; Dario Gregori; Anna Dorste; Catherine Allan; Ravi R Thiagarajan"
+        }
+      ],
+      "year": 2023,
+      "journal": "JAMA network open",
+      "venue": "JAMA network open",
+      "doi": "10.1001/jamanetworkopen.2022.56178",
+      "url": "https://doi.org/10.1001/jamanetworkopen.2022.56178",
+      "quality_score": 5.333333333333333,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "39115488.0",
+      "pmid": "39115488.0",
+      "title": "International Society for Heart and Lung Transplantation Guidelines for the Evaluation and Care of Cardiac Transplant Candidates-2024.",
+      "abstract": "The \"International Society for Heart and Lung Transplantation Guidelines for the Evaluation and Care of Cardiac Transplant Candidates-2024\" updates and replaces the \"Listing Criteria for Heart Transplantation: International Society for Heart and Lung Transplantation Guidelines for the Care of Cardiac Transplant Candidates-2006\" and the \"2016 International Society for Heart Lung Transplantation Listing Criteria for Heart Transplantation: A 10-year Update.\" The document aims to provide tools to help integrate the numerous variables involved in evaluating patients for transplantation, emphasizing updating the collaborative treatment while waiting for a transplant. There have been significant practice-changing developments in the care of heart transplant recipients since the publication of the International Society for Heart and Lung Transplantation (ISHLT) guidelines in 2006 and the 10-year update in 2016. The changes pertain to 3 aspects of heart transplantation: (1) patient selection criteria, (2) care of selected patient populations, and (3) durable mechanical support. To address these issues, 3 task forces were assembled. Each task force was cochaired by a pediatric heart transplant physician with the specific mandate to highlight issues unique to the pediatric heart transplant population and ensure their adequate representation. This guideline was harmonized with other ISHLT guidelines published through November 2023. The 2024 ISHLT guidelines for the evaluation and care of cardiac transplant candidates provide recommendations based on contemporary scientific evidence and patient management flow diagrams. The American College of Cardiology and American Heart Association modular knowledge chunk format has been implemented, allowing guideline information to be grouped into discrete packages (or modules) of information on a disease-specific topic or management issue. Aiming to improve the quality of care for heart transplant candidates, the recommendations present an evidence-based approach.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.711097",
+      "authors": [
+        {
+          "name": "Yael Peled; Anique Ducharme; Michelle Kittleson; Neha Bansal; Josef Stehlik; Shahnawaz Amdani; Diyar Saeed; Richard Cheng; Brian Clarke; Fabienne Dobbels; Maryjane Farr; JoAnn Lindenfeld; Lazaros Nikolaidis; Jignesh Patel; Deepak Acharya; Dimpna Albert; Saima Aslam; Alejandro Bertolotti; Michael Chan; Sharon Chih; Monica Colvin; Maria Crespo-Leiro; David D'Alessandro; Kevin Daly; Carles Diez-Lopez; Anne Dipchand; Stephan Ensminger; Melanie Everitt; Alexander Fardman; Marta Farrero; David Feldman; Christiana Gjelaj; Matthew Goodwin; Kimberly Harrison; Eileen Hsich; Emer Joyce; Tomoko Kato; Daniel Kim; Me-Linh Luong; Haifa Lyster; Marco Masetti; Ligia Neres Matos; Johan Nilsson; Pierre-Emmanuel Noly; Vivek Rao; Katrine Rolid; Kelly Schlendorf; Martin Schweiger; Joseph Spinner; Madeleine Townsend; Maxime Tremblay-Gravel; Simon Urschel; Jean-Luc Vachiery; Angela Velleca; Georgina Waldman; James Walsh"
+        }
+      ],
+      "year": 2024,
+      "journal": "The Journal of heart and lung transplantation : the official publication of the International Society for Heart Transplantation",
+      "venue": "The Journal of heart and lung transplantation : the official publication of the International Society for Heart Transplantation",
+      "doi": "10.1016/j.healun.2024.05.010",
+      "url": "https://doi.org/10.1016/j.healun.2024.05.010",
+      "quality_score": 5.0,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "33166178.0",
+      "pmid": "33166178.0",
+      "title": "Review of Cardiac Involvement in Multisystem Inflammatory Syndrome in Children.",
+      "abstract": "Coronavirus disease 2019 (COVID-19) is an infectious disease caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) with substantial cardiovascular implications. Although infection with SARS-CoV-2 is usually mild in children, some children later develop a severe inflammatory disease that can have manifestations similar to toxic shock syndrome or Kawasaki disease. This syndrome has been defined by the US Centers for Disease Control and Prevention as multisystem inflammatory syndrome in children. Although the prevalence is unknown, >600 cases have been reported in the literature. Multisystem inflammatory syndrome in children appears to be more common in Black and Hispanic children in the United States. Multisystem inflammatory syndrome in children typically occurs a few weeks after acute infection and the putative etiology is a dysregulated inflammatory response to SARS-CoV-2 infection. Persistent fever and gastrointestinal symptoms are the most common symptoms. Cardiac manifestations are common, including ventricular dysfunction, coronary artery dilation and aneurysms, arrhythmia, and conduction abnormalities. Severe cases can present as vasodilatory or cardiogenic shock requiring fluid resuscitation, inotropic support, and in the most severe cases, mechanical ventilation and extracorporeal membrane oxygenation. Empirical treatments have aimed at reversing the inflammatory response using immunomodulatory medications. Intravenous immunoglobulin, steroids, and other immunomodulatory agents have been used frequently. Most patients recover within days to a couple of weeks and mortality is rare, although the medium- and long-term sequelae, particularly cardiovascular complications, are not yet known. This review describes the published data on multisystem inflammatory syndrome in children, focusing on cardiac complications, and provides clinical considerations for cardiac evaluation and follow-up.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.711202",
+      "authors": [
+        {
+          "name": "Tarek Alsaied; Adriana H Tremoulet; Jane C Burns; Arwa Saidi; Audrey Dionne; Sean M Lang; Jane W Newburger; Sarah de Ferranti; Kevin G Friedman"
+        }
+      ],
+      "year": 2021,
+      "journal": "Circulation",
+      "venue": "Circulation",
+      "doi": "10.1161/CIRCULATIONAHA.120.049836",
+      "url": "https://doi.org/10.1161/CIRCULATIONAHA.120.049836",
+      "quality_score": 4.666666666666667,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "35830709.0",
+      "pmid": "35830709.0",
+      "title": "ICU Admission Tool for Congenital Heart Catheterization (iCATCH): A Predictive Model for High Level Post-Catheterization Care and Patient Management.",
+      "abstract": "Currently, there are no prediction tools available to identify patients at risk of needing high-complexity care following cardiac catheterization for congenital heart disease. We sought to develop a method to predict the likelihood a patient will require intensive care level resources following elective cardiac catheterization. Prospective single-center study capturing important patient and procedural characteristics for predicting discharge to the ICU. Characteristics significant at the 0.10 level in the derivation dataset (July 1, 2017 to December 31, 2019) were considered for inclusion in the final multivariable logistic regression model. The model was validated in the testing dataset (January 1, 2020 to December 31, 2020). The novel pre-procedure cardiac status (PCS) feature, collection started in January 2019, was assessed separately in the final model using the 2019 through 2020 dataset. Tertiary pediatric heart center. All elective cases coming from home or non-ICU who underwent a cardiac catheterization from July 2017 to December 2020. None. A total of 2,192 cases were recorded in the derivation dataset, of which 11% of patients ( n = 245) were admitted to the ICU, while 64% ( n = 1,413) were admitted to a medical unit and 24% ( n = 534) were discharged home. In multivariable analysis, the following predictors were identified: 1) weight less than 5 kg and 5-9.9 kg, 2) presence of systemic illness, 3) recent cardiac intervention less than 90 days, and 4) ICU Admission Tool for Congenital Heart Catheterization case type risk categories (1-5), with C -statistics of 0.79 and 0.76 in the derivation and testing cohorts, respectively. The addition of the PCS feature fit into the final model resulted in a C -statistic of 0.79. The creation of a validated pre-procedural risk prediction model for ICU admission following congenital cardiac catheterization using a large volume, single-center, academic institution will improve resource allocation and prediction of capacity needs for this complex patient population.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.728588",
+      "authors": [
+        {
+          "name": "Brian P Quinn; Lauren C Shirley; Mary J Yeh; Kimberlee Gauvreau; Juan C Ibla; Sarah G Kotin; Diego Porras; Lisa J Bergersen"
+        }
+      ],
+      "year": 2022,
+      "journal": "Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federation of Pediatric Intensive and Critical Care Societies",
+      "venue": "Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federation of Pediatric Intensive and Critical Care Societies",
+      "doi": "10.1097/PCC.0000000000003028",
+      "url": "https://doi.org/10.1097/PCC.0000000000003028",
+      "quality_score": 5.0,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "38206260.0",
+      "pmid": "38206260.0",
+      "title": "Multicenter Study of Survival Benefit of Cardiac Resynchronization Therapy in Pediatric and Congenital Heart Disease.",
+      "abstract": "Evidence for the efficacy of cardiac resynchronization therapy (CRT) in pediatric and congenital heart disease (CHD) has been limited to surrogate outcomes. This study aimed to assess the impact of CRT upon the risk of transplantation or death in a retrospective, high-risk, controlled cohort at 5 quaternary referral centers. Both CRT patients and control patients were <21 years of age or had CHD; had systemic ventricular ejection fraction <45%; symptomatic heart failure; and significant electrical dyssynchrony (QRS duration z score >3 or single-site ventricular pacing >40%) at enrollment. Patients with CRT were matched with control patients via 1:1 propensity score matching. CRT patients were enrolled at CRT implantation; control patients were enrolled at the outpatient clinical encounter where inclusion criteria were first met. The primary endpoint was transplantation or death. In total, 324 control patients and 167 CRT recipients were identified. Mean follow-up was 4.2 ± 3.7 years. Upon propensity score matching, 139 closely matched pairs were identified (20 baseline indices). Of the 139 matched pairs, 52 (37.0%) control patients and 31 (22.0%) CRT recipients reached the primary endpoint. On both unadjusted and multivariable Cox regression analysis, the risk reduction associated with CRT for the primary endpoint was significant (HR: 0.40; 95% CI: 0.25-0.64; P < 0.001; and HR: 0.44; 95% CI: 0.28-0.71; P = 0.001, respectively). On longitudinal assessment, the CRT group had significantly improved systemic ventricular ejection fraction (P < 0.001) and shorter QRS duration (P = 0.015), sustained to 5 years. In pediatric and CHD patients with symptomatic systolic heart failure and electrical dyssynchrony, CRT was associated with improved heart transplantation-free survival.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.728748",
+      "authors": [
+        {
+          "name": "Henry Chubb; Douglas Y Mah; Maully Shah; Kimberly Y Lin; David M Peng; Benjamin W Hale; Lindsay May; Susan Etheridge; William Goodyer; Scott R Ceresnak; Kara S Motonaga; David N Rosenthal; Christopher S Almond; Doff B McElhinney; Anne M Dubin"
+        }
+      ],
+      "year": 2024,
+      "journal": "JACC. Clinical electrophysiology",
+      "venue": "JACC. Clinical electrophysiology",
+      "doi": "10.1016/j.jacep.2023.11.008",
+      "url": "https://doi.org/10.1016/j.jacep.2023.11.008",
+      "quality_score": 4.5,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "33084842.0",
+      "pmid": "33084842.0",
+      "title": "Association of Damaging Variants in Genes With Increased Cancer Risk Among Patients With Congenital Heart Disease.",
+      "abstract": "Patients with congenital heart disease (CHD), the most common birth defect, have increased risks for cancer. Identification of the variables that contribute to cancer risk is essential for recognizing patients with CHD who warrant longitudinal surveillance and early interventions. To compare the frequency of damaging variants in cancer risk genes among patients with CHD and control participants and identify associated clinical variables in patients with CHD who have cancer risk variants. This multicenter case-control study included participants with CHD who had previously been recruited to the Pediatric Cardiac Genomics Consortium based on presence of structural cardiac anomaly without genetic diagnosis at the time of enrollment. Permission to use published sequencing data from unaffected adult participants was obtained from 2 parent studies. Data were collected for this study from December 2010 to April 2019. Presence of rare (allele frequency, <1 × 10-5) loss-of-function (LoF) variants in cancer risk genes. Frequency of LoF variants in cancer risk genes (defined in the Catalogue of Somatic Mutations in Cancer-Cancer Gene Consensus database), were statistically assessed by binomial tests in patients with CHD and control participants. A total of 4443 individuals with CHD (mean [range] age, 13.0 [0-84] years; 2225 of 3771 with reported sex [59.0%] male) and 9808 control participants (mean [range] age, 52.1 [1-92] years; 4967 of 9808 [50.6%] male) were included. The frequency of LoF variants in regulatory cancer risk genes was significantly higher in patients with CHD than control participants (143 of 4443 [3.2%] vs 166 of 9808 [1.7%]; odds ratio [OR], 1.93 [95% CI, 1.54-2.42]; P = 1.38 × 10-12), and among CHD genes previously associated with cancer risk (58 of 4443 [1.3%] vs 18 of 9808 [0.18%]; OR, 7.2 [95% CI, 4.2-12.2]; P < 2.2 × 10-16). The LoF variants were also nominally increased in 14 constrained cancer risk genes with high expression in the developing heart. Seven of these genes (ARHGEF12, CTNNB1, LPP, MLLT4, PTEN, TCF12, and TFRC) harbored LoF variants in multiple patients with unexplained CHD. The highest rates for LoF variants in cancer risk genes occurred in patients with CHD and extracardiac anomalies (248 of 1482 individuals [16.7%]; control: 1099 of 9808 individuals [11.2%]; OR, 1.59 [95% CI, 1.37-1.85]; P = 1.3 × 10-10) and/or neurodevelopmental delay (209 of 1393 individuals [15.0%]; control: 1099 of 9808 individuals [11.2%]; OR, 1.40 [95% CI, 1.19-1.64]; P = 9.6 × 10-6). Genotypes of CHD may account for increased cancer risks. In this cohort, damaging variants were prominent in the 216 genes that predominantly encode regulatory proteins. Consistent with their fundamental developmental functions, patients with CHD and damaging variants in these genes often had extracardiac manifestations. These data may also implicate cancer risk genes that are repeatedly varied in patients with unexplained CHD as CHD genes.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.728853",
+      "authors": [
+        {
+          "name": "Sarah U Morton; Akiko Shimamura; Peter E Newburger; Alexander R Opotowsky; Daniel Quiat; Alexandre C Pereira; Sheng Chih Jin; Michelle Gurvitz; Martina Brueckner; Wendy K Chung; Yufeng Shen; Daniel Bernstein; Bruce D Gelb; Alessandro Giardini; Elizabeth Goldmuntz; Richard W Kim; Richard P Lifton; George A Porter; Deepak Srivastava; Martin Tristani-Firouzi; Jane W Newburger; J G Seidman; Christine E Seidman"
+        }
+      ],
+      "year": 2021,
+      "journal": "JAMA cardiology",
+      "venue": "JAMA cardiology",
+      "doi": "10.1001/jamacardio.2020.4947",
+      "url": "https://doi.org/10.1001/jamacardio.2020.4947",
+      "quality_score": 3.5,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "37730290.0",
+      "pmid": "37730290.0",
+      "title": "Chronic Medication Burden After Cardiac Surgery for Pediatric Medicaid Beneficiaries.",
+      "abstract": "Congenital heart defects are the most common and resource-intensive birth defects. As children with congenital heart defects increasingly survive beyond early childhood, it is imperative to understand longitudinal disease burden. The purpose of this study was to examine chronic outpatient prescription medication use and expenditures for New York State pediatric Medicaid enrollees, comparing children who undergo cardiac surgery (cardiac enrollees) and the general pediatric population. This was a retrospective cohort study of all Medicaid enrollees age <18 years using the New York State Congenital Heart Surgery Collaborative for Longitudinal Outcomes and Utilization of Resources database (2006-2019). Primary outcomes were total chronic medications per person-year, enrollees per 100 person-years using ≥1 and ≥3 medications, and medication expenditures per person-year. We described and compared outcomes between cardiac enrollees and the general pediatric population. Among cardiac enrollees, multivariable regression examined associations between outcomes and clinical characteristics. We included 5,459 unique children (32,131 person-years) who underwent cardiac surgery and 4.5 million children (22 million person-years) who did not. More than 4 in 10 children who underwent cardiac surgery used ≥1 chronic medication compared with approximately 1 in 10 children who did not have cardiac surgery. Medication expenditures were 10 times higher per person-year for cardiac compared with noncardiac enrollees. Among cardiac enrollees, disease severity was associated with chronic medication use; use was highest among infants; however, nearly one-half of adolescents used ≥1 chronic medication. Children who undergo cardiac surgery experience high medication burden that persists throughout childhood. Understanding chronic medication use can inform clinicians (both pediatricians and subspecialists) and policymakers, and ultimately the value of care for this medically complex population.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.744799",
+      "authors": [
+        {
+          "name": "Joyce L Woo; Katherine A Nash; Kacie Dragan; Sarah Crook; Matthew Neidell; Stephen Cook; Edward L Hannan; Marshall Jacobs; Andrew B Goldstone; Christopher J Petit; Robert Vincent; Kathleen Walsh-Spoonhower; Ralph Mosca; T K Susheel Kumar; Neil Devejian; Steven A Kamenir; George M Alfieris; Michael F Swartz; David Meyer; Erin A Paul; Jane W Newburger; John Billings; Matthew M Davis; Brett R Anderson"
+        }
+      ],
+      "year": 2023,
+      "journal": "Journal of the American College of Cardiology",
+      "venue": "Journal of the American College of Cardiology",
+      "doi": "10.1016/j.jacc.2023.06.046",
+      "url": "https://doi.org/10.1016/j.jacc.2023.06.046",
+      "quality_score": 9.5,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "38107263.0",
+      "pmid": "38107263.0",
+      "title": "Rationale and design of the Children's Oncology Group study AAML1831 integrated cardiac substudies in pediatric acute myeloid leukemia therapy.",
+      "abstract": "Pediatric acute myeloid leukemia (AML) therapy is associated with substantial short- and long-term treatment-related cardiotoxicity mainly due to high-dose anthracycline exposure. Early left ventricular systolic dysfunction (LVSD) compromises anthracycline delivery and is associated with inferior event-free and overall survival in <i>de novo</i> pediatric AML. Thus, effective cardioprotective strategies and cardiotoxicity risk predictors are critical to optimize cancer therapy delivery and enable early interventions to prevent progressive LVSD. While dexrazoxane-based cardioprotection reduces short-term cardiotoxicity without compromising cancer survival, liposomal anthracycline formulations have the potential to mitigate cardiotoxicity while improving antitumor efficacy. This overview summarizes the rationale and methodology of cardiac substudies within AAML1831, a randomized Children's Oncology Group Phase 3 study of CPX-351, a liposomal formulation of daunorubicin and cytarabine, in comparison with standard daunorubicin/cytarabine with dexrazoxane in the treatment of <i>de novo</i> pediatric AML. Children (age <22 years) with newly diagnosed AML were enrolled and randomized to CPX-351-containing induction 1 and 2 (Arm A) or standard daunorubicin and dexrazoxane-containing induction (Arm B). Embedded cardiac correlative studies aim to compare the efficacy of this liposomal anthracycline formulation to dexrazoxane for primary prevention of cardiotoxicity by detailed core lab analysis of standardized echocardiograms and serial cardiac biomarkers throughout AML therapy and in follow-up. In addition, AAML1831 will assess the ability of early changes in sensitive echo indices (e.g., global longitudinal strain) and cardiac biomarkers (e.g., troponin and natriuretic peptides) to predict subsequent LVSD. Finally, AAML1831 establishes expert consensus-based strategies in cardiac monitoring and anthracycline dose modification to balance the potentially competing priorities of cardiotoxicity reduction with optimal leukemia therapy. This study will inform diagnostic, prognostic, preventative, and treatment strategies regarding cardiotoxicity during pediatric AML therapy. Together, these measures have the potential to improve leukemia-free and overall survival and long-term cardiovascular health in children with AML. <b>Clinical trial registration:</b> https://clinicaltrials.gov/, identifier NCT04293562.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.744898",
+      "authors": [
+        {
+          "name": "Kasey J Leger; Nora Robison; Hari K Narayan; Amanda M Smith; Tenaadam Tsega; Jade Chung; Amber Daniels; Zhen Chen; Virginia Englefield; Biniyam G Demissei; Benedicte Lefebvre; Gemma Morrow; Ilona Dizon; Robert B Gerbing; Reena Pabari; Kelly D Getz; Richard Aplenc; Jessica A Pollard; Eric J Chow; W H Wilson Tang; William L Border; Ritu Sachdeva; Todd A Alonzo; E Anders Kolb; Todd M Cooper; Bonnie Ky"
+        }
+      ],
+      "year": 2023,
+      "journal": "Frontiers in cardiovascular medicine",
+      "venue": "Frontiers in cardiovascular medicine",
+      "doi": "10.3389/fcvm.2023.1286241",
+      "url": "https://doi.org/10.3389/fcvm.2023.1286241",
+      "quality_score": 6.5,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "39172254.0",
+      "pmid": "39172254.0",
+      "title": "Coronary Events Following Dobutamine Stress Cardiac Magnetic Resonance Imaging in Pediatric Patients.",
+      "abstract": "Dobutamine stress cardiac magnetic resonance (dsCMR) has demonstrated value in identifying patients at risk for adverse cardiovascular events in adults with coronary artery disease, but its prognostic value in younger patients is unknown. This study sought to evaluate the relationship between dsCMR results and the risk of subsequent cardiovascular events in children. Patients age < 23 years who underwent dsCMR at Boston Children's Hospital were eligible for inclusion. Patients were excluded if no follow-up data were available after dsCMR or the dsCMR protocol was not completed. Data regarding the presence of inducible regional wall motion abnormalities and subsequent cardiovascular events during follow-up were analyzed. Cardiovascular events included myocardial infarction, surgical or catheter-based coronary artery intervention, and ischemic symptoms. Among 80 dsCMR studies in 64 patients with median age 5.3 years (range 0.5-22.4 years), 3 patients had a positive dsCMR with inducible regional wall motion abnormalities. Over a median follow-up of 7.4 years (IQR 4.0-11.2), 2 of these patients underwent surgical intervention (coronary artery bypass grafting and unroofing of a myocardial bridge) and the third remained asymptomatic with no interventions. Among 61 patients with a negative dsCMR, none experienced myocardial infarction, death, or aborted sudden death. Four underwent cardiac interventions (cardiac transplantation, coronary artery bypass grafting, and unroofing) due to symptoms or catheterization findings. In pediatric patients undergoing dsCMR, wall motion abnormalities indicating inducible ischemia were uncommon. Those with a negative dsCMR were unlikely to experience an adverse cardiac event or undergo a cardiac intervention on medium-term follow-up.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.745086",
+      "authors": [
+        {
+          "name": "Meaghan Beattie; Rebecca Beroukhim; David Annese; Audrey Dionne; Annette Baker; Andrew J Powell"
+        }
+      ],
+      "year": 2024,
+      "journal": "Pediatric cardiology",
+      "venue": "Pediatric cardiology",
+      "doi": "10.1007/s00246-024-03632-4",
+      "url": "https://doi.org/10.1007/s00246-024-03632-4",
+      "quality_score": 5.0,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "31371125.0",
+      "pmid": "31371125.0",
+      "title": "Arterial Ischemic Stroke Secondary to Cardiac Disease in Neonates and Children.",
+      "abstract": "We describe the risk factors for peri-procedural and spontaneous arterial ischemic stroke (AIS) in children with cardiac disease. We identified children with cardiac causes of AIS enrolled in the International Pediatric Stroke Study registry from January 2003 to July 2014. Isolated patent foramen ovale was excluded. Peri-procedural AIS (those occurring during or within 72 hours of cardiac surgery, cardiac catheterization, or mechanical circulatory support) and spontaneous AIS that occurred outside of these time periods were compared. We identified 672 patients with congenital or acquired cardiac disease as the primary risk factor for AIS. Among these, 177 patients (26%) had peri-procedural AIS and 495 patients (74%) had spontaneous AIS. Among non-neonates, spontaneous AIS occurred at older ages (median 4.2 years, interquartile range 0.97 to 12.4) compared with peri-procedural AIS (median 2.4 years, interquartile range 0.35 to 6.1, P < 0.001). About a third of patients in both groups had a systemic illness at the time of AIS. Patients who had spontaneous AIS were more likely to have a preceding thrombotic event (16 % versus 9 %, P = 0.02) and to have a moderate or severe neurological deficit at discharge (67% versus 33%, P = 0.01) compared to those with peri-procedural AIS. Children with cardiac disease are at risk for AIS at the time of cardiac procedures but also outside of the immediate 72 hours after procedures. Many have acute systemic illness or thrombotic event preceding AIS, suggesting that inflammatory or prothrombotic conditions could act as a stroke trigger in this susceptible population.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.745137",
+      "authors": [
+        {
+          "name": "Melissa G Chung; Kristin P Guilliams; Jenny L Wilson; Lauren A Beslow; Michael M Dowling; Neil R Friedman; Sahar M A Hassanein; Rebecca Ichord; Lori C Jordan; Mark T Mackay; Mubeen F Rafay; Michael Rivkin; Marcela Torres; Dimitrios Zafeiriou; Gabrielle deVeber; Christine K Fox"
+        }
+      ],
+      "year": 2019,
+      "journal": "Pediatric neurology",
+      "venue": "Pediatric neurology",
+      "doi": "10.1016/j.pediatrneurol.2019.06.008",
+      "url": "https://doi.org/10.1016/j.pediatrneurol.2019.06.008",
+      "quality_score": 5.0,
+      "relevance_score": 0.7
+    },
+    {
+      "id": "35640385.0",
+      "pmid": "35640385.0",
+      "title": "Learned iterative segmentation of highly variable anatomy from limited data: Applications to whole heart segmentation for congenital heart disease.",
+      "abstract": "Training deep learning models that segment an image in one step typically requires a large collection of manually annotated images that captures the anatomical variability in a cohort. This poses challenges when anatomical variability is extreme but training data is limited, as when segmenting cardiac structures in patients with congenital heart disease (CHD). In this paper, we propose an iterative segmentation model and show that it can be accurately learned from a small dataset. Implemented as a recurrent neural network, the model evolves a segmentation over multiple steps, from a single user click until reaching an automatically determined stopping point. We develop a novel loss function that evaluates the entire sequence of output segmentations, and use it to learn model parameters. Segmentations evolve predictably according to growth dynamics encapsulated by training data, which consists of images, partially completed segmentations, and the recommended next step. The user can easily refine the final segmentation by examining those that are earlier or later in the output sequence. Using a dataset of 3D cardiac MR scans from patients with a wide range of CHD types, we show that our iterative model offers better generalization to patients with the most severe heart malformations.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.728691",
+      "authors": [
+        {
+          "name": "Danielle F Pace; Adrian V Dalca; Tom Brosch; Tal Geva; Andrew J Powell; Jürgen Weese; Mehdi H Moghari; Polina Golland"
+        }
+      ],
+      "year": 2022,
+      "journal": "Medical image analysis",
+      "venue": "Medical image analysis",
+      "doi": "10.1016/j.media.2022.102469",
+      "url": "https://doi.org/10.1016/j.media.2022.102469",
+      "quality_score": 4.5,
+      "relevance_score": 0.6
+    },
+    {
+      "id": "33687737.0",
+      "pmid": "33687737.0",
+      "title": "A survey of the global impact of COVID-19 on the practice of pediatric anesthesia: A study from the pediatric anesthesia COVID-19 Collaborative Group.",
+      "abstract": "Pediatric anesthesiology has been greatly impacted by COVID-19 in the delivery of care to patients and to the individual providers. With this study, we sought to survey pediatric centers and highlight the variations in care related to perioperative medicine during the COVID-19 pandemic, including the availability of protective equipment, the practice of pediatric anesthesia, and economic impact. The aim of the survey was to determine how COVID-19 directly impacted pediatric anesthesia practices during the study period. A survey concerning four major domains (testing, safety, clinical management/policy, economics) was developed. It was pilot tested for clarity and content by members of the Pediatric Anesthesia COVID-19 Collaborative. The survey was administered by email to all Pediatric Anesthesia COVID-19 Collaborative members on September 1, 2020. Respondents had six weeks to complete the survey and were instructed to answer the questions based on their institution's practice during September 1 - October 13, 2020. Sixty-three institutions (100% response rate) participated in the COVID-19 Pediatric Anesthesia Survey. Forty-one hospitals (65%) were from the United States, and 35% included other countries. N95 masks were available to anesthesia teams at 91% of institutions (n = 57) (95% CI: 80%-96%). COVID-19 testing criteria of anesthesia staff and guidelines to return to work varied by institution. Structured simulation training aimed at improving COVID-19 safety and patient care occurred at 62% of institutions (n = 39). Pediatric anesthesiologists were economically affected by a reduction in their employer benefits and restriction of travel due to employer imposed quarantine regulations. Our data indicate that the COVID-19 pandemic has impacted the testing, safety, clinical management, and economics of pediatric anesthesia practice. Further investigation into the long-term consequences for the specialty is indicated.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.689896",
+      "authors": [
+        {
+          "name": "Codruta N Soneru; Allison M Fernandez; Victoria Bradford; Steven J Staffa; Vidya T Raman; Joseph Cravero; David Zurakowski; Petra M Meier"
+        }
+      ],
+      "year": 2021,
+      "journal": "Paediatric anaesthesia",
+      "venue": "Paediatric anaesthesia",
+      "doi": "10.1111/pan.14174",
+      "url": "https://doi.org/10.1111/pan.14174",
+      "quality_score": 6.5,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "38062304.0",
+      "pmid": "38062304.0",
+      "title": "Common Data Elements for Disorders of Consciousness: Recommendations from the Working Group in the Pediatric Population.",
+      "abstract": "The fundamental gap obstructing forward progress of evidenced-based care in pediatric and neonatal disorders of consciousness (DoC) is the lack of defining consensus-based terminology to perform comparative research. This lack of shared nomenclature in pediatric DoC stems from the inherently recursive dilemma of the inability to reliably measure consciousness in the very young. However, recent advancements in validated clinical examinations and technologically sophisticated biomarkers of brain activity linked to future abilities are unlocking this previously formidable challenge to understanding the DoC in the developing brain. To address this need, the first of its kind international convergence of an interdisciplinary team of pediatric DoC experts was organized by the Neurocritical Care Society's Curing Coma Campaign. The multidisciplinary panel of pediatric DoC experts proposed pediatric-tailored common data elements (CDEs) covering each of the CDE working groups including behavioral phenotyping, biospecimens, electrophysiology, family and goals of care, neuroimaging, outcome and endpoints, physiology and big Data, therapies, and pediatrics. We report the working groups' pediatric-focused DoC CDE recommendations and disseminate CDEs to be used in studies of pediatric patients with DoC. The CDEs recommended support the vision of progressing collaborative and successful internationally collaborative pediatric coma research.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.689931",
+      "authors": [
+        {
+          "name": "Varina L Boerwinkle; Brian Appavu; Emilio Garzon Cediel; Jennifer Erklaurer; Saptharishi Lalgudi Ganesan; Christie Gibbons; Cecil Hahn; Kerri L LaRovere; Dick Moberg; Girija Natarajan; Erika Molteni; William R Reuther; Beth S Slomine"
+        }
+      ],
+      "year": 2024,
+      "journal": "Neurocritical care",
+      "venue": "Neurocritical care",
+      "doi": "10.1007/s12028-023-01870-7",
+      "url": "https://doi.org/10.1007/s12028-023-01870-7",
+      "quality_score": 5.5,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "31563573.0",
+      "pmid": "31563573.0",
+      "title": "Comprehensive Prognostication in Critically Ill Pediatric Hematopoietic Cell Transplant Patients: Results from Merging the Center for International Blood and Marrow Transplant Research (CIBMTR) and Virtual Pediatric Systems (VPS) Registries.",
+      "abstract": "Critically ill pediatric allogeneic hematopoietic cell transplant (HCT) patients may benefit from early and aggressive interventions aimed at reversing the progression of multiorgan dysfunction. Therefore, we evaluated 25 early risk factors for pediatric intensive care unit (PICU) mortality to improve mortality prognostication. We merged the Virtual Pediatric Systems and Center for International Blood and Marrow Transplant Research databases and analyzed 936 critically ill patients ≤21 years of age who had undergone allogeneic HCT and subsequently required PICU admission between January 1, 2009, and December 31, 2014. Of 1532 PICU admissions, the overall PICU mortality rate was 17.4% (95% confidence interval [CI], 15.6% to 19.4%) but was significantly higher for patients requiring mechanical ventilation (44.0%), renal replacement therapy (56.1%), or extracorporeal life support (77.8%). Mortality estimates increased significantly the longer that patients remained in the PICU. Of 25 HCT- and PICU-specific characteristics available at or near the time of PICU admission, moderate/severe pre-HCT renal injury, pre-HCT recipient cytomegalovirus seropositivity, <100-day interval between HCT and PICU admission, HCT for underlying acute myeloid leukemia, and greater admission organ dysfunction as approximated by the Pediatric Risk of Mortality 3 score were each independently associated with PICU mortality. A multivariable model using these components identified that patients in the top quartile of risk had 3 times greater mortality than other patients (35.1% versus 11.5%, P < .001, classification accuracy 75.2%; 95% CI, 73.0% to 77.4%). These data improve our working knowledge of the factors influencing the progression of critical illness in pediatric allogeneic HCT patients. Future investigation aimed at mitigating the effect of these risk factors is warranted.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.690018",
+      "authors": [
+        {
+          "name": "Matt S Zinter; Brent R Logan; Caitrin Fretham; Anil Sapru; Allistair Abraham; Mahmoud D Aljurf; Staci D Arnold; Andrew Artz; Jeffery J Auletta; Saurabh Chhabra; Edward Copelan; Christine Duncan; Robert P Gale; Eva Guinan; Peiman Hematti; Amy K Keating; David I Marks; Richard Olsson; Bipin N Savani; Celalettin Ustun; Kirsten M Williams; Marcelo C Pasquini; Christopher C Dvorak"
+        }
+      ],
+      "year": 2020,
+      "journal": "Biology of blood and marrow transplantation : journal of the American Society for Blood and Marrow Transplantation",
+      "venue": "Biology of blood and marrow transplantation : journal of the American Society for Blood and Marrow Transplantation",
+      "doi": "10.1016/j.bbmt.2019.09.027",
+      "url": "https://doi.org/10.1016/j.bbmt.2019.09.027",
+      "quality_score": 4.5,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "33124649.0",
+      "pmid": "33124649.0",
+      "title": "Development and Validation of a Pediatric Comorbidity Index.",
+      "abstract": "Comorbidity scores are widely used to help address confounding bias in nonrandomized studies conducted within health-care databases, but existing scores were developed to predict all-cause mortality in adults and might not be appropriate for use in pediatric studies. We developed and validated a pediatric comorbidity index, using health-care utilization data from the tenth revision of the International Classification of Diseases. Within the MarketScan database of US commercial claims data, pediatric patients (aged ≤18 years) continuously enrolled between October 1, 2015, and September 30, 2017, were identified. Logistic regression was used to predict the 1-year risk of hospitalization based on 27 predefined conditions and empirically identified conditions derived from the most prevalent diagnoses among patients with the outcome. A single numerical index was created by assigning weights to each condition based on its β coefficient. We conducted internal validation of the index and compared its performance with existing adult scores. The pediatric comorbidity index consisted of 24 conditions and achieved a C statistic of 0.718 (95% confidence interval (CI): 0.714, 0.723). The index outperformed existing adult scores in a pediatric population (C statistics ranging from 0.522 to 0.640). The pediatric comorbidity index provides a summary measure of disease burden and can be used for risk adjustment in epidemiologic studies of pediatric patients.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.690045",
+      "authors": [
+        {
+          "name": "Jenny W Sun; Florence T Bourgeois; Sebastien Haneuse; Sonia Hernández-Díaz; Joan E Landon; Brian T Bateman; Krista F Huybrechts"
+        }
+      ],
+      "year": 2021,
+      "journal": "American journal of epidemiology",
+      "venue": "American journal of epidemiology",
+      "doi": "10.1093/aje/kwaa244",
+      "url": "https://doi.org/10.1093/aje/kwaa244",
+      "quality_score": 4.5,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "35151008.0",
+      "pmid": "35151008.0",
+      "title": "Venous thromboembolism in pediatric patients with sickle cell disease: A north American survey on experience and management approaches of pediatric hematologists.",
+      "abstract": "There is a lack of pediatric-specific data to guide recommendations for prevention and management of venous thromboembolism (VTE) in sickle cell disease (SCD). Experience and expert opinion in this area have not been reported. To characterize the management practices of pediatric hematologists in SCD-associated VTE. We hypothesized there is substantial variability in duration of therapy and prophylaxis preferences. Electronic survey among pediatric hematologists members of three international subspecialty societies/consortia. Among 52 complete respondents (response rate, 42%), 47% of physicians reported treating 1-2 patients with SCD-associated VTE, while 20% treated 3-5 patients during the preceding 12 months. Most respondents (86%) estimated the risk of VTE recurrence at <5%. The vast majority (98%) of respondents prescribed anticoagulation for symptomatic VTE treatment. Duration of therapy varied by VTE type, 95% reported prescribing 6 weeks-3 months for provoked DVT, while 60% reported prescribing a similar duration for provoked PE with the remaining 40% reporting treating PE for longer duration. There was notable variation in the treatment practices for asymptomatic or unprovoked VTE. Lastly, half of physicians indicated to be \"somewhat\" (40%) and \"not at all\" (10%) confident making decisions regarding the duration and intensity of prophylactic anticoagulation. We identified significant variability in practice, a lower than expected perceived risk of recurrence, and uncertainty regarding VTE prophylaxis strategies in pediatric SCD. Cooperative multicenter studies are needed to generate evidence for future treatment guidelines development, and to identify opportunities for interventions aimed at managing and preventing VTE in pediatric SCD.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.690072",
+      "authors": [
+        {
+          "name": "Marisol Betensky; Riten Kumar; Jane S Hankins; Neil A Goldenberg"
+        }
+      ],
+      "year": 2022,
+      "journal": "Thrombosis research",
+      "venue": "Thrombosis research",
+      "doi": "10.1016/j.thromres.2022.01.028",
+      "url": "https://doi.org/10.1016/j.thromres.2022.01.028",
+      "quality_score": 4.5,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "37214806.0",
+      "pmid": "37214806.0",
+      "title": "Researching COVID to enhance recovery (RECOVER) pediatric study protocol: Rationale, objectives and design.",
+      "abstract": "The prevalence, pathophysiology, and long-term outcomes of COVID-19 (post-acute sequelae of SARS-CoV-2 [PASC] or \"Long COVID\") in children and young adults remain unknown. Studies must address the urgent need to define PASC, its mechanisms, and potential treatment targets in children and young adults. We describe the protocol for the Pediatric Observational Cohort Study of the NIH's <b>RE</b> searching <b>COV</b> ID to <b>E</b> nhance <b>R</b> ecovery (RECOVER) Initiative. RECOVER-Pediatrics is an observational meta-cohort study of caregiver-child pairs (birth through 17 years) and young adults (18 through 25 years), recruited from more than 100 sites across the US. This report focuses on two of five cohorts that comprise RECOVER-Pediatrics: 1) a <i>de novo</i> RECOVER prospective cohort of children and young adults with and without previous or current infection; and 2) an extant cohort derived from the Adolescent Brain Cognitive Development (ABCD) study ( <i>n</i> =10,000). The <i>de novo</i> cohort incorporates three tiers of data collection: 1) remote baseline assessments (Tier 1, n=6000); 2) longitudinal follow-up for up to 4 years (Tier 2, n=6000); and 3) a subset of participants, primarily the most severely affected by PASC, who will undergo deep phenotyping to explore PASC pathophysiology (Tier 3, n=600). Youth enrolled in the ABCD study participate in Tier 1. The pediatric protocol was developed as a collaborative partnership of investigators, patients, researchers, clinicians, community partners, and federal partners, intentionally promoting inclusivity and diversity. The protocol is adaptive to facilitate responses to emerging science. RECOVER-Pediatrics seeks to characterize the clinical course, underlying mechanisms, and long-term effects of PASC from birth through 25 years old. RECOVER-Pediatrics is designed to elucidate the epidemiology, four-year clinical course, and sociodemographic correlates of pediatric PASC. The data and biosamples will allow examination of mechanistic hypotheses and biomarkers, thus providing insights into potential therapeutic interventions. Clinical Trial Registration: http://www.clinicaltrials.gov . Unique identifier: NCT05172011.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.690155",
+      "authors": [
+        {
+          "name": "Rachel Gross; Tanayott Thaweethai; Erika B Rosenzweig; James Chan; Lori B Chibnik; Mine S Cicek; Amy J Elliott; Valerie J Flaherman; Andrea S Foulkes; Margot Gage Witvliet; Richard Gallagher; Maria Laura Gennaro; Terry L Jernigan; Elizabeth W Karlson; Stuart D Katz; Patricia A Kinser; Lawrence C Kleinman; Michelle F Lamendola-Essel; Joshua D Milner; Sindhu Mohandas; Praveen C Mudumbi; Jane W Newburger; Kyung E Rhee; Amy L Salisbury; Jessica N Snowden; Cheryl R Stein; Melissa S Stockwell; Kelan G Tantisira; Moriah E Thomason; Dongngan T Truong; David Warburton; John C Wood; Shifa Ahmed; Almary Akerlundh; Akram N Alshawabkeh; Brett R Anderson; Judy L Aschner; Andrew M Atz; Robin L Aupperle; Fiona C Baker; Venkataraman Balaraman; Dithi Banerjee; Deanna M Barch; Arielle Baskin-Sommers; Sultana Bhuiyan; Marie-Abele C Bind; Amanda L Bogie; Natalie C Buchbinder; Elliott Bueler; Hülya Bükülmez; B J Casey; Linda Chang; Duncan B Clark; Rebecca G Clifton; Katharine N Clouser; Lesley Cottrell; Kelly Cowan; Viren D'Sa; Mirella Dapretto; Soham Dasgupta; Walter Dehority; Kirsten B Dummer; Matthew D Elias; Shari Esquenazi-Karonika; Danielle N Evans; E Vincent S Faustino; Alexander G Fiks; Daniel Forsha; John J Foxe; Naomi P Friedman; Greta Fry; Sunanda Gaur; Dylan G Gee; Kevin M Gray; Ashraf S Harahsheh; Andrew C Heath; Mary M Heitzeg; Christina M Hester; Sophia Hill; Laura Hobart-Porter; Travis K F Hong; Carol R Horowitz; Daniel S Hsia; Matthew Huentelman; Kathy D Hummel; William G Iacono; Katherine Irby; Joanna Jacobus; Vanessa L Jacoby; Pei-Ni Jone; David C Kaelber; Tyler J Kasmarcak; Matthew J Kluko; Jessica S Kosut; Angela R Laird; Jeremy Landeo-Gutierrez; Sean M Lang; Christine L Larson; Peter Paul C Lim; Krista M Lisdahl; Brian W McCrindle; Russell J McCulloh; Alan L Mendelsohn; Torri D Metz; Lerraughn M Morgan; Eva M Müller-Oehring; Erica R Nahin; Michael C Neale; Manette Ness-Cochinwala; Sheila M Nolan; Carlos R Oliveira; Matthew E Oster; R Mark Payne; Hengameh Raissy; Isabelle G Randall; Suchitra Rao; Harrison T Reeder; Johana M Rosas; Mark W Russell; Arash A Sabati; Yamuna Sanil; Alice I Sato; Michael S Schechter; Rangaraj Selvarangan; Divya Shakti; Kavita Sharma; Lindsay M Squeglia; Michelle D Stevenson; Jacqueline Szmuszkovicz; Maria M Talavera-Barber; Ronald J Teufel; Deepika Thacker; Mmekom M Udosen; Megan R Warner; Sara E Watson; Alan Werzberger; Jordan C Weyer; Marion J Wood; H Shonna Yin; William T Zempsky; Emily Zimmerman; Benard P Dreyer"
+        }
+      ],
+      "year": 2023,
+      "journal": "medRxiv : the preprint server for health sciences",
+      "venue": "medRxiv : the preprint server for health sciences",
+      "doi": "10.1101/2023.04.27.23289228",
+      "url": "https://doi.org/10.1101/2023.04.27.23289228",
+      "quality_score": 4.5,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "35353553.0",
+      "pmid": "35353553.0",
+      "title": "Actionable Tumor Alterations and Treatment Protocol Enrollment of Pediatric and Young Adult Patients With Refractory Cancers in the National Cancer Institute-Children's Oncology Group Pediatric MATCH Trial.",
+      "abstract": "The National Cancer Institute-Children's Oncology Group Pediatric MATCH trial aimed to facilitate evaluation of molecular-targeted therapies in biomarker-selected cohorts of childhood and young adult patients with cancer by screening tumors for actionable alterations. Tumors from patients age 1-21 years with refractory solid tumors, lymphomas, or histiocytic disorders were subjected to cancer gene panel sequencing and limited immunohistochemistry to identify actionable alterations for assignment to phase II treatment arms. The rates of treatment arm assignment and enrollment were compared between clinical and demographic groups. Testing was completed for 94.7% of tumors submitted. Actionable alterations were detected in 31.5% of the first 1,000 tumors screened, with treatment arm assignment and enrollment occurring in 28.4% and 13.1% of patients, respectively. Assignment rates varied by tumor histology and were higher for patients with CNS tumors or enrolled at Pediatric Early Phase Clinical Trials Network sites. A reported history of prior clinical molecular testing was associated with higher assignment and enrollment rates. Actionable alterations in the mitogen-activated protein kinase signaling pathway were most frequent (11.2%). The most common reasons provided for not enrolling on treatment arms were patients receiving other treatment or poor clinical status. The Pediatric MATCH trial has proven the feasibility of a nationwide screening Protocol for identification of actionable genetic alterations and assignment of pediatric and young adult patients with refractory cancers to trials of molecularly targeted therapies. These data support the early use of tumor molecular screening for childhood patients with cancer whose tumors have not responded to standard treatments.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.690209",
+      "authors": [
+        {
+          "name": "D Williams Parsons; Katherine A Janeway; David R Patton; Cynthia L Winter; Brent Coffey; P Mickey Williams; Sinchita Roy-Chowdhuri; Gregory J Tsongalis; Mark Routbort; Nilsa C Ramirez; Lauren Saguilig; Jin Piao; Todd A Alonzo; Stacey L Berg; Elizabeth Fox; Douglas S Hawkins; Jeffrey S Abrams; Margaret Mooney; Naoko Takebe; James V Tricoli; Nita L Seibel"
+        }
+      ],
+      "year": 2022,
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "venue": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "doi": "10.1200/JCO.21.02838",
+      "url": "https://doi.org/10.1200/JCO.21.02838",
+      "quality_score": 4.0,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "31703566.0",
+      "pmid": "31703566.0",
+      "title": "Comparison of Military Health System Data Repository and American College of Surgeons National Surgical Quality Improvement Program-Pediatric.",
+      "abstract": "Given the rarity of pediatric surgical disease, it is important to consider available large-scale data resources as a means to better study and understand relevant disease-processes and their treatments. The Military Health System Data Repository (MDR) includes claims-based information for > 3 million pediatric patients who are dependents of members and retirees of the United States Armed Services, but has not been externally validated. We hypothesized that demographics and selected outcome metrics would be similar between MDR and the previously validated American College of Surgeons National Surgical Quality Improvement Program-Pediatric (NSQIP-P) for several common pediatric surgical operations. We selected five commonly performed pediatric surgical operations: appendectomy, pyeloplasty, pyloromyotomy, spinal arthrodesis for scoliosis, and facial reconstruction for cleft palate. Among children who underwent these operations, we compared demographics (age, sex, and race) and clinical outcomes (length of hospital stay [LOS] and mortality) in the MDR and NSQIP-P, including all available overlapping years (2012-2014). Age, sex, and race were generally similar between the NSQIP-P and MDR. Specifically, these demographics were generally similar between the resources for appendectomy (NSQIP-P, n = 20,602 vs. MDR, n = 4363; median age 11 vs. 12 years; female 40% vs. 41%; white 75% vs. 84%), pyeloplasty (NSQIP-P, n = 786 vs. MDR, n = 112; median age 0.9 vs. 2 years; female 28% vs. 28%; white 71% vs. 80%), pyloromyotomy, (NSQIP-P, n = 3827 vs. MDR, n = 227; median age 34 vs. < 1 year, female 17% vs. 16%; white 76% vs. 89%), scoliosis surgery (NSQIP-P, n = 5743 vs. MDR, n = 95; median age 14.2 vs. 14 years; female 75% vs. 67%; white 72% vs. 75%), and cleft lip/palate repair (NSQIP-P, n = 6202 vs. MDR, n = 749; median age, 1 vs. 1 year; female 42% vs. 45%; white 69% vs. 84%). Length of stay and 30-day mortality were similar between resources. LOS and 30-day mortality were also similar between datasets. For the selected common pediatric surgical operations, patients included in the MDR were comparable to those included in the validated NSQIP-P. The MDR may comprise a valuable clinical outcomes research resource, especially for studying infrequent diseases with follow-up beyond the 30-day peri-operative period.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.690268",
+      "authors": [
+        {
+          "name": "Arin L Madenci; Cathaleen K Madsen; Nicollette K Kwon; Lindsey L Wolf; Kristin A Sonderman; Jill M Zalieckas; Samuel E Rice-Townsend; Adil H Haider; Robert L Ricca; Brent R Weil; Christopher B Weldon; Tracey P Koehlmoos"
+        }
+      ],
+      "year": 2019,
+      "journal": "BMC pediatrics",
+      "venue": "BMC pediatrics",
+      "doi": "10.1186/s12887-019-1795-x",
+      "url": "https://doi.org/10.1186/s12887-019-1795-x",
+      "quality_score": 4.0,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "37531201.0",
+      "pmid": "37531201.0",
+      "title": "Palliative Care Training in Pediatric Nephrology Fellowship: A Cross-Sectional Survey.",
+      "abstract": "Pediatric nephrology fellows have limited primary palliative exposure and opportunities to develop and refine primary palliative care (PC) skills. While experiential practice seems to improve confidence, most fellows have low confidence to provide primary PC. Fellows indicate a need and desire for additional PC training during nephrology fellowship. Children with CKD and their families encounter significant burdens. Integrating primary palliative care (PC), holistic care provided by nephrologists focused on enhancing quality of life through symptom management, stress relief, and high-quality serious illness communication, provides an opportunity to promote flourishing. Incorporation of primary PC education in training is therefore recommended. Yet, adult nephrology fellows report inadequate preparation to deliver primary PC. Similar experience of pediatric nephrology fellows is unknown. We sought to describe pediatric nephrology fellows' experience in providing primary PC and PC exposure during training. We administered a cross-sectional web-based survey to pediatric nephrology fellows associated with the American Society of Pediatric Nephrology listserv in May 2021. The survey was adapted from a previously validated instrument and pretested by stakeholder nephrologists and subspecialty PC physicians; queries included institutional and personal PC experience, training, and confidence in primary PC delivery. Data were summarized descriptively. Response rate was 32% (32/101). Respondents were 81% female and 50% White; 87% practiced in an urban setting. Only one fellow (3%) completed a PC rotation during fellowship, and 15 respondents (48%) completed a rotation in medical school or residency. Fellows reported substantially more practice conducting kidney biopsies than family meetings; 68% of fellows had performed >10 kidney biopsies, and 3% of fellows had led >10 family meetings. Confidence in navigating challenging communication, addressing psychological distress, or managing physical symptoms associated with CKD was generally low. Fellows with greater exposure to family meetings reported more confidence navigating challenging communication. Fellows endorsed a need for additional training; 97% indicated that training should happen during fellowship. Few pediatric nephrology fellows receive PC education or exposure during training, resulting in low rates of knowledge and confidence in primary PC delivery. Fellows indicate a need and desire for improved PC training.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.690322",
+      "authors": [
+        {
+          "name": "Taylor R House; Aaron Wightman; Jodi Smith; Margaret Schwarze; Miranda C Bradford; Abby R Rosenberg"
+        }
+      ],
+      "year": 2023,
+      "journal": "Kidney360",
+      "venue": "Kidney360",
+      "doi": "10.34067/KID.0000000000000233",
+      "url": "https://doi.org/10.34067/KID.0000000000000233",
+      "quality_score": 4.0,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "32705809.0",
+      "pmid": "32705809.0",
+      "title": "American College of Rheumatology Clinical Guidance for Multisystem Inflammatory Syndrome in Children Associated With SARS-CoV-2 and Hyperinflammation in Pediatric COVID-19: Version 1.",
+      "abstract": "To provide guidance on the management of multisystem inflammatory syndrome in children (MIS-C), a condition characterized by fever, inflammation, and multiorgan dysfunction that manifests late in the course of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) infection, and to provide recommendations for children with hyperinflammation during coronavirus disease 2019 (COVID-19), the acute, infectious phase of SARS-CoV-2 infection. A multidisciplinary task force was convened by the American College of Rheumatology (ACR) to provide guidance on the management of MIS-C associated with SARS-CoV-2 and hyperinflammation in COVID-19. The task force was composed of 9 pediatric rheumatologists, 2 adult rheumatologists, 2 pediatric cardiologists, 2 pediatric infectious disease specialists, and 1 pediatric critical care physician. Preliminary statements addressing clinical questions related to MIS-C and hyperinflammation in COVID-19 were developed based on evidence reports. Consensus was built through a modified Delphi process that involved 2 rounds of anonymous voting and 2 webinars. A 9-point scale was used to determine the appropriateness of each statement (median scores of 1-3 for inappropriate, 4-6 for uncertain, and 7-9 for appropriate), and consensus was rated as low, moderate, or high based on dispersion of the votes along the numeric scale. Approved guidance statements were those that were classified as appropriate with moderate or high levels of consensus, as prespecified prior to voting. The ACR task force approved a total of 128 guidance statements addressing the management of MIS-C and hyperinflammation in pediatric COVID-19. These statements were refined into 40 final clinical guidance statements, accompanied by a flow diagram depicting the diagnostic pathway for MIS-C. Our understanding of SARS-CoV-2-related syndromes in the pediatric population continues to evolve. The guidance provided in this \"living document\" reflects currently available evidence, coupled with expert opinion, and will be revised as further evidence becomes available.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.690356",
+      "authors": [
+        {
+          "name": "Lauren A Henderson; Scott W Canna; Kevin G Friedman; Mark Gorelik; Sivia K Lapidus; Hamid Bassiri; Edward M Behrens; Anne Ferris; Kate F Kernan; Grant S Schulert; Philip Seo; Mary Beth F Son; Adriana H Tremoulet; Rae S M Yeung; Amy S Mudano; Amy S Turner; David R Karp; Jay J Mehta"
+        }
+      ],
+      "year": 2020,
+      "journal": "Arthritis & rheumatology (Hoboken, N.J.)",
+      "venue": "Arthritis & rheumatology (Hoboken, N.J.)",
+      "doi": "10.1002/art.41454",
+      "url": "https://doi.org/10.1002/art.41454",
+      "quality_score": 4.0,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "37471090.0",
+      "pmid": "37471090.0",
+      "title": "Utility of Exome Sequencing for Diagnosis in Unexplained Pediatric-Onset Epilepsy.",
+      "abstract": "Genomic advances inform our understanding of epilepsy and can be translated to patients as precision diagnoses that influence clinical treatment, prognosis, and counseling. To delineate the genetic landscape of pediatric epilepsy and clinical utility of genetic diagnoses for patients with epilepsy. This cohort study used phenotypic data from medical records and treating clinicians at a pediatric hospital to identify patients with unexplained pediatric-onset epilepsy. Exome sequencing was performed for 522 patients and available biological parents, and sequencing data were analyzed for single nucleotide variants (SNVs) and copy number variants (CNVs). Variant pathogenicity was assessed, patients were provided with their diagnostic results, and clinical utility was evaluated. Patients were enrolled from August 2018 to October 2021, and data were analyzed through December 2022. Phenotypic features associated with diagnostic genetic results. Main outcomes included diagnostic yield and clinical utility. Diagnostic findings included variants curated as pathogenic, likely pathogenic (PLP), or diagnostic variants of uncertain significance (VUS) with clinical features consistent with the involved gene's associated phenotype. The proportion of the cohort with diagnostic findings, the genes involved, and their clinical utility, defined as impact on clinical treatment, prognosis, or surveillance, are reported. A total of 522 children (269 [51.5%] male; mean [SD] age at seizure onset, 1.2 [1.4] years) were enrolled, including 142 children (27%) with developmental epileptic encephalopathy and 263 children (50.4%) with intellectual disability. Of these, 100 participants (19.2%) had identifiable genetic explanations for their seizures: 89 participants had SNVs (87 germline, 2 somatic mosaic) involving 69 genes, and 11 participants had CNVs. The likelihood of identifying a genetic diagnosis was highest in patients with intellectual disability (adjusted odds ratio [aOR], 2.44; 95% CI, 1.40-4.26), early onset seizures (aOR, 0.93; 95% CI, 0.88-0.98), and motor impairment (aOR, 2.19; 95% CI 1.34-3.58). Among 43 patients with apparently de novo variants, 2 were subsequently determined to have asymptomatic parents harboring mosaic variants. Of 71 patients who received diagnostic results and were followed clinically, 29 (41%) had documented clinical utility resulting from their genetic diagnoses. These findings suggest that pediatric-onset epilepsy is genetically heterogeneous and that some patients with previously unexplained pediatric-onset epilepsy had genetic diagnoses with direct clinical implications.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.690384",
+      "authors": [
+        {
+          "name": "Hyun Yong Koh; Lacey Smith; Kimberly N Wiltrout; Archana Podury; Nitish Chourasia; Alissa M D'Gama; Meredith Park; Devon Knight; Emma L Sexton; Julia J Koh; Brandon Oby; Rebecca Pinsky; Diane D Shao; Courtney E French; Wanqing Shao; Shira Rockowitz; Piotr Sliz; Bo Zhang; Sonal Mahida; Christelle Moufawad El Achkar; Christopher J Yuskaitis; Heather E Olson; Beth Rosen Sheidley; Annapurna H Poduri"
+        }
+      ],
+      "year": 2023,
+      "journal": "JAMA network open",
+      "venue": "JAMA network open",
+      "doi": "10.1001/jamanetworkopen.2023.24380",
+      "url": "https://doi.org/10.1001/jamanetworkopen.2023.24380",
+      "quality_score": 3.5,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "33336810.0",
+      "pmid": "33336810.0",
+      "title": "Evaluation of emergency department utilization for dermatologic conditions in the pediatric population within the United States from 2009-2015.",
+      "abstract": "Dermatologic conditions comprise a significant number of emergency department visits in the pediatric population in the United States. Understanding key predictors of emergency department utilization for dermatologic conditions is important to reduce inappropriate use. A total of 44 554 sampled patient emergency department visits, consisting of patients less than 18 years of age, were collected from the National Hospital Ambulatory Medical Care Survey between 2009 to 2015. ICD-9 codes were used to define dermatologic conditions versus non-dermatologic conditions with univariate and multivariate analyses used to identify factors significantly correlated with dermatologic emergency department utilization. A total of 13 681 691 pediatric dermatologic emergency department visits (weighted) were evaluated over the seven-year period, representing 6.4% of total pediatric emergency department visits. The most common dermatologic diagnosis was cellulitis (25.6% of visits). The majority of patients were five years old or younger (54.4%). Patients with primary dermatologic conditions were more likely to be triaged as non-urgent (16.7%) or semi-urgent (45.8%) than patients without dermatologic conditions. Only 2.1% of patients with dermatologic conditions required further observation or admission. On further regression modeling, age ≤ 5, semi-urgent or non-urgent acuity, Medicaid insurance, and residence in the Northeastern or Midwestern United States were significantly associated with presentation to the emergency department with a dermatologic condition when compared to non-dermatologic condition. Dermatologic conditions continue to comprise a significant number of ED visits in the pediatric population. Increased ED utilization by vulnerable pediatric populations highlights the need to better direct or provide access to outpatient dermatologic care.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.690411",
+      "authors": [
+        {
+          "name": "Erin K Collier; Jason J Yang; Sophia Sangar; Steven T Chen; Jennifer T Huang; Daniel Q Bach"
+        }
+      ],
+      "year": 2021,
+      "journal": "Pediatric dermatology",
+      "venue": "Pediatric dermatology",
+      "doi": "10.1111/pde.14476",
+      "url": "https://doi.org/10.1111/pde.14476",
+      "quality_score": 3.5,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "39156025.0",
+      "pmid": "39156025.0",
+      "title": "Using a collaborative learning health system approach to improve disease activity outcomes in children with juvenile idiopathic arthritis in the Pediatric Rheumatology Care and Outcomes Improvement Network.",
+      "abstract": "The Pediatric Rheumatology Care and Outcomes Improvement Network (PR-COIN) is a North American learning health network focused on improving outcomes of children with juvenile idiopathic arthritis (JIA). JIA is a chronic autoimmune disease that can lead to morbidity related to persistent joint and ocular inflammation. PR-COIN has a shared patient registry that tracks twenty quality measures including ten outcome measures of which six are related to disease activity. The network's global aim, set in 2021, was to increase the percent of patients with oligoarticular or polyarticular JIA that had an inactive or low disease activity state from 76% to 80% by the end of 2023. Twenty-three hospitals participate in PR-COIN, with over 7,200 active patients with JIA. The disease activity outcome measures include active joint count, physician global assessment of disease activity, and measures related to validated composite disease activity scoring systems including inactive or low disease activity by the 10-joint clinical Juvenile Arthritis Disease Activity Score (cJADAS10), inactive or low disease activity by cJADAS10 at 6 months post-diagnosis, mean cJADAS10 score, and the American College of Rheumatology (ACR) provisional criteria for clinical inactive disease. Data is collated to measure network performance, which is displayed on run and control charts. Network-wide interventions have included pre-visit planning, shared decision making, self-management support, population health management, and utilizing a Treat to Target approach to care. Five outcome measures related to disease activity have demonstrated significant improvement over time. The percent of patients with inactive or low disease activity by cJADAS10 surpassed our goal with current network performance at 81%. Clinical inactive disease by ACR provisional criteria improved from 46% to 60%. The mean cJADAS10 score decreased from 4.3 to 2.6, and the mean active joint count declined from 1.5 to 0.7. Mean physician global assessment of disease activity significantly improved from 1 to 0.6. PR-COIN has shown significant improvement in disease activity metrics for patients with JIA. The network will continue to work on both site-specific and collaborative efforts to improve outcomes for children with JIA with attention to health equity, severity adjustment, and data quality.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.710824",
+      "authors": [
+        {
+          "name": "Julia G Harris; Catherine A Bingham; Sheetal S Vora; Cagri Yildirim-Toruner; Michelle Batthish; Danielle R Bullock; Jon M Burnham; Danielle C Fair; Kerry Ferraro; Suhas Ganguli; Mileka Gilbert; Beth S Gottlieb; Olha Halyabar; Melissa M Hazen; Ronald M Laxer; Tzielan C Lee; Alice Liu; Daniel J Lovell; Melissa L Mannion; Edward J Oberle; Nancy Pan; Michael Shishov; Jennifer E Weiss; Esi M Morgan"
+        }
+      ],
+      "year": 2024,
+      "journal": "Frontiers in pediatrics",
+      "venue": "Frontiers in pediatrics",
+      "doi": "10.3389/fped.2024.1434074",
+      "url": "https://doi.org/10.3389/fped.2024.1434074",
+      "quality_score": 7.0,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "31821110.0",
+      "pmid": "31821110.0",
+      "title": "The Lyme Disease Polymerase Chain Reaction Test Has Low Sensitivity.",
+      "abstract": "<b><i>Background:</i></b> The Lyme PCR is a direct detection test, but has not been rigorously evaluated in children undergoing evaluation for acute Lyme disease. <b><i>Methods:</i></b> We performed a six-center prospective cohort study of children aged 1 to 21 years undergoing acute evaluation for Lyme disease. For this planned secondary analysis, we limited our cohort to children undergoing evaluation for Lyme disease who had any Lyme PCR test obtained by a treating clinician (blood, synovial fluid, or cerebrospinal fluid). We defined a case of Lyme disease with a positive two-tier Lyme disease serology: a positive or equivocal enzyme immunoassay followed by a positive supplemental immunoblot interpreted using standard criteria. We report the test characteristics of Lyme PCR for the diagnosis of Lyme disease. <b><i>Results:</i></b> We identified 124 children of whom 54 (43.5%) had Lyme disease. Overall, 23 had a positive PCR test (sensitivity 41.8%; 95% confidence interval [CI] 29.7-55.0; specificity 100%, 95% CI: 94.2-100). All children with a positive Lyme PCR also had a positive two-tiered Lyme disease serology. <b><i>Conclusions:</i></b> The Lyme disease PCR test did not improve the diagnosis of children undergoing evaluation for acute Lyme disease. Given the additional costs of this low utility test, clinicians should not order Lyme PCR testing in the acute care setting.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.710880",
+      "authors": [
+        {
+          "name": "Lise E Nigrovic; David P Lewander; Fran Balamuth; Desiree N Neville; Michael N Levas; Jonathan E Bennett; Aris Garro"
+        }
+      ],
+      "year": 2020,
+      "journal": "Vector borne and zoonotic diseases (Larchmont, N.Y.)",
+      "venue": "Vector borne and zoonotic diseases (Larchmont, N.Y.)",
+      "doi": "10.1089/vbz.2019.2547",
+      "url": "https://doi.org/10.1089/vbz.2019.2547",
+      "quality_score": 6.0,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "34251310.0",
+      "pmid": "34251310.0",
+      "title": "Microbiome is not linked to clinical disease severity of familial Mediterranean fever in an international cohort of children.",
+      "abstract": "The severity of familial Mediterranean fever (FMF) may vary in different areas, suggesting a role for environmental factors. We analysed the composition of gut microbiota among children with FMF and healthy controls from Turkey and the USA and determined its effect on disease severity. Children with FMF with pathogenic MEFV mutations and healthy controls from Turkey and the USA were enrolled. FMF disease activity was evaluated with the Autoinflammatory Disease Activity Index (AIDAI). Gut bacterial diversity was assessed by sequencing 16S rRNA gene libraries. We included 36 children from Turkey (28 patients with FMF, 8 healthy controls), and 21 patients and 6 controls from the USA. In the Turkish group, 28.6% of patients had severe disease, while 13.3% of US group patients had severe disease. As expected, we observed substantial differences between the gut microbiota of children from the two geographic regions, with Turkish patients and controls exhibiting higher relative abundances of Bacteriodia, while US patients and controls exhibited higher relative abundances of Clostridia. Alpha- and betadiversity did not differ significantly between FMF patients and controls, and neither was predictive of disease severity within each geographic region. We observed differences between FMF patients and controls in the relative abundance of some bacterial taxa at the amplicon sequence variant (ASV) level, but these differences received mixed statistical support. Among an international cohort of children with FMF, we did not find a strong effect of gut microbiota composition on disease severity. Other environmental or epigenetic factors may be operative.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.710961",
+      "authors": [
+        {
+          "name": "Seza Ozen; Holly L Lutz; Vanessa M Rivera; Andreas Reiff; Ezgi Deniz Batu; Edwin Anderson; Mariana Salas Garcia; Grace Aldrovandi; Tayfun Hilmi Akbaba; İlker Pazarbasi; Yelda Bilginer; Ayse Balat; Banu Balci-Peynircioglu; Jack A Gilbert; Fatma Dedeoglu; Jonathan S Hausmann"
+        }
+      ],
+      "year": 2021,
+      "journal": "Clinical and experimental rheumatology",
+      "venue": "Clinical and experimental rheumatology",
+      "doi": "10.55563/clinexprheumatol/olvbyd",
+      "url": "https://doi.org/10.55563/clinexprheumatol/olvbyd",
+      "quality_score": 5.333333333333333,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "38073325.0",
+      "pmid": "38073325.0",
+      "title": "Physical and Pharmacologic Restraint in Hospitalized Children With Autism Spectrum Disorder.",
+      "abstract": "Children with autism spectrum disorder (ASD) have high rates of cooccurring conditions and are hospitalized longer and more frequently than children without ASD. Little is known about use of involuntary physical or pharmacologic restraint in hospitalized children with ASD. This study compares use of restraint because of violent or self-injurious behavior during inpatient pediatric hospitalization in children with ASD compared with typical peers. This retrospective cohort study examines electronic health records of all children aged 5 to 21 years admitted to a pediatric medical unit at a large urban hospital between October 2016 and October 2021. Billing diagnoses from inpatient encounters identified ASD and cooccurring diagnoses. Clinical orders identified physical and pharmacologic restraint. Propensity score matching ensured equivalency between ASD and matched non-ASD groups on demographic factors. Logistic regression determined the odds of restraint in children with ASD compared with children without ASD, controlling for hospitalization factors and cooccurring diagnoses. Of 21 275 hospitalized children, 367 (1.7%) experienced restraint and 1187 (5.6%) had ASD. After adjusting for reason for admission, length of stay, and cooccurring mental health, developmental, and behavioral disorders, children with ASD were significantly more likely to be restrained than children without ASD (odds ratio 2.3, 95% confidence interval 1.6-3.4; P < .001). Hospitalized children with ASD have significantly higher odds of restraint for violent or self-injurious behavior compared with children without ASD after accounting for reason for admission, length of hospitalization and cooccurring diagnoses. Work is needed to modify the hospital environment for children with ASD to reduce behavioral dysregulation and restraint.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.711123",
+      "authors": [
+        {
+          "name": "Mary Elizabeth Calabrese; Georgios Sideridis; Carol Weitzman"
+        }
+      ],
+      "year": 2024,
+      "journal": "Pediatrics",
+      "venue": "Pediatrics",
+      "doi": "10.1542/peds.2023-062172",
+      "url": "https://doi.org/10.1542/peds.2023-062172",
+      "quality_score": 5.0,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "31647184.0",
+      "pmid": "31647184.0",
+      "title": "Burden of major depressive disorder and quality of life among mothers of children with autism spectrum disorder in urban bangladesh.",
+      "abstract": "This cross-sectional study examined the burden of depression and quality of life (QoL) among mothers of children with autism spectrum disorder (ASD) attending six schools offering special educational services for children with ASD in urban Dhaka, Bangladesh. All consenting mothers were 18 years of age and older and met criteria for major depressive disorder (MDD) on the Structured Interview for DSM-V-TR Research Version-non patient edition administered by trained raters. QoL was assessed by the EuroQol five-dimensional standardized questionnaire. MDD was diagnosed in 45% of mothers and was proportionally higher among those who did not work outside the home, had no childcare support at home, expressed low level of satisfaction with the quality of providers when they had sought care for their children with ASD, and reported being recipient of negative attitudes from neighbors toward their children with ASD. QoL was negatively associated with MDD, mothers' illness, and low satisfaction with the health care providers for children with ASD, as well as experiencing a negative attitude by neighbors toward their children. QoL was positively associated with the reported family monthly income and improvement of the children with ASD on school attendance. The prevalence of MDD among mothers of children with ASD was high and associated with poor QoL. Integrating mental health services and supports for mothers in the ASD care of children is likely to address the high burden of depression they face, and improve their overall quality of life. Autism Res 2020, 13: 284-297. © 2019 International Society for Autism Research, Wiley Periodicals, Inc. LAY SUMMARY: The levels of depression were assessed among mothers of children with autism spectrum disorder (ASD) attending six schools offering special educational services for children with ASD in urban Dhaka, Bangladesh. Almost one in two mothers was found to have major depression. The quality of life of these mothers was generally poor. Integrating mental health services for mothers with ASD care in children is likely to address the burden of depression among the mothers of children with ASD and improve overall quality of life.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.711149",
+      "authors": [
+        {
+          "name": "Aliya Naheed; Md Saimul Islam; Saima Wazed Hossain; Helal Uddin Ahmed; M M Jalal Uddin; Fahmida Tofail; Jena Derakhshani Hamadani; A H M Enayet Hussain; Kerim Munir"
+        }
+      ],
+      "year": 2020,
+      "journal": "Autism research : official journal of the International Society for Autism Research",
+      "venue": "Autism research : official journal of the International Society for Autism Research",
+      "doi": "10.1002/aur.2227",
+      "url": "https://doi.org/10.1002/aur.2227",
+      "quality_score": 5.0,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "37858396.0",
+      "pmid": "37858396.0",
+      "title": "Post-operative Opioid Reduction Protocol Reduces Racial Disparity in Clinical Outcomes in Children.",
+      "abstract": "Racial disparities in health outcomes continue to exist for children requiring surgery. Previous investigations suggest that clinical protocols may reduce racial disparities. A post-operative opioid reduction protocol was implemented in children undergoing abdominal surgery who were less than 1 years old at a tertiary level hospital. The purpose of this investigation was to determine if the clinical protocol was associated with a reduction in racial disparity in post-operative opioid prescribing patterns and associated clinical outcomes. A post-operative opioid reduction protocol based on standing intravenous acetaminophen, educational sessions with nursing staff, and standardized post-operative sign-out between the surgical and NICU teams was implemented in children under 1 year old in 2016. A time series and before and after analysis was conducted using a historical pre-intervention cohort (Jan 2011-Dec 2015) and prospectively collected post-intervention cohort (Jan 2016-Jan 2021). Primary outcomes included post-operative opioid use and post-operative pain scores stratified by race. Secondary outcomes included associated clinical outcomes also stratified by race. A total of 249 children were included in the investigation, 117 in the pre-intervention group and 132 in the post intervention group. The majority of patients in both cohorts were either White or Black. The two cohorts were equally matched in terms of pre-operative clinical variables. In the pre-intervention cohort, the median post-operative morphine equivalents in White children was 2.1 mg/kg (IQR 0.2, 11.1) while in Black children it was 13.1 mg/kg (IQR 2.4, 65.3), p-value = 0.0352. In the post-intervention cohort, the median value for White children and Black children was statistically identical (0.05 mg/kg (IQR 0, 0.5) and 0.0 mg/kg (IQR 0, 0.3), respectively, p-value = 0.237). This pattern was also demonstrated in clinical variables including length of stay, intubation length and total parenteral nutrition use. In the pre-intervention cohort, the total length of stay for white children was 16 days while for black children it was 45 days (p = 0.007). In the postintervention cohort the length of stay for both White and Black children were identical at 8 days (p = 0.748). The use of a clinical opioid reduction protocol implemented at a tertiary medical center was associated with a reduction in racial disparity in opioid prescribing habits in children. Prior to the protocol, there was a racial disparity in clinical variables associated with prolonged opioid use including length of stay, TPN use, and intubation length. The clinical protocol reduced variability in opioid prescribing patterns in all racial groups which was associated with a reduction in variability in associated clinical variables. Level III.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.711175",
+      "authors": [
+        {
+          "name": "David F Grabski; Rick D Vavolizza; Heron D Baumgarten; Mark A Fleming; Chioma Moneme; Eugene D McGahren; Jonathan R Swanson; Sandra K Kabagambe; Jeffrey W Gander"
+        }
+      ],
+      "year": 2024,
+      "journal": "Journal of pediatric surgery",
+      "venue": "Journal of pediatric surgery",
+      "doi": "10.1016/j.jpedsurg.2023.09.030",
+      "url": "https://doi.org/10.1016/j.jpedsurg.2023.09.030",
+      "quality_score": 4.666666666666667,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "33109678.0",
+      "pmid": "33109678.0",
+      "title": "What are the volume and budget needs to provide chemotherapy to all children with acute lymphoblastic leukaemia in Thailand? Development and application of an estimation tool.",
+      "abstract": "Insufficient access to anticancer medicines may contribute to the wide survival differences of children with cancers across the globe. We developed a tool to estimate the volume of medicines and budget requirements to provide chemotherapy to children with acute lymphoblastic leukaemia (ALL). Development and application of an estimation tool. Paediatric oncology hospital departments in Thailand. 318 children aged 0-14 years diagnosed with ALL and 215 children with undiagnosed ALL. Estimates of volume and budget requirements for administering a full course of chemotherapy for ALL and a further course for children who relapse, according to National Treatment Guidelines. Primary outcome measures were the volume (mg) and cost (US$) of medicines needed to treat children with ALL. For medicines whose main indication is paediatric ALL (asparaginase and 6-mercaptopurine), we estimated the difference between volume needed and actual sales in 2017 (secondary outcome). Ten anticancer medicines and four chemoprotective agents are needed for the treatment of paediatric ALL according to the Thai treatment guidelines. Of these 14 medicines, 13 are included in the WHO essential medicines list for children. All are available as generics. We estimated that essential chemotherapy and chemoprotective agents to treat all children diagnosed with ALL in Thailand in 2017 would cost US$ 814 952 (US$ 1 365 422 for diagnosed and undiagnosed children), which corresponds to 0.005% (0.008%) of the country's total health expenditure. The volumes of asparaginase and 6-mercaptopurine available on the Thai market in 2017 were more than sufficient (2.3 and 1.5 times the amounts needed, respectively) to treat all children diagnosed with ALL. Procuring sufficient quantities of essential medicines to treat children with ALL requires relatively modest resources. Medicine cost should not be a major barrier to ALL treatment in similar settings.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.711254",
+      "authors": [
+        {
+          "name": "Rosarin Sruamsiri; Alessandra Ferrario; Dennis Ross-Degnan; Avram E Denburg; A Lindsay Frazier; Sumit Gupta; Zachary J Ward; Jennifer M Yeh; Anita Katharina Wagner"
+        }
+      ],
+      "year": 2020,
+      "journal": "BMJ open",
+      "venue": "BMJ open",
+      "doi": "10.1136/bmjopen-2020-041901",
+      "url": "https://doi.org/10.1136/bmjopen-2020-041901",
+      "quality_score": 4.333333333333333,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "39956790.0",
+      "pmid": "39956790.0",
+      "title": "EEG frontal alpha asymmetry mediates the association between maternal and child internalizing symptoms in childhood.",
+      "abstract": "Anxiety and depression are highly prevalent in youth and can cause significant distress and functional impairment. The presence of maternal anxiety and depression are well-established risk factors for child internalizing psychopathology, yet the responsible mechanisms linking the two remain unclear. We examined the potential mediating and moderating roles of EEG frontal alpha asymmetry (FAA) in the intergenerational transmission of internalizing symptoms in a longitudinal sample of N = 323 mother-child dyads. Self-report maternal internalizing symptoms were evaluated at child age 3 years and 5 years, child EEG at 5 years, and parent-report child internalizing symptoms at age 7 years. Mediation was evaluated via bootstrapped (N = 5,000) confidence intervals. We found significant associations among maternal internalizing (anxiety, depressive) symptoms when their children were ages 3 and 5 years, child FAA at age 5 years, and child internalizing symptoms at age 7 years. There was a significant mediation effect, whereby greater maternal anxiety and depressive symptoms at age 3 years were significantly associated with FAA (greater relative right cortical activation) in children at age 5 years, which, in turn, was significantly associated with greater child internalizing symptoms at age 7 years (ps < .001). There was no moderating effect of FAA on the association between maternal internalizing symptoms at age 5 years and child internalizing symptoms at age 7 years. Greater right frontal asymmetry may be a neurophysiological mechanism that mediates the intergenerational transmission of internalizing symptoms.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.761205",
+      "authors": [
+        {
+          "name": "Dashiell D Sacks; Yiyi Wang; Asja Abron; Kaitlin M Mulligan; Caroline M Kelsey; Wanze Xie; Charles A Nelson; Michelle Bosquet Enlow"
+        }
+      ],
+      "year": 2025,
+      "journal": "Journal of child psychology and psychiatry, and allied disciplines",
+      "venue": "Journal of child psychology and psychiatry, and allied disciplines",
+      "doi": "10.1111/jcpp.14129",
+      "url": "https://doi.org/10.1111/jcpp.14129",
+      "quality_score": 7.5,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "38504647.0",
+      "pmid": "38504647.0",
+      "title": "Parental communicative input as a protective factor in Bangladeshi families living in poverty: A multi-dimensional perspective.",
+      "abstract": "Studies from high-income populations have shown that stimulating, supportive communicative input from parents promote children's cognitive and language development. However, fewer studies have identified specific features of input supporting the healthy development of children growing up in low- or middle-income countries. The current study proposes and tests a multi-dimensional framework for understanding whether and how caregiver communicative input mediates the associations between socio-economic conditions and early development. We also examine how caregiver conceptual scaffolding and autonomy support uniquely and synergistically explain variation in child outcomes. Participants were 71 Bangladeshi families with five-year-olds who were exposed to a range of biological and psychosocial hazards from birth. Caregiver-child interactions during snack sharing and semi-structured play were coded for caregiver conceptual scaffolding, autonomy support, and child engagement. Findings indicate that the two dimensions of input were correlated, suggesting that caregivers who provided richer conceptual scaffolds were simultaneously more supportive of children's autonomy. Notably, conceptual scaffolding and autonomy support each mediated associations between maternal education and child verbal intelligence quotient (IQ) scores. Further, caregivers who supported greater autonomy in their children had children who participated in conversations more actively, and these children in turn had higher performance IQ scores. When considered simultaneously, conceptual scaffolding was associated with verbal IQ over and above autonomy support, whereas autonomy support related to child engagement, controlling for conceptual scaffolding. These findings shed new light on how environmental factors may support early development, contributing to the design of family-centered, culturally authentic interventions. A video abstract of this article can be viewed at https://youtu.be/9v_8sIv7ako RESEARCH HIGHLIGHTS: Studies from high-income countries have identified factors mitigating the impacts of socio-economic risks on development. Such research is scarce in low- and middle-income countries. The present study conceptualized and evaluated caregiver communicative input in Bangladeshi families along two interrelated yet distinct dimensions: conceptual scaffolding and autonomy support. Conceptual scaffolding and autonomy support individually mediated associations between maternal education and child verbal IQ, shedding light on protective factors in families living in poverty. Parents providing richer conceptual scaffolds were simultaneously more supportive of children's autonomy. However, the two dimensions each related to cognition and language through unique pathways.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.761373",
+      "authors": [
+        {
+          "name": "Ran Wei; Eileen F Sullivan; Fatema Begum; Navin Rahman; Fahmida Tofail; Rashidul Haque; Charles A Nelson"
+        }
+      ],
+      "year": 2024,
+      "journal": "Developmental science",
+      "venue": "Developmental science",
+      "doi": "10.1111/desc.13494",
+      "url": "https://doi.org/10.1111/desc.13494",
+      "quality_score": 6.5,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "39655248.0",
+      "pmid": "39655248.0",
+      "title": "Trajectories and social determinants of child cognitive development: a prospective cohort study from infancy through middle childhood in Dhaka, Bangladesh.",
+      "abstract": "Over a third of children globally do not meet their developmental potential, and children living in low and middle-income countries (LMICs) are most vulnerable. Understanding the contextual factors that influence cognitive development for children in LMICs is crucial to inform and develop interventions. We sought to characterize developmental trajectories of cognition in Bangladeshi children and identify salient social determinants. We used a longitudinal design and included 542 children living in Dhaka, Bangladesh. Social determinants (maternal and paternal education, housing risks, household assets, and food security) were assessed at baseline visits using a combination of oral interviews and home assessments. Cognitive development was assessed at 6 months, 2, 3, 4, 5, and 7 years. A total of 1397 cognitive assessments were completed across all participants. Growth curve models and mixed effect models were used. In children living above the poverty line, there was increasing deviation from expected cognitive scores from 6 months to 2 years (-12.85, <i>p</i> < 0.001) with stable scores from 2 to 7 years. For those below the poverty line, there were widening disparities from expectations in scores from 6 months to 4 years (-24.58, <i>p</i> < 0.001) with stable scores from 4 to 7 years. Higher levels of maternal education (<i>t</i> = 2.22, <i>p</i> = 0.03) and more food security (<i>t</i> = 4.48, <i>p</i> < 0.001) were protective for cognition longitudinally. Interaction effects between poverty level and maternal education and food security respectively were observed. Cognitive development trajectories showed increasing disparities from expectations in the first two years of life, with more pronounced and lasting effects through 4 years for children below the poverty line. Maternal education and food security had promotive/protective effects on longitudinal cognitive development scores for the full sample. Maternal education and food security had stronger effects on cognitive development for children living below the poverty line compared to those living above the poverty line. Funding for the study was provided by a grant from the Bill and Melinda Gates Foundation (OPP1111625) to CAN.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.761399",
+      "authors": [
+        {
+          "name": "Viviane Valdes; Eileen F Sullivan; Fahmida Tofail; Lisa M Thompson; Shahria H Kakon; Talat Shama; Rashidul Haque; Charles A Nelson"
+        }
+      ],
+      "year": 2025,
+      "journal": "The Lancet regional health. Southeast Asia",
+      "venue": "The Lancet regional health. Southeast Asia",
+      "doi": "10.1016/j.lansea.2024.100511",
+      "url": "https://doi.org/10.1016/j.lansea.2024.100511",
+      "quality_score": 6.0,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "38562761.0",
+      "pmid": "38562761.0",
+      "title": "Associations Between Phenotypes of Childhood and Adolescent Obesity and Incident Hypertension in Young Adulthood.",
+      "abstract": "We investigated whether empirically derived childhood obesity phenotypes were differentially associated with risk of hypertension in young adulthood, and whether these associations differed by sex. Data came from 11,404 participants in the Growing Up Today Study, a prospective cohort study in the US established in 1996. We used a childhood obesity phenotype variable that was previously empirically derived using latent class analysis. The childhood obesity phenotypes included an early puberty phenotype (females only), a mothers with obesity phenotype, a high weight concerns phenotype, and a mixed phenotype. Participants without overweight or obesity in childhood or adolescence were the reference group. We then used logistic regression models with generalized estimating equations to examine associations of childhood obesity phenotypes with incident hypertension between ages 20-35 years. All analyses were stratified by sex. Among females, participants in all of the empirically derived childhood obesity phenotypes were more likely than their peers without childhood overweight/obesity to develop hypertension in young adulthood (early puberty subtype odds ratio (OR) = 2.52; 95% confidence interval (CI) = 1.75, 3.62; mothers with obesity (MO) subtype OR = 2.98; 95% CI = 1.93, 4.59; high weight concerns (WC) subtype OR = 2.33; 95% CI = 1.65, 3.28; mixed subtype OR = 1.66; 95% CI = 1.25, 2.20). Among males, the childhood obesity phenotypes were associated with a higher risk of developing hypertension, although males in the MO (OR = 2.65; 95% CI = 1.82, 3.87) and WC phenotypes (OR = 3.52; 95% CI = 2.38, 5.20) had a greater risk of developing hypertension than the mixed subtype (OR = 1.51; 95% CI = 1.23, 1.86) (<i>p</i> = 0.004). Risk for incident hypertension in young adulthood varied by childhood obesity phenotypes, as well as by biological sex. If replicated, these results may suggest that increased surveillance of specific childhood obesity phenotypes might help in targeting those at highest risk for hypertension.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.761425",
+      "authors": [
+        {
+          "name": "Ruth St Fleur; Marian Tanofsky-Kraff; Jack Yanovski; Nicholas Horton; Laura Reich; Jorge Chavarro; Joel Hirschhorn; Hannah Ziobrowski; Alison Field"
+        }
+      ],
+      "year": 2024,
+      "journal": "Research square",
+      "venue": "Research square",
+      "doi": "10.21203/rs.3.rs-4113605/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-4113605/v1",
+      "quality_score": 6.0,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "33313877.0",
+      "pmid": "33313877.0",
+      "title": "Psychosocial Functioning Among Children With and Without Differences of Sex Development.",
+      "abstract": "To assess health-related quality of life (HRQoL), psychosocial adjustment, and family functioning of children with differences of sex development (DSD) or cleft lip and/or palate (CL/P). In this cross-sectional study, parents of children with DSD (n = 67), CL/P (n = 121), and a comparison group of unaffected youth (n = 126) completed standardized measures assessing family functioning and their children's HRQoL and psychosocial adjustment. Medical charts were abstracted for youth with either congenital condition. Children with DSD were rated as having significantly lower HRQoL and greater internalizing problems compared to youth with CL/P and unaffected youth. Children in the DSD group were also significantly more likely to fall into the clinical risk categories for total and internalizing problems relative to the CL/P and unaffected groups. Caregivers of children with DSD were significantly more likely to endorse items about child suicidality compared with caregivers in the CL/P and unaffected groups. No significant differences were found between groups for externalizing problems or the expressiveness domain of family functioning; parents of children with DSD reported significantly less family conflict relative to the other groups and greater cohesion relative to the unaffected group. Conclusions Youth with DSD appear to be at greater risk for psychosocial problems relative to children with CL/P and unaffected peers. Results underscore the need for integrated interdisciplinary care and ongoing psychosocial risk monitoring in youth with DSD.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.761450",
+      "authors": [
+        {
+          "name": "Jennifer A Hansen-Moore; Hillary M Kapa; Jennifer L Litteral; Leena Nahata; Justin A Indyk; Venkata R Jayanthi; Yee-Ming Chan; Amy C Tishelman; Canice E Crerand"
+        }
+      ],
+      "year": 2021,
+      "journal": "Journal of pediatric psychology",
+      "venue": "Journal of pediatric psychology",
+      "doi": "10.1093/jpepsy/jsaa089",
+      "url": "https://doi.org/10.1093/jpepsy/jsaa089",
+      "quality_score": 5.5,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "37182536.0",
+      "pmid": "37182536.0",
+      "title": "Cumulative burden of late, major surgical intervention in survivors of childhood cancer: a report from the Childhood Cancer Survivor Study (CCSS) cohort.",
+      "abstract": "Multimodal cancer therapy places childhood cancer survivors at increased risk for chronic health conditions, subsequent malignancies, and premature mortality as they age. We aimed to estimate the cumulative burden of late (>5 years from cancer diagnosis), major surgical interventions among childhood cancer survivors, compared with their siblings, and to examine associations between specific childhood cancer treatments and the burden of late surgical interventions. We analysed data from the Childhood Cancer Survivor Study (CCSS), a retrospective cohort study with longitudinal prospective follow-up of 5-year survivors of childhood cancer (diagnosed before age 21 years) treated at 31 institutions in the USA, with a comparison group of nearest-age siblings of survivors selected by simple random sampling. The primary outcome was any self-reported late, major surgical intervention (defined as any anaesthesia-requiring operation) occurring 5 years or more after the primary cancer diagnosis. The cumulative burden was assessed with mean cumulative counts (MCC) of late, major surgical interventions. Piecewise exponential regression models with calculation of adjusted rate ratios (RRs) evaluated associations between treatment exposures and late, major surgical interventions. Between Jan 1, 1970, and Dec 31, 1999, 25 656 survivors were diagnosed (13 721 male, 11 935 female; median follow-up 21·8 years [IQR 16·5-28·4]; median age at diagnosis 6·1 years [3·0-12·4]); 5045 nearest-age siblings were also included as a comparison group. Survivors underwent 28 202 late, major surgical interventions and siblings underwent 4110 late, major surgical interventions. The 35-year MCC of a late, major surgical intervention was 206·7 per 100 survivors (95% CI 202·7-210·8) and 128·9 per 100 siblings (123·0-134·7). The likelihood of a late, major surgical intervention was higher in survivors versus siblings (adjusted RR 1·8, 95% CI 1·7-1·9) and in female versus male survivors (1·4; 1·4-1·5). Survivors diagnosed in the 1990s (adjusted RR 1·4, 95% CI 1·3-1·5) had an increased likelihood of late surgery compared with those diagnosed in the 1970s. Survivors received late interventions more frequently than siblings in most anatomical regions or organ systems, including CNS (adjusted RR 16·9, 95% CI 9·4-30·4), endocrine (6·7, 5·2-8·7), cardiovascular (6·6, 5·2-8·3), respiratory (5·3, 3·4-8·2), spine (2·4, 1·8-3·2), breast (2·1, 1·7-2·6), renal or urinary (2·0, 1·5-2·6), musculoskeletal (1·5, 1·4-1·7), gastrointestinal (1·4, 1·3-1·6), and head and neck (1·2, 1·1-1·4) interventions. Survivors of Hodgkin lymphoma (35-year MCC 333·3 [95% CI 320·1-346·6] per 100 survivors), Ewing sarcoma (322·9 [294·5-351·3] per 100 survivors), and osteosarcoma (269·6 [250·1-289·2] per 100 survivors) had the highest cumulative burdens of late, major surgical interventions. Locoregional surgery or radiotherapy cancer treatment were associated with undergoing late surgical intervention in the same body region or organ system. Childhood cancer survivors have a significant burden of late, major surgical interventions, a late effect that has previously been poorly quantified. Survivors would benefit from regular health-care evaluations aiming to anticipate impending surgical issues and to intervene early in the disease course when feasible. US National Institutes of Health, US National Cancer Institute, American Lebanese Syrian Associated Charities, and St Jude Children's Research Hospital.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.761476",
+      "authors": [
+        {
+          "name": "Bryan V Dieffenbach; Andrew J Murphy; Qi Liu; Duncan C Ramsey; Erik J Geiger; Lisa R Diller; Rebecca M Howell; Kevin C Oeffinger; Leslie L Robison; Yutaka Yasui; Gregory T Armstrong; Eric J Chow; Brent R Weil; Christopher B Weldon"
+        }
+      ],
+      "year": 2023,
+      "journal": "The Lancet. Oncology",
+      "venue": "The Lancet. Oncology",
+      "doi": "10.1016/S1470-2045(23)00154-7",
+      "url": "https://doi.org/10.1016/S1470-2045(23)00154-7",
+      "quality_score": 5.5,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "36086805.0",
+      "pmid": "36086805.0",
+      "title": "Concomitant medication use in children with autism spectrum disorder: Data from the Autism Biomarkers Consortium for Clinical Trials.",
+      "abstract": "Children with autism spectrum disorder are prescribed a variety of medications that affect the central nervous system (psychotropic medications) to address behavior and mood. In clinical trials, individuals taking concomitant psychotropic medications often are excluded to maintain homogeneity of the sample and prevent contamination of biomarkers or clinical endpoints. However, this choice may significantly diminish the clinical representativeness of the sample. In a recent multisite study designed to identify biomarkers and behavioral endpoints for clinical trials (the Autism Biomarkers Consortium for Clinical Trials), school-age children with autism spectrum disorder were enrolled without excluding for medications, thus providing a unique opportunity to examine characteristics of psychotropic medication use in a research cohort and to guide future decisions on medication-related inclusion criteria. The aims of the current analysis were (1) to quantify the frequency and type of psychotropic medications reported in school-age children enrolled in the ABC-CT and (2) to examine behavioral features of children with autism spectrum disorder based on medication classes. Of the 280 children with autism spectrum disorder in the cohort, 42.5% were taking psychotropic medications, with polypharmacy in half of these children. The most commonly reported psychotropic medications included melatonin, stimulants, selective serotonin reuptake inhibitors, alpha agonists, and antipsychotics. Descriptive analysis showed that children taking antipsychotics displayed a trend toward greater overall impairment. Our findings suggest that exclusion of children taking concomitant psychotropic medications in trials could limit the clinical representativeness of the study population, perhaps even excluding children who may most benefit from new treatment options.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.761506",
+      "authors": [
+        {
+          "name": "Logan Shurtz; Chloe Schwartz; Charlotte DiStefano; James C McPartland; April R Levin; Geraldine Dawson; Natalia M Kleinhans; Susan Faja; Sara J Webb; Frederick Shic; Adam J Naples; Helen Seow; Raphael A Bernier; Katarzyna Chawarska; Catherine A Sugar; James Dziura; Damla Senturk; Megha Santhosh; Shafali S Jeste"
+        }
+      ],
+      "year": 2023,
+      "journal": "Autism : the international journal of research and practice",
+      "venue": "Autism : the international journal of research and practice",
+      "doi": "10.1177/13623613221121425",
+      "url": "https://doi.org/10.1177/13623613221121425",
+      "quality_score": 5.5,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "37043449.0",
+      "pmid": "37043449.0",
+      "title": "Parental compliance and reasons for COVID-19 Vaccination among American children.",
+      "abstract": "COVID-19 vaccination rates among children have stalled, while new coronavirus strains continue to emerge. To improve child vaccination rates, policymakers must better understand parental preferences and reasons for COVID-19 vaccination among their children. Cross-sectional surveys were administered online to 30,174 US parents with at least one child of COVID-19 vaccine eligible age (5-17 years) between January 1 and May 9, 2022. Participants self-reported willingness to vaccinate their child and reasons for refusal, and answered additional questions about demographics, pandemic related behavior, and vaccination status. Willingness to vaccinate a child for COVID-19 was strongly associated with parental vaccination status (multivariate odds ratio 97.9, 95% confidence interval 86.9-111.0). The majority of fully vaccinated (86%) and unvaccinated (84%) parents reported concordant vaccination preferences for their eligible child. Age and education had differing relationships by vaccination status, with higher age and education positively associated with willingness among vaccinated parents. Among all parents unwilling to vaccinate their children, the two most frequently reported reasons were possible side effects (47%) and that vaccines are too new (44%). Unvaccinated parents were much more likely to list a lack of trust in government (41% to 21%, p < .001) and a lack of trust in scientists (34% to 19%, p < .001) as reasons for refusal. Cluster analysis identified three groups of unwilling parents based on their reasons for refusal to vaccinate, with distinct concerns that may be obscured when analyzed in aggregate. Factors associated with willingness to vaccinate children and reasons for refusal may inform targeted approaches to increase vaccination.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.761557",
+      "authors": [
+        {
+          "name": "Neil K R Sehgal; Benjamin Rader; Autumn Gertz; Christina M Astley; John S Brownstein"
+        }
+      ],
+      "year": 2023,
+      "journal": "PLOS digital health",
+      "venue": "PLOS digital health",
+      "doi": "10.1371/journal.pdig.0000147",
+      "url": "https://doi.org/10.1371/journal.pdig.0000147",
+      "quality_score": 5.5,
+      "relevance_score": 0.4
+    },
+    {
+      "id": "39101936.0",
+      "pmid": "39101936.0",
+      "title": "Adoptive parents' racial colorblindness and adopted Korean adolescents' experiences of discrimination.",
+      "abstract": "Using longitudinal data, this study investigated the association between parent racial colorblindness and discrimination toward children (reported by both parents and adolescents) in transracial, transnational adoptive families. Eighty White adoptive parents with adopted Korean children (ages 5-12 years old) were surveyed in 2007 (Time 1 [T1]), and both parents and adolescents (ages 13-19 years old) were surveyed in 2014 (Time 2 [T2]). Parents completed a self-report measure of parent racial colorblindness toward their child at T1 and T2, and parents and adolescents completed a measure of discrimination experienced by adoptees at T2. Parent reports of racial colorblindness toward their child were not significantly different between T1 and T2. However, parent reports of discrimination increased between time points. Further, parent and adolescent reports of discrimination were not significantly different from one another. Using hierarchical regression models, racial colorblindness among parents at T1 (when children were in middle childhood) was significantly associated with parent reports of discrimination experienced by adolescent children at T2, even when controlling for T2 racial colorblindness. This association did not hold for adolescent reports of discrimination. Adoptive parents' acknowledgment of their children's race and ethnicity appears relatively stable from childhood into adolescence, and parent racial colorblindness toward their own child can affect their ability to recognize discrimination during adolescent development, a vital period when discrimination becomes more common and salient. (PsycInfo Database Record (c) 2024 APA, all rights reserved).",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:24:45.761608",
+      "authors": [
+        {
+          "name": "Kay A Simon; Jason Sumontha; Amelia Blankenau; Shawyn Domyancich-Lee; Rachel H Farr; Adam Y Kim; Richard M Lee"
+        }
+      ],
+      "year": 2024,
+      "journal": "Cultural diversity & ethnic minority psychology",
+      "venue": "Cultural diversity & ethnic minority psychology",
+      "doi": "10.1037/cdp0000695",
+      "url": "https://doi.org/10.1037/cdp0000695",
+      "quality_score": 5.0,
+      "relevance_score": 0.4
+    }
+  ]
+}

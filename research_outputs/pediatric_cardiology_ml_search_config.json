@@ -1,0 +1,65 @@
+{
+  "query": "pediatric cardiology machine learning",
+  "original_query": "pediactric cardiology ml",
+  "search_domain": "medical_ai",
+  "databases": [
+    "local_pubmed",
+    "semantic_scholar",
+    "arxiv",
+    "pubmed",
+    "crossref"
+  ],
+  "search_strategy": "local_first_with_remote_fallback",
+  "max_results_per_source": 100,
+  "total_max_results": 500,
+  "enable_deduplication": true,
+  "include_datasets": false,
+  "filters": {
+    "date_range": {"start": "2019-01-01", "end": "2024-12-31"},
+    "quality_threshold": 0.0,
+    "language": "english",
+    "study_types": ["original_research", "validation_study", "clinical_trial"],
+    "min_citations": 5,
+    "age_focus": "pediatric"
+  },
+  "keywords": {
+    "primary": ["pediatric", "cardiology", "machine learning"],
+    "synonyms": {
+      "pediatric": ["children", "child", "infant", "neonatal", "paediatric"],
+      "cardiology": ["cardiac", "heart", "congenital heart disease", "CHD", "echocardiography"],
+      "machine learning": ["artificial intelligence", "AI", "deep learning", "neural network", "algorithm"]
+    }
+  },
+  "inclusion_criteria": [
+    "Studies involving patients ≤18 years or pediatric-specific applications",
+    "Machine learning, deep learning, or AI applications",
+    "Cardiology, cardiac imaging, or heart disease management",
+    "Publication date: 2019-2024",
+    "English language publications",
+    "Original research with validation"
+  ],
+  "exclusion_criteria": [
+    "Adult-only studies without pediatric applications",
+    "Pure theoretical papers without clinical validation",
+    "Review articles (unless systematic)",
+    "Conference abstracts without full-text",
+    "Non-English publications"
+  ],
+  "quality_weights": {
+    "journal_impact": 0.3,
+    "citation_count": 0.2,
+    "recency": 0.2,
+    "validation_methodology": 0.2,
+    "sample_size": 0.1
+  },
+  "expected_output": {
+    "target_papers": 50,
+    "primary_areas": [
+      "echocardiogram analysis",
+      "ECG interpretation",
+      "surgical outcome prediction",
+      "congenital heart defect diagnosis",
+      "risk stratification"
+    ]
+  }
+}

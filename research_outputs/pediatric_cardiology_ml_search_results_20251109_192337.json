@@ -1,0 +1,23 @@
+{
+  "search_metadata": {
+    "search_date": "2025-11-09T19:23:35.265562",
+    "research_topic": "pediatric cardiology machine learning",
+    "databases_searched": [
+      "local_pubmed"
+    ],
+    "total_results": 0,
+    "after_deduplication": 0
+  },
+  "search_strategy": {
+    "keywords": [
+      "pediatric",
+      "cardiology",
+      "machine learning"
+    ],
+    "databases_used": [],
+    "inclusion_criteria": [],
+    "exclusion_criteria": []
+  },
+  "results": [],
+  "quality_assessment": {}
+}
