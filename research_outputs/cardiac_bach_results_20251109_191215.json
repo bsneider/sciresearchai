@@ -1,0 +1,240 @@
+{
+  "topic": "cardiac",
+  "date": "2025-11-09T19:12:15.034138",
+  "papers": [
+    {
+      "id": "37730290.0",
+      "pmid": "37730290.0",
+      "title": "Chronic Medication Burden After Cardiac Surgery for Pediatric Medicaid Beneficiaries.",
+      "abstract": "Congenital heart defects are the most common and resource-intensive birth defects. As children with congenital heart defects increasingly survive beyond early childhood, it is imperative to understand longitudinal disease burden. The purpose of this study was to examine chronic outpatient prescription medication use and expenditures for New York State pediatric Medicaid enrollees, comparing children who undergo cardiac surgery (cardiac enrollees) and the general pediatric population. This was a retrospective cohort study of all Medicaid enrollees age <18 years using the New York State Congenital Heart Surgery Collaborative for Longitudinal Outcomes and Utilization of Resources database (2006-2019). Primary outcomes were total chronic medications per person-year, enrollees per 100 person-years using ≥1 and ≥3 medications, and medication expenditures per person-year. We described and compared outcomes between cardiac enrollees and the general pediatric population. Among cardiac enrollees, multivariable regression examined associations between outcomes and clinical characteristics. We included 5,459 unique children (32,131 person-years) who underwent cardiac surgery and 4.5 million children (22 million person-years) who did not. More than 4 in 10 children who underwent cardiac surgery used ≥1 chronic medication compared with approximately 1 in 10 children who did not have cardiac surgery. Medication expenditures were 10 times higher per person-year for cardiac compared with noncardiac enrollees. Among cardiac enrollees, disease severity was associated with chronic medication use; use was highest among infants; however, nearly one-half of adolescents used ≥1 chronic medication. Children who undergo cardiac surgery experience high medication burden that persists throughout childhood. Understanding chronic medication use can inform clinicians (both pediatricians and subspecialists) and policymakers, and ultimately the value of care for this medically complex population.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:12:15.091298",
+      "authors": [
+        {
+          "name": "Joyce L Woo; Katherine A Nash; Kacie Dragan; Sarah Crook; Matthew Neidell; Stephen Cook; Edward L Hannan; Marshall Jacobs; Andrew B Goldstone; Christopher J Petit; Robert Vincent; Kathleen Walsh-Spoonhower; Ralph Mosca; T K Susheel Kumar; Neil Devejian; Steven A Kamenir; George M Alfieris; Michael F Swartz; David Meyer; Erin A Paul; Jane W Newburger; John Billings; Matthew M Davis; Brett R Anderson"
+        }
+      ],
+      "year": 2023,
+      "journal": "Journal of the American College of Cardiology",
+      "venue": "Journal of the American College of Cardiology",
+      "doi": "10.1016/j.jacc.2023.06.046",
+      "url": "https://doi.org/10.1016/j.jacc.2023.06.046",
+      "quality_score": 13.0
+    },
+    {
+      "id": "35956306.0",
+      "pmid": "35956306.0",
+      "title": "Salt-Sensitive Ileal Microbiota Plays a Role in Atrial Natriuretic Peptide Deficiency-Induced Cardiac Injury.",
+      "abstract": "Atrial natriuretic peptide (ANP) activity deficiency contributes to salt-sensitive hypertension in humans and mice. However, the role of ileal microbiota in salt sensitivity in ANP deficiency-related cardiac injury has not been investigated yet. This study used ANP<sup>-/-</sup> mice to analyze the role of the salt-sensitive ileal microbiome on cardiac injury. ANP<sup>-/-</sup> mice showed an increase in blood pressure (BP), the heart weight/body weight (HW/BW) ratio, and cardiac hypertrophy compared with wild-type (WT) mice. ANP deficiency did not impact the histological structure but reduced occludin expression in the ileum. Antibiotics significantly relieved BP and cardiac hypertrophy in ANP<sup>-/-</sup> mice. A high-salt diet (HSD) increased BP, the HW/BW ratio, and cardiac hypertrophy/fibrosis in WT and ANP<sup>-/-</sup> mice, and an HSD treatment in ANP<sup>-/-</sup> mice exacerbated these cardiac parameters. The HSD markedly decreased muscularis layer thickening, villus length, and numbers of Paneth and goblet cells in the ileum of WT and ANP<sup>-/-</sup> mice. Furthermore, the HSD increased the level of TLR4 and IL-1β in ANP<sup>-/-</sup> mice ileum compared with WT mice. Antibiotics reduced the HW/BW ratio, cardiac hypertrophy/fibrosis, and the level of TLR4 and IL-1β in the ileum, and rescued the muscularis layer thickening, villus length, and numbers of Paneth and goblet cells in the ileum of HSD-ANP<sup>-/-</sup> mice. Importantly, ANP deficiency induced the colonization of <i>Burkholderiales bacterium YL45</i>, <i>Lactobacillus johnsonii</i>, and <i>Lactobacillus reuteri</i> in the ileum on the NSD diet, which was only observed in HSD-induced WT mice but not in WT mice on the NSD. Besides, the HSD significantly enhanced the sum of the percentage of the colonization of <i>Burkholderiales bacterium YL45</i>, <i>Lactobacillus johnsonii</i>, and <i>Lactobacillus reuteri</i> in the ileum of ANP<sup>-/-</sup> mice. Ileal microbiota transfer (IMT) from ANP<sup>-/-</sup> mice to healthy C57BL/6J mice drove <i>Lactobacillus johnsonii</i> and <i>Lactobacillus reuteri</i> colonization in the ileum, which manifested an increase in BP, the HW/BW ratio, cardiac hypertrophy, and ileal pathology compared with IMT from WT mice. The HSD in C57BL/6J mice with IMT from ANP<sup>-/-</sup> mice drove the colonization of <i>Burkholderiales bacterium YL45</i>, <i>Lactobacillus johnsonii</i>, and <i>Lactobacillus reuteri</i> in the ileum and further exacerbated the cardiac and ileal pathology. Our results suggest that salt-sensitive ileal microbiota is probably related to ANP deficiency-induced cardiac injury.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:12:15.091346",
+      "authors": [
+        {
+          "name": "Siqi Li; Sishuo Chen; Min Nie; Lijing Wen; Bin Zou; Lingyu Zhang; Jingzhou Xie; Hooi-Leng Ser; Learn-Han Lee; Shunyi Wang; Caixia Lin; Janak L Pathak; Weijie Zhou; Ji Miao; Lijing Wang; Lingyun Zheng"
+        }
+      ],
+      "year": 2022,
+      "journal": "Nutrients",
+      "venue": "Nutrients",
+      "doi": "10.3390/nu14153129",
+      "url": "https://doi.org/10.3390/nu14153129",
+      "quality_score": 12.0
+    },
+    {
+      "id": "36763356.0",
+      "pmid": "36763356.0",
+      "title": "Trends in In-Hospital Cardiac Arrest and Mortality Among Children With Cardiac Disease in the Intensive Care Unit: A Systematic Review and Meta-analysis.",
+      "abstract": "Data on trends in incidence and mortality for in-hospital cardiac arrest (IHCA) in children with cardiac disease in the intensive care unit (ICU) are lacking. Additionally, there is limited information on factors associated with IHCA and mortality in this population. To investigate incidence, trends, and factors associated with IHCA and mortality in children with cardiac disease in the ICU. A systematic review was conducted using PubMed, Web of Science, EMBASE, and CINAHL, from inception to September 2021. Observational studies on IHCA in pediatric ICU patients with cardiac disease were selected (age cutoffs in studies varied from age ≤18 y to age ≤21 y). Quality of studies was assessed using the National Institutes of Health Quality Assessment Tools. Data on incidence, mortality, and factors associated with IHCA or mortality were extracted by 2 independent observers. Random-effects meta-analysis was used to compute pooled proportions and pooled ORs. Metaregression, adjusted for type of study and diagnostic category, was used to evaluate trends in incidence and mortality. Primary outcomes were incidence of IHCA and in-hospital mortality. Secondary outcomes were proportions of patients who underwent extracorporeal membrane oxygenation (ECMO) cardiopulmonary resuscitation (ECPR) and those who did not achieve return of spontaneous circulation (ROSC). Of the 2574 studies identified, 25 were included in the systematic review (131 724 patients) and 18 in the meta-analysis. Five percent (95% CI, 4%-6%) of children with cardiac disease in the ICU experienced IHCA. The pooled in-hospital mortality among children who experienced IHCA was 51% (95% CI, 42%-59%). Thirty-nine percent (95% CI, 29%-51%) did not achieve ROSC; in centers with ECMO, 22% (95% CI, 14%-33%) underwent ECPR, whereas 22% (95% CI, 12%-38%) were unable to be resuscitated. Both incidence of IHCA and associated in-hospital mortality decreased significantly in the last 20 years (both P for trend < .001), whereas the proportion of patients not achieving ROSC did not significantly change (P for trend = .90). Neonatal age, prematurity, comorbidities, univentricular physiology, arrhythmias, prearrest mechanical ventilation or ECMO, and higher surgical complexity were associated with increased incidence of IHCA and mortality odds. This systematic review and meta-analysis found that 5% of children with cardiac disease in the ICU experienced IHCA. Decreasing trends in IHCA incidence and mortality suggest that education on preventive interventions, use of ECMO, and post-arrest care may have been effective; however, there remains a crucial need for developing resuscitation strategies specific to children with cardiac disease.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:12:15.091382",
+      "authors": [
+        {
+          "name": "Francesca Sperotto; Marco Daverio; Angela Amigoni; Dario Gregori; Anna Dorste; Catherine Allan; Ravi R Thiagarajan"
+        }
+      ],
+      "year": 2023,
+      "journal": "JAMA network open",
+      "venue": "JAMA network open",
+      "doi": "10.1001/jamanetworkopen.2022.56178",
+      "url": "https://doi.org/10.1001/jamanetworkopen.2022.56178",
+      "quality_score": 11.0
+    },
+    {
+      "id": "31371125.0",
+      "pmid": "31371125.0",
+      "title": "Arterial Ischemic Stroke Secondary to Cardiac Disease in Neonates and Children.",
+      "abstract": "We describe the risk factors for peri-procedural and spontaneous arterial ischemic stroke (AIS) in children with cardiac disease. We identified children with cardiac causes of AIS enrolled in the International Pediatric Stroke Study registry from January 2003 to July 2014. Isolated patent foramen ovale was excluded. Peri-procedural AIS (those occurring during or within 72 hours of cardiac surgery, cardiac catheterization, or mechanical circulatory support) and spontaneous AIS that occurred outside of these time periods were compared. We identified 672 patients with congenital or acquired cardiac disease as the primary risk factor for AIS. Among these, 177 patients (26%) had peri-procedural AIS and 495 patients (74%) had spontaneous AIS. Among non-neonates, spontaneous AIS occurred at older ages (median 4.2 years, interquartile range 0.97 to 12.4) compared with peri-procedural AIS (median 2.4 years, interquartile range 0.35 to 6.1, P < 0.001). About a third of patients in both groups had a systemic illness at the time of AIS. Patients who had spontaneous AIS were more likely to have a preceding thrombotic event (16 % versus 9 %, P = 0.02) and to have a moderate or severe neurological deficit at discharge (67% versus 33%, P = 0.01) compared to those with peri-procedural AIS. Children with cardiac disease are at risk for AIS at the time of cardiac procedures but also outside of the immediate 72 hours after procedures. Many have acute systemic illness or thrombotic event preceding AIS, suggesting that inflammatory or prothrombotic conditions could act as a stroke trigger in this susceptible population.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:12:15.091413",
+      "authors": [
+        {
+          "name": "Melissa G Chung; Kristin P Guilliams; Jenny L Wilson; Lauren A Beslow; Michael M Dowling; Neil R Friedman; Sahar M A Hassanein; Rebecca Ichord; Lori C Jordan; Mark T Mackay; Mubeen F Rafay; Michael Rivkin; Marcela Torres; Dimitrios Zafeiriou; Gabrielle deVeber; Christine K Fox"
+        }
+      ],
+      "year": 2019,
+      "journal": "Pediatric neurology",
+      "venue": "Pediatric neurology",
+      "doi": "10.1016/j.pediatrneurol.2019.06.008",
+      "url": "https://doi.org/10.1016/j.pediatrneurol.2019.06.008",
+      "quality_score": 9.0
+    },
+    {
+      "id": "36328157.0",
+      "pmid": "36328157.0",
+      "title": "Edoxaban for Thromboembolism Prevention in Pediatric Patients With Cardiac Disease.",
+      "abstract": "Standard of care (SOC) anticoagulation for thromboembolism (TE) prevention in children with cardiac disease includes low molecular weight heparins or vitamin K antagonists. Limited data exists for alternate use of direct oral anticoagulants in children. The investigators aimed to obtain safety and efficacy data for edoxaban in children. We performed a phase 3, multinational, prospective, randomized, open-label, blinded-endpoint trial in patients <18 years of age with cardiac disease (ENNOBLE-ATE [Edoxaban for Prevention of Blood Vessels Being Blocked by Clots (Thrombotic Events) in Children at Risk Because of Cardiac Disease] trial). Patients were randomized 2:1 to age- and weight-based oral edoxaban once daily vs SOC for 3 months (main study period), stratified by cardiac diagnosis. Both groups could continue in an open-label edoxaban extension arm through 1 year. The primary endpoint was adjudicated clinically relevant bleeding (CRB). The main secondary endpoint was symptomatic TE or asymptomatic intracardiac thrombosis. The modified intention-to-treat cohort included 167 children. One patient per group experienced a nonmajor CRB in the main period. Treatment-emergent adverse events occurred in 46.8% (51 of 109) with edoxaban and 41.4% (24 of 58) with SOC. One SOC patient experienced 2 TE events (DVT with PE). Among 147 children in the extension, 1 CRB event (0.7%) and 4 TEs occurred (2.8%; 2 strokes and 2 of 33 Kawasaki disease patients with coronary artery thromboses and/or myocardial infarctions). Edoxaban is a potential alternative mode of thromboprophylaxis in children with cardiac disease showing low rates of CRB and TEs with advantages of once daily dosing and infrequent monitoring requirement. (ENNOBLE-ATE [Edoxaban for Prevention of Blood Vessels Being Blocked by Clots] (Thrombotic Events) in Children at Risk Because of Cardiac Disease trial; NCT03395639).",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:12:15.091443",
+      "authors": [
+        {
+          "name": "Michael A Portman; Jeffrey P Jacobs; Jane W Newburger; Felix Berger; Michael A Grosso; Anil Duggal; Ben Tao; Neil A Goldenberg"
+        }
+      ],
+      "year": 2022,
+      "journal": "Journal of the American College of Cardiology",
+      "venue": "Journal of the American College of Cardiology",
+      "doi": "10.1016/j.jacc.2022.09.031",
+      "url": "https://doi.org/10.1016/j.jacc.2022.09.031",
+      "quality_score": 9.0
+    },
+    {
+      "id": "39846173.0",
+      "pmid": "39846173.0",
+      "title": "NEDD4-Mediated GSNOR Degradation Aggravates Cardiac Hypertrophy and Dysfunction.",
+      "abstract": "The decrease in S-nitrosoglutathione reductase (GSNOR) leads to an elevation of S-nitrosylation, thereby exacerbating the progression of cardiomyopathy in response to hemodynamic stress. However, the mechanisms under GSNOR decrease remain unclear. Here, we identify NEDD4 (neuronal precursor cell expressed developmentally downregulated 4) as a novel molecule that plays a crucial role in the pathogenesis of pressure overload-induced cardiac hypertrophy, by modulating GSNOR levels, thereby demonstrating significant therapeutic potential. Protein synthesis and degradation inhibitors were used to verify the reasons for the decrease in GSNOR. Mass spectrometry and database filtering were used to uncover NEDD4, the E3 Ub (ubiquitin) ligase, involved in GSNOR decrease. NEDD4 cardiomyocyte-specific deficiency mice were used to evaluate the role of NEDD4 and NEDD4-induced ubiquitination of GSNOR in cardiac hypertrophy in vivo. Both IBM (indolebutenate methyl ester derivatives), a highly specific NEDD4 inhibitor, and indole-3-carbinol, a NEDD4 inhibitor currently undergoing phase 2 clinical trial, were used to effectively suppress the NEDD4/GSNOR axis. GSNOR protein levels were reduced, while mRNA levels remained unchanged in myocardium samples from hypertrophic patients and transverse aortic constriction-induced mice, indicating GSNOR is regulated by ubiquitination. NEDD4, an E3 Ub ligase, was associated with GSNOR ubiquitination, which exhibited significantly higher expression levels in hypertrophic myocardial samples. Moreover, either the NEDD4 enzyme-dead mutant or GSNOR nonubiquitylated mutant decreased GSNOR ubiquitination and inhibited cardiac hypertrophic growth. Cardiomyocyte-specific NEDD4 deficiency inhibited cardiac hypertrophy in vitro and in vivo. NEDD4 inhibitor IBM effectively suppressed GSNOR ubiquitination and cardiac hypertrophy. Clinically, indole-3-carbinol, a NEDD4 inhibitor in phase II clinical trials used as an antitumor drug, demonstrated comparable efficacy. Our findings showed that upregulated NEDD4 leads to GSNOR ubiquitination and subsequent degradation, thereby facilitating the progression of cardiac hypertrophy. NEDD4 inhibitors may serve as a potential therapeutic strategy for the treatment of cardiac hypertrophy and heart failure.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:12:15.091472",
+      "authors": [
+        {
+          "name": "Xin Tang; Xiameng Liu; Xinqi Sha; Yan Zhang; Yan Zu; Qiyao Fan; Lulu Hu; Shixiu Sun; Zhiren Zhang; Feng Chen; ChengHui Yan; Xin Chen; Yueyue Xu; Wen Chen; Yongfeng Shao; Jiaxi Gu; Jun Pu; Bo Yu; Yaling Han; Liping Xie; Yi Han; Yong Ji"
+        }
+      ],
+      "year": 2025,
+      "journal": "Circulation research",
+      "venue": "Circulation research",
+      "doi": "10.1161/CIRCRESAHA.124.324872",
+      "url": "https://doi.org/10.1161/CIRCRESAHA.124.324872",
+      "quality_score": 9.0
+    },
+    {
+      "id": "36598072.0",
+      "pmid": "36598072.0",
+      "title": "COVID-19 international experience in paediatric patients with congenital heart disease.",
+      "abstract": "As COVID-19 continues to affect the global population, it is crucial to study the impact of the disease in vulnerable populations. This study of a diverse, international cohort aims to provide timely, experiential data on the course of disease in paediatric patients with congenital heart disease (CHD). Data were collected by capitalising on two pre-existing CHD registries, the International Quality Improvement Collaborative for Congenital Heart Disease: <i>Improving Care in Low- and Middle-Income Countries</i> and the Congenital Cardiac Catheterization Project on Outcomes. 35 participating sites reported data for all patients under 18 years of age with diagnosed CHD and known COVID-19 illness during 2020 identified at their institution. Patients were classified as low, moderate or high risk for moderate or severe COVID-19 illness based on patient anatomy, physiology and genetic syndrome using current published guidelines. Association of risk factors with hospitalisation and intensive care unit (ICU) level care were assessed. The study included 339 COVID-19 cases in paediatric patients with CHD from 35 sites worldwide. Of these cases, 84 patients (25%) required hospitalisation, and 40 (12%) required ICU care. Age <1 year, recent cardiac intervention, anatomical complexity, clinical cardiac status and overall risk were all significantly associated with need for hospitalisation and ICU admission. A multivariable model for ICU admission including clinical cardiac status and recent cardiac intervention produced a c-statistic of 0.86. These observational data suggest risk factors for hospitalisation related to COVID-19 in paediatric CHD include age, lower functional cardiac status and recent cardiac interventions. There is a need for further data to identify factors relevant to the care of patients with CHD who contract COVID-19 illness.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:12:15.091500",
+      "authors": [
+        {
+          "name": "Mary J Yeh; Lisa Bergersen; Kimberlee Gauvreau; Oliver M Barry; Sarosh P Batlivala; Elsa Bjornlund; Brian Boe; Luiz Fernando Caneo; Ulisses A Croti; Thomas Doyle; Shumaila Furnaz; Rodrigo Cesar Moraes; Michael L O'Byrne; Erica de Oliveira Paes; Alexis Palacios-Macedo; Dimitar Pechilkov; Nestor Fernando Sandoval; Supratim Sen; Mila Stajevic; Marco Antonio Ferreira Travessa; Kathy J Jenkins"
+        }
+      ],
+      "year": 2023,
+      "journal": "Heart (British Cardiac Society)",
+      "venue": "Heart (British Cardiac Society)",
+      "doi": "10.1136/heartjnl-2022-321208",
+      "url": "https://doi.org/10.1136/heartjnl-2022-321208",
+      "quality_score": 7.0
+    },
+    {
+      "id": "35684953.0",
+      "pmid": "35684953.0",
+      "title": "Screening and diagnostic imaging at centres performing congenital heart surgery in middle-income countries.",
+      "abstract": "Surgical care for CHD is increasingly available in low- and middle-income countries, and efforts to optimise outcomes are growing. This study characterises cardiac imaging and prenatal diagnosis infrastructure in this setting. An infrastructure survey was administered to sites participating in the International Quality Improvement Collaborative for CHD. Questions regarding transthoracic, transesophageal and epicardial echocardiography, cardiac CT, cardiac magnetic resonance, prenatal screening and fetal echocardiography were included. Associations with in-hospital and 30-day mortality were assessed. Thirty-seven sites in 17 countries responded. Programme size and geography varied considerably: < 250 cases (n = 13), 250-500 cases (n = 9), > 500 cases (n = 15); Americas (n = 13), Asia (n = 18), and Eastern Europe (n = 6). All had access to transthoracic echo. Most reported transesophageal and epicardial echocardiography availability (86 and 89%, respectively). Most (81%) had cardiac CT, but only 54% had cardiac magnetic resonance. A third reported impediments to imaging, including lack of portable machines, age/size-appropriate equipment and advanced cardiac imaging access and training. Only 19% of centres reported universal prenatal CHD screening in their catchment area, and only 46% always performed fetal echocardiography if screening raised concern for CHD. No statistically significant associations were identified between imaging modality availability and surgical outcomes. Although access to echocardiography is available in most middle-income countries; advanced imaging modalities (cardiac CT and magnetic resonance) are not always accessible. Prenatal screening for CHD is low, and availability of fetal echocardiography is limited. Imaging infrastructure in low- and middle-income countries and associations with outcomes merits additional study.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:12:15.091528",
+      "authors": [
+        {
+          "name": "Amara Majeed; Kathy Jenkins; Kimberlee Gauvreau; Julian F Forero; Fabiola Pérez Juárez; Snehal Kulkarni; Vu Minh Phuc; David Schidlow"
+        }
+      ],
+      "year": 2023,
+      "journal": "Cardiology in the young",
+      "venue": "Cardiology in the young",
+      "doi": "10.1017/S1047951122001731",
+      "url": "https://doi.org/10.1017/S1047951122001731",
+      "quality_score": 7.0
+    },
+    {
+      "id": "38107263.0",
+      "pmid": "38107263.0",
+      "title": "Rationale and design of the Children's Oncology Group study AAML1831 integrated cardiac substudies in pediatric acute myeloid leukemia therapy.",
+      "abstract": "Pediatric acute myeloid leukemia (AML) therapy is associated with substantial short- and long-term treatment-related cardiotoxicity mainly due to high-dose anthracycline exposure. Early left ventricular systolic dysfunction (LVSD) compromises anthracycline delivery and is associated with inferior event-free and overall survival in <i>de novo</i> pediatric AML. Thus, effective cardioprotective strategies and cardiotoxicity risk predictors are critical to optimize cancer therapy delivery and enable early interventions to prevent progressive LVSD. While dexrazoxane-based cardioprotection reduces short-term cardiotoxicity without compromising cancer survival, liposomal anthracycline formulations have the potential to mitigate cardiotoxicity while improving antitumor efficacy. This overview summarizes the rationale and methodology of cardiac substudies within AAML1831, a randomized Children's Oncology Group Phase 3 study of CPX-351, a liposomal formulation of daunorubicin and cytarabine, in comparison with standard daunorubicin/cytarabine with dexrazoxane in the treatment of <i>de novo</i> pediatric AML. Children (age <22 years) with newly diagnosed AML were enrolled and randomized to CPX-351-containing induction 1 and 2 (Arm A) or standard daunorubicin and dexrazoxane-containing induction (Arm B). Embedded cardiac correlative studies aim to compare the efficacy of this liposomal anthracycline formulation to dexrazoxane for primary prevention of cardiotoxicity by detailed core lab analysis of standardized echocardiograms and serial cardiac biomarkers throughout AML therapy and in follow-up. In addition, AAML1831 will assess the ability of early changes in sensitive echo indices (e.g., global longitudinal strain) and cardiac biomarkers (e.g., troponin and natriuretic peptides) to predict subsequent LVSD. Finally, AAML1831 establishes expert consensus-based strategies in cardiac monitoring and anthracycline dose modification to balance the potentially competing priorities of cardiotoxicity reduction with optimal leukemia therapy. This study will inform diagnostic, prognostic, preventative, and treatment strategies regarding cardiotoxicity during pediatric AML therapy. Together, these measures have the potential to improve leukemia-free and overall survival and long-term cardiovascular health in children with AML. <b>Clinical trial registration:</b> https://clinicaltrials.gov/, identifier NCT04293562.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:12:15.091556",
+      "authors": [
+        {
+          "name": "Kasey J Leger; Nora Robison; Hari K Narayan; Amanda M Smith; Tenaadam Tsega; Jade Chung; Amber Daniels; Zhen Chen; Virginia Englefield; Biniyam G Demissei; Benedicte Lefebvre; Gemma Morrow; Ilona Dizon; Robert B Gerbing; Reena Pabari; Kelly D Getz; Richard Aplenc; Jessica A Pollard; Eric J Chow; W H Wilson Tang; William L Border; Ritu Sachdeva; Todd A Alonzo; E Anders Kolb; Todd M Cooper; Bonnie Ky"
+        }
+      ],
+      "year": 2023,
+      "journal": "Frontiers in cardiovascular medicine",
+      "venue": "Frontiers in cardiovascular medicine",
+      "doi": "10.3389/fcvm.2023.1286241",
+      "url": "https://doi.org/10.3389/fcvm.2023.1286241",
+      "quality_score": 7.0
+    },
+    {
+      "id": "32347147.0",
+      "pmid": "32347147.0",
+      "title": "Patient and Institutional Characteristics Influence the Decision to Use Extracorporeal Cardiopulmonary Resuscitation for In-Hospital Cardiac Arrest.",
+      "abstract": "BACKGROUND Outcomes from extracorporeal cardiopulmonary resuscitation (ECPR) are felt to be influenced by selective use, but the characteristics of those receiving ECPR are undefined. We demonstrate the relationship between individual patient and hospital characteristics and the probability of ECPR use. METHODS AND RESULTS We performed an observational analysis of adult inpatient cardiac arrests in the United States from 2000 to 2018 reported to the American Heart Association's Get With The Guidelines-Resuscitation registry restricted to hospitals that provided ECPR. We calculated case mix adjusted relative risk (RR) of receiving ECPR for individual characteristics. From 2000 to 2018, 129 736 patients had a cardiac arrest (128 654 conventional cardiopulmonary resuscitation and 1082 ECPR) in 224 hospitals that offered ECPR. ECPR use was associated with younger age (RR, 1.5 for <40 vs. 40-59 years; 95% CI, 1.2-1.8), no pre-existing comorbidities (RR, 1.4; 95% CI, 1.1-1.8) or cardiac-specific comorbidities (congestive heart failure [RR, 1.3; 95% CI, 1.2-1.5], prior myocardial infarction [RR, 1.4; 95% CI, 1.2-1.6], or current myocardial infarction [RR, 1.5; 95% CI, 1.3-1.8]), and in locations of procedural areas at the times of cardiac arrest (RR, 12.0; 95% CI, 9.5-15.1). ECPR decreased after hours (3-11 pm [RR, 0.8; 95% CI, 0.7-1.0] and 11 pm-7 am [RR, 0.6; 95% CI, 0.5-0.7]) and on weekends (RR, 0.7; 95% CI, 0.6-0.9). CONCLUSIONS Less than 1% of in-hospital cardiac arrest patients are treated with ECPR. ECPR use is influenced by patient age, comorbidities, and hospital system factors. Randomized controlled trials are needed to better define the patients in whom ECPR may provide a benefit.",
+      "source": "local_pubmed",
+      "retrieved_at": "2025-11-09T19:12:15.091584",
+      "authors": [
+        {
+          "name": "Joseph E Tonna; Craig H Selzman; Saket Girotra; Angela P Presson; Ravi R Thiagarajan; Lance B Becker; Chong Zhang; Heather T Keenan"
+        }
+      ],
+      "year": 2020,
+      "journal": "Journal of the American Heart Association",
+      "venue": "Journal of the American Heart Association",
+      "doi": "10.1161/JAHA.119.015522",
+      "url": "https://doi.org/10.1161/JAHA.119.015522",
+      "quality_score": 7.0
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H001",
+      "title": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clini...",
+      "statement": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clinical practice",
+      "gap_addressed": "Gap between guidelines and real-world implementation",
+      "type": "implementation",
+      "evidence_level": "Strong",
+      "feasibility": "High",
+      "impact_potential": "High",
+      "weighted_score": 7.9
+    },
+    {
+      "id": "H002",
+      "title": "Digital-enabled risk stratification will achieve improved prediction accuracy in patient populations",
+      "statement": "Digital-enabled risk stratification will achieve improved prediction accuracy in patient populations",
+      "gap_addressed": "Limited research in diverse populations",
+      "type": "technology",
+      "evidence_level": "Strong",
+      "feasibility": "High",
+      "impact_potential": "High",
+      "weighted_score": 7.9
+    }
+  ],
+  "summary": {
+    "papers_found": 10,
+    "recent_papers": 6,
+    "highly_cited": 0,
+    "hypotheses_generated": 2,
+    "high_scoring_hypotheses": 2,
+    "top_hypothesis": {
+      "id": "H001",
+      "title": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clini...",
+      "statement": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clinical practice",
+      "gap_addressed": "Gap between guidelines and real-world implementation",
+      "type": "implementation",
+      "evidence_level": "Strong",
+      "feasibility": "High",
+      "impact_potential": "High",
+      "weighted_score": 7.9
+    },
+    "research_maturity": "Developing (steady research activity)",
+    "action_level": "IMPLEMENTATION - Strong candidates for development"
+  }
+}

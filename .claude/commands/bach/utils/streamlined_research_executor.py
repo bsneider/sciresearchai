@@ -12,9 +12,13 @@ from typing import Dict, List, Optional, Any
 import asyncio
 import aiohttp
 
-# Import local PubMed data loader
+# Import local PubMed data loader directly (avoid package imports)
 try:
-    from .apis.local_pubmed_data import LocalPubMedDataLoader
+    import sys
+    import os
+    api_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'apis')
+    sys.path.insert(0, api_path)
+    from local_pubmed_data import LocalPubMedDataLoader
 except ImportError:
     LocalPubMedDataLoader = None
 

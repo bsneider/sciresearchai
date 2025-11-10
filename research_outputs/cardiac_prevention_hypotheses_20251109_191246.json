@@ -1,0 +1,37 @@
+{
+  "research_topic": "cardiac prevention",
+  "date": "2025-11-09T19:12:46.499556",
+  "papers_analyzed": 10,
+  "research_gaps": [
+    "Gap between guidelines and real-world implementation",
+    "Limited research in diverse populations"
+  ],
+  "hypotheses": [
+    {
+      "id": "H001",
+      "title": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clini...",
+      "statement": "Standardized evidence-based protocol implementation will improve guideline adherence by 30% in clinical practice",
+      "gap_addressed": "Gap between guidelines and real-world implementation",
+      "type": "implementation",
+      "evidence_level": "Strong",
+      "feasibility": "High",
+      "impact_potential": "High",
+      "weighted_score": 7.9
+    },
+    {
+      "id": "H002",
+      "title": "Digital-enabled risk stratification will achieve improved prediction accuracy in patient populations",
+      "statement": "Digital-enabled risk stratification will achieve improved prediction accuracy in patient populations",
+      "gap_addressed": "Limited research in diverse populations",
+      "type": "technology",
+      "evidence_level": "Strong",
+      "feasibility": "High",
+      "impact_potential": "High",
+      "weighted_score": 7.9
+    }
+  ],
+  "recommendations": [
+    "Prioritize 2 high-scoring hypotheses (≥7.0) for immediate development",
+    "2 hypotheses have high feasibility - focus resources here"
+  ]
+}
